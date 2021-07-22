@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CAF77805-AF85-48B9-A075-60A800E9036E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Net4Sage</RootNamespace>
+    <AssemblyName>Net4Sage</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Net4Sage.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Net4Sage.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>packages\CrystalReports.Engine.13.0.3500\lib\net20\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ClientDoc, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>packages\CrystalReports.ReportAppServer.ClientDoc.13.0.3500\lib\net20\CrystalDecisions.ReportAppServer.ClientDoc.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommLayer, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>packages\CrystalReports.ReportAppServer.CommLayer.13.0.3500\lib\net20\CrystalDecisions.ReportAppServer.CommLayer.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonControls, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>packages\CrystalReports.ReportAppServer.CommonControls.13.0.3500\lib\net20\CrystalDecisions.ReportAppServer.CommonControls.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonObjectModel, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>packages\CrystalReports.ReportAppServer.CommonObjectModel.13.0.3500\lib\net20\CrystalDecisions.ReportAppServer.CommonObjectModel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.Controllers, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>packages\CrystalReports.ReportAppServer.Controllers.13.0.3500\lib\net20\CrystalDecisions.ReportAppServer.Controllers.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CubeDefModel, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>packages\CrystalReports.ReportAppServer.CubeDefModel.13.0.3500\lib\net20\CrystalDecisions.ReportAppServer.CubeDefModel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.DataDefModel, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>packages\CrystalReports.ReportAppServer.DataDefModel.13.0.3500\lib\net20\CrystalDecisions.ReportAppServer.DataDefModel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.DataSetConversion, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>packages\CrystalReports.ReportAppServer.DataSetConversion.13.0.3500\lib\net20\CrystalDecisions.ReportAppServer.DataSetConversion.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ObjectFactory, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>packages\CrystalReports.ReportAppServer.ObjectFactory.13.0.3500\lib\net20\CrystalDecisions.ReportAppServer.ObjectFactory.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.Prompting, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>packages\CrystalReports.ReportAppServer.Prompting.13.0.3500\lib\net20\CrystalDecisions.ReportAppServer.Prompting.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ReportDefModel, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>packages\CrystalReports.ReportAppServer.ReportDefModel.13.0.3500\lib\net20\CrystalDecisions.ReportAppServer.ReportDefModel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.XmlSerialize, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>packages\CrystalReports.ReportAppServer.XmlSerialize.13.0.3500\lib\net20\CrystalDecisions.ReportAppServer.XmlSerialize.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>packages\CrystalReports.Shared.13.0.3500\lib\net20\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <HintPath>packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CompanyPairsValues.cs" />
+    <Compile Include="Controls\DropDown\DynamicDropDown.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\DropDown\DynamicDropDown.Designer.cs">
+      <DependentUpon>DynamicDropDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DropDown\StaticDropDown.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\DropDown\StaticDropDown.Designer.cs">
+      <DependentUpon>StaticDropDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DropDown\StaticListEntry.cs" />
+    <Compile Include="Controls\GridSelect\CalendarEditingControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\GridSelect\DataGridViewCalendarCell.cs" />
+    <Compile Include="Controls\GridSelect\DataGridViewCalendarColumn.cs" />
+    <Compile Include="Controls\GridSelect\DataGridViewStaticDropDownCell.cs" />
+    <Compile Include="Controls\GridSelect\DataGridViewStaticDropDownColumn.cs" />
+    <Compile Include="Controls\GridSelect\DataGridViewTextLookupCell.cs" />
+    <Compile Include="Controls\GridSelect\DataGridViewTextLookupColumn.cs" />
+    <Compile Include="Controls\GridSelect\GridSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\GridSelect\GridSelect.designer.cs">
+      <DependentUpon>GridSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GridSelect\SelectRow.cs" />
+    <Compile Include="Controls\GridSelect\SelectRowDataType.cs" />
+    <Compile Include="Controls\GridSelect\SelectRowTypeEntry.cs" />
+    <Compile Include="Controls\GridSelect\SelectRowTypes.cs" />
+    <Compile Include="Controls\GridSelect\StaticDropDownEditingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\GridSelect\TextLookupEditingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\GridSort\Attributes.cs" />
+    <Compile Include="Controls\GridSort\GridSort.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\GridSort\GridSort.Designer.cs">
+      <DependentUpon>GridSort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GridSort\SortRow.cs" />
+    <Compile Include="Controls\Lookup\Attributes.cs" />
+    <Compile Include="Controls\Lookup\GLAccountLookup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Lookup\GLAccountLookup.Designer.cs">
+      <DependentUpon>GLAccountLookup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Lookup\LookupButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Lookup\LookupButton.Designer.cs">
+      <DependentUpon>LookupButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Lookup\LookupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Lookup\LookupForm.Designer.cs">
+      <DependentUpon>LookupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Lookup\LookupReturnEventHandler.cs" />
+    <Compile Include="Controls\Lookup\TextLookup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Lookup\TextLookup.designer.cs">
+      <DependentUpon>TextLookup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Navigators\GridNavigator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Navigators\Navigator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Navigators\Navigator.Designer.cs">
+      <DependentUpon>Navigator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Navigators\LookupNavigator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MenuBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Navigators\NavigatorController.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Navigators\NavigatorController.Designer.cs">
+      <DependentUpon>NavigatorController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\StatusBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\StatusBar.Designer.cs">
+      <DependentUpon>StatusBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReportEngine.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportEngine.designer.cs">
+      <DependentUpon>CrystalReportEngine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrystalReportForm.designer.cs">
+      <DependentUpon>CrystalReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\GLAccountEntry.cs" />
+    <Compile Include="Model\SpParameter.cs" />
+    <Compile Include="Model\SysCompany.cs" />
+    <Compile Include="Model\SysTaskPerm.cs" />
+    <Compile Include="Model\SysUser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SageSession.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SessionStates.cs" />
+    <Compile Include="TaskPermision.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\DropDown\DynamicDropDown.resx">
+      <DependentUpon>DynamicDropDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DropDown\StaticDropDown.resx">
+      <DependentUpon>StaticDropDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\GridSelect\GridSelect.resx">
+      <DependentUpon>GridSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\GridSort\GridSort.resx">
+      <DependentUpon>GridSort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Lookup\GLAccountLookup.resx">
+      <DependentUpon>GLAccountLookup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Lookup\LookupButton.resx">
+      <DependentUpon>LookupButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Lookup\LookupForm.resx">
+      <DependentUpon>LookupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Lookup\TextLookup.resx">
+      <DependentUpon>TextLookup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MenuBar.resx">
+      <DependentUpon>MenuBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Navigators\NavigatorController.resx">
+      <DependentUpon>NavigatorController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\StatusBar.resx">
+      <DependentUpon>StatusBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportForm.resx">
+      <DependentUpon>CrystalReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Net4Sage.nuspec" />
+    <None Include="Net4Sage.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\CompanyPairsValues.datasource" />
+    <None Include="Properties\DataSources\Net4Sage.Controls.DropDown.StaticListEntry.datasource" />
+    <None Include="Properties\DataSources\Net4Sage.Controls.GridSort.SortRow.datasource" />
+    <None Include="Resources\OK_16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancl_16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh_16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\srch_16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Disable_Lookup.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Del_24.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Linkaddvars.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_rec.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_record.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Preview.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\End_16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Start_16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Browse_Next_16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Browse_Previous_16.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,2233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Net4SageUtilsDBContextStoreContainer" CdmEntityContainer="Context">
+    <EntitySetMapping Name="TranTypeCompanies">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.TranTypeCompany">
+        <MappingFragment StoreEntitySet="tciTranTypeCompanies">
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="TranType" ColumnName="TranType" />
+          <ScalarProperty Name="JrnlKey" ColumnName="JrnlKey" />
+          <ScalarProperty Name="NextTranNo" ColumnName="NextTranNo" />
+          <ScalarProperty Name="TranTypeID" ColumnName="TranTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RouteDetails">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.RouteDetail">
+        <MappingFragment StoreEntitySet="tmfRoutDetl_HAIs">
+          <ScalarProperty Name="RoutingStepKey" ColumnName="RoutingStepKey" />
+          <ScalarProperty Name="BackFlush" ColumnName="BackFlush" />
+          <ScalarProperty Name="BackFlushFromPrefBin" ColumnName="BackFlushFromPrefBin" />
+          <ScalarProperty Name="BackFlushResetHours" ColumnName="BackFlushResetHours" />
+          <ScalarProperty Name="BackFlushSetupHours" ColumnName="BackFlushSetupHours" />
+          <ScalarProperty Name="BackFlushWhseBinKey" ColumnName="BackFlushWhseBinKey" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="EffectPcsHr" ColumnName="EffectPcsHr" />
+          <ScalarProperty Name="EffectPercent" ColumnName="EffectPercent" />
+          <ScalarProperty Name="MachineKey" ColumnName="MachineKey" />
+          <ScalarProperty Name="MaterReqPer" ColumnName="MaterReqPer" />
+          <ScalarProperty Name="MaterValUOMKey" ColumnName="MaterValUOMKey" />
+          <ScalarProperty Name="MatItemKey" ColumnName="MatItemKey" />
+          <ScalarProperty Name="MatNonInvtUnitCost" ColumnName="MatNonInvtUnitCost" />
+          <ScalarProperty Name="MatReqPc" ColumnName="MatReqPc" />
+          <ScalarProperty Name="MatRoutKey" ColumnName="MatRoutKey" />
+          <ScalarProperty Name="MoveHrs" ColumnName="MoveHrs" />
+          <ScalarProperty Name="NotesKey" ColumnName="NotesKey" />
+          <ScalarProperty Name="OperationDesc1" ColumnName="OperationDesc1" />
+          <ScalarProperty Name="OperationDesc2" ColumnName="OperationDesc2" />
+          <ScalarProperty Name="OperationKey" ColumnName="OperationKey" />
+          <ScalarProperty Name="OperationType" ColumnName="OperationType" />
+          <ScalarProperty Name="OperCostToWip" ColumnName="OperCostToWip" />
+          <ScalarProperty Name="OvrdMatNonInvtUnitCost" ColumnName="OvrdMatNonInvtUnitCost" />
+          <ScalarProperty Name="PcHrHrPc" ColumnName="PcHrHrPc" />
+          <ScalarProperty Name="PcsB4Reset" ColumnName="PcsB4Reset" />
+          <ScalarProperty Name="PcsHr" ColumnName="PcsHr" />
+          <ScalarProperty Name="PhantomPart" ColumnName="PhantomPart" />
+          <ScalarProperty Name="ProduceItemKey" ColumnName="ProduceItemKey" />
+          <ScalarProperty Name="ProgressStep" ColumnName="ProgressStep" />
+          <ScalarProperty Name="QTYCycle" ColumnName="QTYCycle" />
+          <ScalarProperty Name="QTYPerDesc" ColumnName="QTYPerDesc" />
+          <ScalarProperty Name="QueueHrs" ColumnName="QueueHrs" />
+          <ScalarProperty Name="ResetUpHr" ColumnName="ResetUpHr" />
+          <ScalarProperty Name="RoutingKey" ColumnName="RoutingKey" />
+          <ScalarProperty Name="ScrapPcs" ColumnName="ScrapPcs" />
+          <ScalarProperty Name="ScrapPercent" ColumnName="ScrapPercent" />
+          <ScalarProperty Name="SetUpHr" ColumnName="SetUpHr" />
+          <ScalarProperty Name="StepID" ColumnName="StepID" />
+          <ScalarProperty Name="ToolKey" ColumnName="ToolKey" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+          <ScalarProperty Name="UseMostRecentECO" ColumnName="UseMostRecentECO" />
+          <ScalarProperty Name="WhseKey" ColumnName="WhseKey" />
+          <ScalarProperty Name="WorkCenterKey" ColumnName="WorkCenterKey" />
+          <ScalarProperty Name="WrkCntrOperFactor" ColumnName="WrkCntrOperFactor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Routes">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.Route">
+        <MappingFragment StoreEntitySet="tmfRoutHead_HAIs">
+          <ScalarProperty Name="RoutingKey" ColumnName="RoutingKey" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ApprovalKey" ColumnName="ApprovalKey" />
+          <ScalarProperty Name="BatchSize" ColumnName="BatchSize" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateType" ColumnName="CreateType" />
+          <ScalarProperty Name="CreateUserID" ColumnName="CreateUserID" />
+          <ScalarProperty Name="CustKey" ColumnName="CustKey" />
+          <ScalarProperty Name="EconCycleQty" ColumnName="EconCycleQty" />
+          <ScalarProperty Name="ECOTrackFlag" ColumnName="ECOTrackFlag" />
+          <ScalarProperty Name="ItemClassKey" ColumnName="ItemClassKey" />
+          <ScalarProperty Name="ItemKey" ColumnName="ItemKey" />
+          <ScalarProperty Name="MaxWOQty" ColumnName="MaxWOQty" />
+          <ScalarProperty Name="MinWOQty" ColumnName="MinWOQty" />
+          <ScalarProperty Name="NetWeightPerPart" ColumnName="NetWeightPerPart" />
+          <ScalarProperty Name="NotesKey" ColumnName="NotesKey" />
+          <ScalarProperty Name="ParentBackFlush" ColumnName="ParentBackFlush" />
+          <ScalarProperty Name="ParentRoutingKey" ColumnName="ParentRoutingKey" />
+          <ScalarProperty Name="ParentSource" ColumnName="ParentSource" />
+          <ScalarProperty Name="PhantIncLabor" ColumnName="PhantIncLabor" />
+          <ScalarProperty Name="PhantIncMat" ColumnName="PhantIncMat" />
+          <ScalarProperty Name="PhantIncOther" ColumnName="PhantIncOther" />
+          <ScalarProperty Name="PhantIncOut" ColumnName="PhantIncOut" />
+          <ScalarProperty Name="PhantIncProg" ColumnName="PhantIncProg" />
+          <ScalarProperty Name="PlanOverPercent" ColumnName="PlanOverPercent" />
+          <ScalarProperty Name="PlanWOWindow" ColumnName="PlanWOWindow" />
+          <ScalarProperty Name="QTYCycle" ColumnName="QTYCycle" />
+          <ScalarProperty Name="Reference" ColumnName="Reference" />
+          <ScalarProperty Name="Revision" ColumnName="Revision" />
+          <ScalarProperty Name="RevisionDate" ColumnName="RevisionDate" />
+          <ScalarProperty Name="RollUpFlag" ColumnName="RollUpFlag" />
+          <ScalarProperty Name="RoutingId" ColumnName="RoutingId" />
+          <ScalarProperty Name="RoutType" ColumnName="RoutType" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="UpdateUserID" ColumnName="UpdateUserID" />
+          <ScalarProperty Name="VersionId" ColumnName="VersionId" />
+          <ScalarProperty Name="WhseKey" ColumnName="WhseKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WorkOrderDetails">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.WorkOrderDetails">
+        <MappingFragment StoreEntitySet="tmfWorkOrdDetl_HAIs">
+          <ScalarProperty Name="WorkOrderStepKey" ColumnName="WorkOrderStepKey" />
+          <ScalarProperty Name="BackFlush" ColumnName="BackFlush" />
+          <ScalarProperty Name="BackFlushFromPrefBin" ColumnName="BackFlushFromPrefBin" />
+          <ScalarProperty Name="BackFlushResetHours" ColumnName="BackFlushResetHours" />
+          <ScalarProperty Name="BackFlushSetupHours" ColumnName="BackFlushSetupHours" />
+          <ScalarProperty Name="BackFlushWhseBinKey" ColumnName="BackFlushWhseBinKey" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="DownHrsSTD" ColumnName="DownHrsSTD" />
+          <ScalarProperty Name="DownHrsTD" ColumnName="DownHrsTD" />
+          <ScalarProperty Name="EffectPcsHr" ColumnName="EffectPcsHr" />
+          <ScalarProperty Name="EffectPercent" ColumnName="EffectPercent" />
+          <ScalarProperty Name="MachineKey" ColumnName="MachineKey" />
+          <ScalarProperty Name="MatCostSTD" ColumnName="MatCostSTD" />
+          <ScalarProperty Name="MatCostTD" ColumnName="MatCostTD" />
+          <ScalarProperty Name="MaterReqPer" ColumnName="MaterReqPer" />
+          <ScalarProperty Name="MaterValUOMKey" ColumnName="MaterValUOMKey" />
+          <ScalarProperty Name="MatItemKey" ColumnName="MatItemKey" />
+          <ScalarProperty Name="MatNonInvtUnitCost" ColumnName="MatNonInvtUnitCost" />
+          <ScalarProperty Name="MatReqPc" ColumnName="MatReqPc" />
+          <ScalarProperty Name="MatRoutKey" ColumnName="MatRoutKey" />
+          <ScalarProperty Name="MatTOT" ColumnName="MatTOT" />
+          <ScalarProperty Name="MatUPD" ColumnName="MatUPD" />
+          <ScalarProperty Name="MoveHrs" ColumnName="MoveHrs" />
+          <ScalarProperty Name="NotesKey" ColumnName="NotesKey" />
+          <ScalarProperty Name="OperationDesc1" ColumnName="OperationDesc1" />
+          <ScalarProperty Name="OperationDesc2" ColumnName="OperationDesc2" />
+          <ScalarProperty Name="OperationKey" ColumnName="OperationKey" />
+          <ScalarProperty Name="OperationType" ColumnName="OperationType" />
+          <ScalarProperty Name="OperCostToWip" ColumnName="OperCostToWip" />
+          <ScalarProperty Name="OrigRoutingStepKey" ColumnName="OrigRoutingStepKey" />
+          <ScalarProperty Name="OtherTOT" ColumnName="OtherTOT" />
+          <ScalarProperty Name="OtherUPD" ColumnName="OtherUPD" />
+          <ScalarProperty Name="OutTOT" ColumnName="OutTOT" />
+          <ScalarProperty Name="OutUPD" ColumnName="OutUPD" />
+          <ScalarProperty Name="OvrdMatNonInvtUnitCost" ColumnName="OvrdMatNonInvtUnitCost" />
+          <ScalarProperty Name="PcHrHrPc" ColumnName="PcHrHrPc" />
+          <ScalarProperty Name="PcsB4Reset" ColumnName="PcsB4Reset" />
+          <ScalarProperty Name="PcsHr" ColumnName="PcsHr" />
+          <ScalarProperty Name="PhantomPart" ColumnName="PhantomPart" />
+          <ScalarProperty Name="ProduceItemKey" ColumnName="ProduceItemKey" />
+          <ScalarProperty Name="ProgressStep" ColumnName="ProgressStep" />
+          <ScalarProperty Name="QTYCycle" ColumnName="QTYCycle" />
+          <ScalarProperty Name="QTYPerDesc" ColumnName="QTYPerDesc" />
+          <ScalarProperty Name="QTYReqEST" ColumnName="QTYReqEST" />
+          <ScalarProperty Name="QTYReqSTD" ColumnName="QTYReqSTD" />
+          <ScalarProperty Name="QTYShipTD" ColumnName="QTYShipTD" />
+          <ScalarProperty Name="QTYTD" ColumnName="QTYTD" />
+          <ScalarProperty Name="QueueHrs" ColumnName="QueueHrs" />
+          <ScalarProperty Name="ResetUpHr" ColumnName="ResetUpHr" />
+          <ScalarProperty Name="RoutingStepKey" ColumnName="RoutingStepKey" />
+          <ScalarProperty Name="RunCostSTD" ColumnName="RunCostSTD" />
+          <ScalarProperty Name="RunCostTD" ColumnName="RunCostTD" />
+          <ScalarProperty Name="RunFixTOT" ColumnName="RunFixTOT" />
+          <ScalarProperty Name="RunFixUPD" ColumnName="RunFixUPD" />
+          <ScalarProperty Name="RunHrsSTD" ColumnName="RunHrsSTD" />
+          <ScalarProperty Name="RunHrsTD" ColumnName="RunHrsTD" />
+          <ScalarProperty Name="RunVarTOT" ColumnName="RunVarTOT" />
+          <ScalarProperty Name="RunVarUPD" ColumnName="RunVarUPD" />
+          <ScalarProperty Name="SchStepFinishDate" ColumnName="SchStepFinishDate" />
+          <ScalarProperty Name="SchStepStartDate" ColumnName="SchStepStartDate" />
+          <ScalarProperty Name="ScrapPcs" ColumnName="ScrapPcs" />
+          <ScalarProperty Name="ScrapPcsSTD" ColumnName="ScrapPcsSTD" />
+          <ScalarProperty Name="ScrapPcsTD" ColumnName="ScrapPcsTD" />
+          <ScalarProperty Name="ScrapPercent" ColumnName="ScrapPercent" />
+          <ScalarProperty Name="SetCostSTD" ColumnName="SetCostSTD" />
+          <ScalarProperty Name="SetCostTD" ColumnName="SetCostTD" />
+          <ScalarProperty Name="SetFixTOT" ColumnName="SetFixTOT" />
+          <ScalarProperty Name="SetFixUPD" ColumnName="SetFixUPD" />
+          <ScalarProperty Name="SetHrsEST" ColumnName="SetHrsEST" />
+          <ScalarProperty Name="SetHrsSTD" ColumnName="SetHrsSTD" />
+          <ScalarProperty Name="SetHrsTD" ColumnName="SetHrsTD" />
+          <ScalarProperty Name="SetupComplete" ColumnName="SetupComplete" />
+          <ScalarProperty Name="SetUpHr" ColumnName="SetUpHr" />
+          <ScalarProperty Name="SetVarTOT" ColumnName="SetVarTOT" />
+          <ScalarProperty Name="SetVarUPD" ColumnName="SetVarUPD" />
+          <ScalarProperty Name="StepComplete" ColumnName="StepComplete" />
+          <ScalarProperty Name="StepID" ColumnName="StepID" />
+          <ScalarProperty Name="StepStartDate" ColumnName="StepStartDate" />
+          <ScalarProperty Name="ToolKey" ColumnName="ToolKey" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+          <ScalarProperty Name="WhseKey" ColumnName="WhseKey" />
+          <ScalarProperty Name="WorkCenterKey" ColumnName="WorkCenterKey" />
+          <ScalarProperty Name="WorkOrderKey" ColumnName="WorkOrderKey" />
+          <ScalarProperty Name="WrkCntrOperFactor" ColumnName="WrkCntrOperFactor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WorkOrders">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.WorkOrder">
+        <MappingFragment StoreEntitySet="tmfWorkOrdHead_HAIs">
+          <ScalarProperty Name="WorkOrderKey" ColumnName="WorkOrderKey" />
+          <ScalarProperty Name="ActualStartDate" ColumnName="ActualStartDate" />
+          <ScalarProperty Name="ApprovalKey" ColumnName="ApprovalKey" />
+          <ScalarProperty Name="AppTrackFlag" ColumnName="AppTrackFlag" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="Complete" ColumnName="Complete" />
+          <ScalarProperty Name="CompleteDate" ColumnName="CompleteDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateType" ColumnName="CreateType" />
+          <ScalarProperty Name="CreateUserID" ColumnName="CreateUserID" />
+          <ScalarProperty Name="CustKey" ColumnName="CustKey" />
+          <ScalarProperty Name="CustPONo" ColumnName="CustPONo" />
+          <ScalarProperty Name="EntryDate" ColumnName="EntryDate" />
+          <ScalarProperty Name="EstimateKey" ColumnName="EstimateKey" />
+          <ScalarProperty Name="ItemClassKey" ColumnName="ItemClassKey" />
+          <ScalarProperty Name="LastActDate" ColumnName="LastActDate" />
+          <ScalarProperty Name="MFGCommitDate" ColumnName="MFGCommitDate" />
+          <ScalarProperty Name="NotesKey" ColumnName="NotesKey" />
+          <ScalarProperty Name="Printed" ColumnName="Printed" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="PriorityCode" ColumnName="PriorityCode" />
+          <ScalarProperty Name="ProjectKey" ColumnName="ProjectKey" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="QuantityToDate" ColumnName="QuantityToDate" />
+          <ScalarProperty Name="QTYCycle" ColumnName="QTYCycle" />
+          <ScalarProperty Name="ReasonCodeKey" ColumnName="ReasonCodeKey" />
+          <ScalarProperty Name="ReleaseDate" ColumnName="ReleaseDate" />
+          <ScalarProperty Name="RequiredDate" ColumnName="RequiredDate" />
+          <ScalarProperty Name="RoutingKey" ColumnName="RoutingKey" />
+          <ScalarProperty Name="SchedFinish" ColumnName="SchedFinish" />
+          <ScalarProperty Name="SchedStart" ColumnName="SchedStart" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="UpdateUserID" ColumnName="UpdateUserID" />
+          <ScalarProperty Name="WhseKey" ColumnName="WhseKey" />
+          <ScalarProperty Name="WorkOrderNo" ColumnName="WorkOrderNo" />
+          <ScalarProperty Name="WorkOrderType" ColumnName="WorkOrderType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MFParameters">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.MFParameters">
+        <MappingFragment StoreEntitySet="tmfParameters_HAIs">
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateType" ColumnName="CreateType" />
+          <ScalarProperty Name="CreateUserID" ColumnName="CreateUserID" />
+          <ScalarProperty Name="GLPostRgstrFormat" ColumnName="GLPostRgstrFormat" />
+          <ScalarProperty Name="NonInvtForMatOperationTyp" ColumnName="NonInvtForMatOperationTyp" />
+          <ScalarProperty Name="NonInvtForOthOperationTyp" ColumnName="NonInvtForOthOperationTyp" />
+          <ScalarProperty Name="NonInvtForOutOperationTyp" ColumnName="NonInvtForOutOperationTyp" />
+          <ScalarProperty Name="NoOfFuturePer" ColumnName="NoOfFuturePer" />
+          <ScalarProperty Name="ParentBackFlush" ColumnName="ParentBackFlush" />
+          <ScalarProperty Name="IntegrateWithGL" ColumnName="IntegrateWithGL" />
+          <ScalarProperty Name="ParamCADImportDelim" ColumnName="ParamCADImportDelim" />
+          <ScalarProperty Name="ParmEstExpiratDaysNum" ColumnName="ParmEstExpiratDaysNum" />
+          <ScalarProperty Name="ParmNextEstimateNum" ColumnName="ParmNextEstimateNum" />
+          <ScalarProperty Name="ParmNextLotNum" ColumnName="ParmNextLotNum" />
+          <ScalarProperty Name="ParmNextLotTransNum" ColumnName="ParmNextLotTransNum" />
+          <ScalarProperty Name="ParmNextShipment" ColumnName="ParmNextShipment" />
+          <ScalarProperty Name="ParmNextTranNum" ColumnName="ParmNextTranNum" />
+          <ScalarProperty Name="ParmNextWorkOrdNum" ColumnName="ParmNextWorkOrdNum" />
+          <ScalarProperty Name="ParmSchOutSideWC" ColumnName="ParmSchOutSideWC" />
+          <ScalarProperty Name="ParmShipNumCopies" ColumnName="ParmShipNumCopies" />
+          <ScalarProperty Name="PhantIncLabor" ColumnName="PhantIncLabor" />
+          <ScalarProperty Name="PhantIncMat" ColumnName="PhantIncMat" />
+          <ScalarProperty Name="PhantIncOther" ColumnName="PhantIncOther" />
+          <ScalarProperty Name="PhantIncOut" ColumnName="PhantIncOut" />
+          <ScalarProperty Name="PhantIncProg" ColumnName="PhantIncProg" />
+          <ScalarProperty Name="PhantStartStep" ColumnName="PhantStartStep" />
+          <ScalarProperty Name="PhantStepIncrement" ColumnName="PhantStepIncrement" />
+          <ScalarProperty Name="ReleaseDateDays" ColumnName="ReleaseDateDays" />
+          <ScalarProperty Name="SchedCompleteTime" ColumnName="SchedCompleteTime" />
+          <ScalarProperty Name="UnlockAllFuturePer" ColumnName="UnlockAllFuturePer" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="UpdateUserID" ColumnName="UpdateUserID" />
+          <ScalarProperty Name="WIPHiddenBatchKey" ColumnName="WIPHiddenBatchKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WorkOrderProds">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.WorkOrderProd">
+        <MappingFragment StoreEntitySet="tmfWorkOrdProd_HAIs">
+          <ScalarProperty Name="WorkOrderKey" ColumnName="WorkOrderKey" />
+          <ScalarProperty Name="ItemKey" ColumnName="ItemKey" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="QTYCycle" ColumnName="QTYCycle" />
+          <ScalarProperty Name="QTYToDate" ColumnName="QTYToDate" />
+          <ScalarProperty Name="QTYTotal" ColumnName="QTYTotal" />
+          <ScalarProperty Name="SOKey" ColumnName="SOKey" />
+          <ScalarProperty Name="SOLineKey" ColumnName="SOLineKey" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InvtLots">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.InvtLot">
+        <MappingFragment StoreEntitySet="timInvtLots">
+          <ScalarProperty Name="InvtLotKey" ColumnName="InvtLotKey" />
+          <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+          <ScalarProperty Name="ImportLogKey" ColumnName="ImportLogKey" />
+          <ScalarProperty Name="ItemKey" ColumnName="ItemKey" />
+          <ScalarProperty Name="LotNo" ColumnName="LotNo" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="WhseKey" ColumnName="WhseKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InvtLotBins">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.InvtLotBin">
+        <MappingFragment StoreEntitySet="timInvtLotBins">
+          <ScalarProperty Name="InvtLotBinKey" ColumnName="InvtLotBinKey" />
+          <ScalarProperty Name="ImportLogKey" ColumnName="ImportLogKey" />
+          <ScalarProperty Name="InvtLotKey" ColumnName="InvtLotKey" />
+          <ScalarProperty Name="OrigQty" ColumnName="OrigQty" />
+          <ScalarProperty Name="PendQtyDecrease" ColumnName="PendQtyDecrease" />
+          <ScalarProperty Name="PendQtyIncrease" ColumnName="PendQtyIncrease" />
+          <ScalarProperty Name="QtyUsed" ColumnName="QtyUsed" />
+          <ScalarProperty Name="WhseBinKey" ColumnName="WhseBinKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InvtSerialCorrs">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.InvtSerialCorr">
+        <MappingFragment StoreEntitySet="timInvtSerialCorrs">
+          <ScalarProperty Name="InvtSerialKey" ColumnName="InvtSerialKey" />
+          <ScalarProperty Name="OldSerialNo" ColumnName="OldSerialNo" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateUserID" ColumnName="CreateUserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InvtTrans">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.InvtTran">
+        <MappingFragment StoreEntitySet="timInvtTrans">
+          <ScalarProperty Name="InvtTranKey" ColumnName="InvtTranKey" />
+          <ScalarProperty Name="AcctRefKey" ColumnName="AcctRefKey" />
+          <ScalarProperty Name="BatchKey" ColumnName="BatchKey" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateType" ColumnName="CreateType" />
+          <ScalarProperty Name="CreateUserID" ColumnName="CreateUserID" />
+          <ScalarProperty Name="FreightAmt" ColumnName="FreightAmt" />
+          <ScalarProperty Name="GLAcctKey" ColumnName="GLAcctKey" />
+          <ScalarProperty Name="ImportLogKey" ColumnName="ImportLogKey" />
+          <ScalarProperty Name="ItemAliasKey" ColumnName="ItemAliasKey" />
+          <ScalarProperty Name="ItemKey" ColumnName="ItemKey" />
+          <ScalarProperty Name="MaterialAmt" ColumnName="MaterialAmt" />
+          <ScalarProperty Name="OtherAmt" ColumnName="OtherAmt" />
+          <ScalarProperty Name="OtherMfgAmt" ColumnName="OtherMfgAmt" />
+          <ScalarProperty Name="OutsideAmt" ColumnName="OutsideAmt" />
+          <ScalarProperty Name="PostDate" ColumnName="PostDate" />
+          <ScalarProperty Name="PurchAmt" ColumnName="PurchAmt" />
+          <ScalarProperty Name="QtyPerKit" ColumnName="QtyPerKit" />
+          <ScalarProperty Name="ReasonCodeKey" ColumnName="ReasonCodeKey" />
+          <ScalarProperty Name="RunFixAmt" ColumnName="RunFixAmt" />
+          <ScalarProperty Name="RunVarAmt" ColumnName="RunVarAmt" />
+          <ScalarProperty Name="SalesAmt" ColumnName="SalesAmt" />
+          <ScalarProperty Name="SetFixAmt" ColumnName="SetFixAmt" />
+          <ScalarProperty Name="SetVarAmt" ColumnName="SetVarAmt" />
+          <ScalarProperty Name="SourceInvtTranKey" ColumnName="SourceInvtTranKey" />
+          <ScalarProperty Name="STaxAmt" ColumnName="STaxAmt" />
+          <ScalarProperty Name="TranAmt" ColumnName="TranAmt" />
+          <ScalarProperty Name="TranCmnt" ColumnName="TranCmnt" />
+          <ScalarProperty Name="TranDate" ColumnName="TranDate" />
+          <ScalarProperty Name="TranID" ColumnName="TranID" />
+          <ScalarProperty Name="TranKey" ColumnName="TranKey" />
+          <ScalarProperty Name="TranNo" ColumnName="TranNo" />
+          <ScalarProperty Name="TranQty" ColumnName="TranQty" />
+          <ScalarProperty Name="TranType" ColumnName="TranType" />
+          <ScalarProperty Name="TrnsfrOrderLineKey" ColumnName="TrnsfrOrderLineKey" />
+          <ScalarProperty Name="UnitCost" ColumnName="UnitCost" />
+          <ScalarProperty Name="UnitMeasKey" ColumnName="UnitMeasKey" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="UpdateUserID" ColumnName="UpdateUserID" />
+          <ScalarProperty Name="WhseKey" ColumnName="WhseKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InvtTranDists">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.InvtTranDist">
+        <MappingFragment StoreEntitySet="timInvtTranDists">
+          <ScalarProperty Name="InvtTranDistKey" ColumnName="InvtTranDistKey" />
+          <ScalarProperty Name="AdjQty" ColumnName="AdjQty" />
+          <ScalarProperty Name="DistQty" ColumnName="DistQty" />
+          <ScalarProperty Name="InvtLotBinKey" ColumnName="InvtLotBinKey" />
+          <ScalarProperty Name="InvtSerialKey" ColumnName="InvtSerialKey" />
+          <ScalarProperty Name="InvtTranKey" ColumnName="InvtTranKey" />
+          <ScalarProperty Name="ItemKey" ColumnName="ItemKey" />
+          <ScalarProperty Name="TranQty" ColumnName="TranQty" />
+          <ScalarProperty Name="WhseBinKey" ColumnName="WhseBinKey" />
+          <ScalarProperty Name="WhseKey" ColumnName="WhseKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WorkCenters">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.WorkCenter">
+        <MappingFragment StoreEntitySet="tmfWorkCenter_HAIs">
+          <ScalarProperty Name="WorkCenterKey" ColumnName="WorkCenterKey" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateType" ColumnName="CreateType" />
+          <ScalarProperty Name="CreateUserID" ColumnName="CreateUserID" />
+          <ScalarProperty Name="DepartmentKey" ColumnName="DepartmentKey" />
+          <ScalarProperty Name="FacilityKey" ColumnName="FacilityKey" />
+          <ScalarProperty Name="FriStart1" ColumnName="FriStart1" />
+          <ScalarProperty Name="FriStart2" ColumnName="FriStart2" />
+          <ScalarProperty Name="FriStart3" ColumnName="FriStart3" />
+          <ScalarProperty Name="FriStart4" ColumnName="FriStart4" />
+          <ScalarProperty Name="FriStop1" ColumnName="FriStop1" />
+          <ScalarProperty Name="FriStop2" ColumnName="FriStop2" />
+          <ScalarProperty Name="FriStop3" ColumnName="FriStop3" />
+          <ScalarProperty Name="FriStop4" ColumnName="FriStop4" />
+          <ScalarProperty Name="MonStart1" ColumnName="MonStart1" />
+          <ScalarProperty Name="MonStart2" ColumnName="MonStart2" />
+          <ScalarProperty Name="MonStart3" ColumnName="MonStart3" />
+          <ScalarProperty Name="MonStart4" ColumnName="MonStart4" />
+          <ScalarProperty Name="MonStop1" ColumnName="MonStop1" />
+          <ScalarProperty Name="MonStop2" ColumnName="MonStop2" />
+          <ScalarProperty Name="MonStop3" ColumnName="MonStop3" />
+          <ScalarProperty Name="MonStop4" ColumnName="MonStop4" />
+          <ScalarProperty Name="SatStart1" ColumnName="SatStart1" />
+          <ScalarProperty Name="SatStart2" ColumnName="SatStart2" />
+          <ScalarProperty Name="SatStart3" ColumnName="SatStart3" />
+          <ScalarProperty Name="SatStart4" ColumnName="SatStart4" />
+          <ScalarProperty Name="SatStop1" ColumnName="SatStop1" />
+          <ScalarProperty Name="SatStop2" ColumnName="SatStop2" />
+          <ScalarProperty Name="SatStop3" ColumnName="SatStop3" />
+          <ScalarProperty Name="SatStop4" ColumnName="SatStop4" />
+          <ScalarProperty Name="SunStart1" ColumnName="SunStart1" />
+          <ScalarProperty Name="SunStart2" ColumnName="SunStart2" />
+          <ScalarProperty Name="SunStart3" ColumnName="SunStart3" />
+          <ScalarProperty Name="SunStart4" ColumnName="SunStart4" />
+          <ScalarProperty Name="SunStop1" ColumnName="SunStop1" />
+          <ScalarProperty Name="SunStop2" ColumnName="SunStop2" />
+          <ScalarProperty Name="SunStop3" ColumnName="SunStop3" />
+          <ScalarProperty Name="SunStop4" ColumnName="SunStop4" />
+          <ScalarProperty Name="ThuStart1" ColumnName="ThuStart1" />
+          <ScalarProperty Name="ThuStart2" ColumnName="ThuStart2" />
+          <ScalarProperty Name="ThuStart3" ColumnName="ThuStart3" />
+          <ScalarProperty Name="ThuStart4" ColumnName="ThuStart4" />
+          <ScalarProperty Name="ThuStop1" ColumnName="ThuStop1" />
+          <ScalarProperty Name="ThuStop2" ColumnName="ThuStop2" />
+          <ScalarProperty Name="ThuStop3" ColumnName="ThuStop3" />
+          <ScalarProperty Name="ThuStop4" ColumnName="ThuStop4" />
+          <ScalarProperty Name="TueStart1" ColumnName="TueStart1" />
+          <ScalarProperty Name="TueStart2" ColumnName="TueStart2" />
+          <ScalarProperty Name="TueStart3" ColumnName="TueStart3" />
+          <ScalarProperty Name="TueStart4" ColumnName="TueStart4" />
+          <ScalarProperty Name="TueStop1" ColumnName="TueStop1" />
+          <ScalarProperty Name="TueStop2" ColumnName="TueStop2" />
+          <ScalarProperty Name="TueStop3" ColumnName="TueStop3" />
+          <ScalarProperty Name="TueStop4" ColumnName="TueStop4" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="UpdateUserID" ColumnName="UpdateUserID" />
+          <ScalarProperty Name="WedStart1" ColumnName="WedStart1" />
+          <ScalarProperty Name="WedStart2" ColumnName="WedStart2" />
+          <ScalarProperty Name="WedStart3" ColumnName="WedStart3" />
+          <ScalarProperty Name="WedStart4" ColumnName="WedStart4" />
+          <ScalarProperty Name="WedStop1" ColumnName="WedStop1" />
+          <ScalarProperty Name="WedStop2" ColumnName="WedStop2" />
+          <ScalarProperty Name="WedStop3" ColumnName="WedStop3" />
+          <ScalarProperty Name="WedStop4" ColumnName="WedStop4" />
+          <ScalarProperty Name="WorkCenterDesc" ColumnName="WorkCenterDesc" />
+          <ScalarProperty Name="WorkCenterID" ColumnName="WorkCenterID" />
+          <ScalarProperty Name="WrkCntrCapacity" ColumnName="WrkCntrCapacity" />
+          <ScalarProperty Name="WrkCntrCrewRate0" ColumnName="WrkCntrCrewRate0" />
+          <ScalarProperty Name="WrkCntrCrewRate1" ColumnName="WrkCntrCrewRate1" />
+          <ScalarProperty Name="WrkCntrCrewRate2" ColumnName="WrkCntrCrewRate2" />
+          <ScalarProperty Name="WrkCntrCrewRate3" ColumnName="WrkCntrCrewRate3" />
+          <ScalarProperty Name="WrkCntrCrewRate4" ColumnName="WrkCntrCrewRate4" />
+          <ScalarProperty Name="WrkCntrCrewRate5" ColumnName="WrkCntrCrewRate5" />
+          <ScalarProperty Name="WrkCntrCrewRate6" ColumnName="WrkCntrCrewRate6" />
+          <ScalarProperty Name="WrkCntrCrewRate7" ColumnName="WrkCntrCrewRate7" />
+          <ScalarProperty Name="WrkCntrCrewRate8" ColumnName="WrkCntrCrewRate8" />
+          <ScalarProperty Name="WrkCntrCrewRate9" ColumnName="WrkCntrCrewRate9" />
+          <ScalarProperty Name="WrkCntrEstRunRate" ColumnName="WrkCntrEstRunRate" />
+          <ScalarProperty Name="WrkCntrEstSetupRate" ColumnName="WrkCntrEstSetupRate" />
+          <ScalarProperty Name="WrkCntrFixedRunRate" ColumnName="WrkCntrFixedRunRate" />
+          <ScalarProperty Name="WrkCntrFixedSetupRate" ColumnName="WrkCntrFixedSetupRate" />
+          <ScalarProperty Name="WrkCntrPcHrHrPc" ColumnName="WrkCntrPcHrHrPc" />
+          <ScalarProperty Name="WrkCntrStdEffPercentage" ColumnName="WrkCntrStdEffPercentage" />
+          <ScalarProperty Name="WrkCntrStdMoveHrs" ColumnName="WrkCntrStdMoveHrs" />
+          <ScalarProperty Name="WrkCntrStdOprFactor" ColumnName="WrkCntrStdOprFactor" />
+          <ScalarProperty Name="WrkCntrStdPcsB4Reset" ColumnName="WrkCntrStdPcsB4Reset" />
+          <ScalarProperty Name="WrkCntrStdPcsHrs" ColumnName="WrkCntrStdPcsHrs" />
+          <ScalarProperty Name="WrkCntrStdResetHrs" ColumnName="WrkCntrStdResetHrs" />
+          <ScalarProperty Name="WrkCntrStdRunLaborRate" ColumnName="WrkCntrStdRunLaborRate" />
+          <ScalarProperty Name="WrkCntrStdScrapPct" ColumnName="WrkCntrStdScrapPct" />
+          <ScalarProperty Name="WrkCntrStdSetupHrs" ColumnName="WrkCntrStdSetupHrs" />
+          <ScalarProperty Name="WrkCntrStdSetupLaborRate" ColumnName="WrkCntrStdSetupLaborRate" />
+          <ScalarProperty Name="WrkCntrVarRunRate" ColumnName="WrkCntrVarRunRate" />
+          <ScalarProperty Name="WrkCntrVarSetupRate" ColumnName="WrkCntrVarSetupRate" />
+          <ScalarProperty Name="WrkCntStdQueueHrs" ColumnName="WrkCntStdQueueHrs" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Warehouses">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.Warehouse">
+        <MappingFragment StoreEntitySet="timWarehouses">
+          <ScalarProperty Name="WhseKey" ColumnName="WhseKey" />
+          <ScalarProperty Name="AllowImmedPickFromSO" ColumnName="AllowImmedPickFromSO" />
+          <ScalarProperty Name="AllowImmedShipFromPick" ColumnName="AllowImmedShipFromPick" />
+          <ScalarProperty Name="AllowTrnsfrBackOrd" ColumnName="AllowTrnsfrBackOrd" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="CostOfCarry" ColumnName="CostOfCarry" />
+          <ScalarProperty Name="COSAcctKey" ColumnName="COSAcctKey" />
+          <ScalarProperty Name="CostTierAdjAcctKey" ColumnName="CostTierAdjAcctKey" />
+          <ScalarProperty Name="CostToReplenish" ColumnName="CostToReplenish" />
+          <ScalarProperty Name="CostWhseKey" ColumnName="CostWhseKey" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="DfltLotPickMethod" ColumnName="DfltLotPickMethod" />
+          <ScalarProperty Name="DfltPickMeth" ColumnName="DfltPickMeth" />
+          <ScalarProperty Name="DfltPickOfOutOfStockItems" ColumnName="DfltPickOfOutOfStockItems" />
+          <ScalarProperty Name="ImmedInvcPrinterDest" ColumnName="ImmedInvcPrinterDest" />
+          <ScalarProperty Name="ImmedInvcRptSettingKey" ColumnName="ImmedInvcRptSettingKey" />
+          <ScalarProperty Name="ImmedPickPrinterDest" ColumnName="ImmedPickPrinterDest" />
+          <ScalarProperty Name="ImmedPickRptSettingKey" ColumnName="ImmedPickRptSettingKey" />
+          <ScalarProperty Name="InvtAcctKey" ColumnName="InvtAcctKey" />
+          <ScalarProperty Name="IssueAcctKey" ColumnName="IssueAcctKey" />
+          <ScalarProperty Name="LastRankDate" ColumnName="LastRankDate" />
+          <ScalarProperty Name="LastRankInvtPerKey" ColumnName="LastRankInvtPerKey" />
+          <ScalarProperty Name="LastRplnsmntUpdate" ColumnName="LastRplnsmntUpdate" />
+          <ScalarProperty Name="MailAddrKey" ColumnName="MailAddrKey" />
+          <ScalarProperty Name="MaxDemandMult" ColumnName="MaxDemandMult" />
+          <ScalarProperty Name="MaxOrderCycle" ColumnName="MaxOrderCycle" />
+          <ScalarProperty Name="MaxQualLeadTime" ColumnName="MaxQualLeadTime" />
+          <ScalarProperty Name="MaxQualLeadTimePct" ColumnName="MaxQualLeadTimePct" />
+          <ScalarProperty Name="MaxSeasDemandMult" ColumnName="MaxSeasDemandMult" />
+          <ScalarProperty Name="MinDemandMult" ColumnName="MinDemandMult" />
+          <ScalarProperty Name="MinOrderCycle" ColumnName="MinOrderCycle" />
+          <ScalarProperty Name="MinQualLeadTimePct" ColumnName="MinQualLeadTimePct" />
+          <ScalarProperty Name="MiscAdjAcctKey" ColumnName="MiscAdjAcctKey" />
+          <ScalarProperty Name="PhysCountAcctKey" ColumnName="PhysCountAcctKey" />
+          <ScalarProperty Name="PriceWhseKey" ColumnName="PriceWhseKey" />
+          <ScalarProperty Name="PurchAcctKey" ColumnName="PurchAcctKey" />
+          <ScalarProperty Name="ReordMeth" ColumnName="ReordMeth" />
+          <ScalarProperty Name="RestockMeth" ColumnName="RestockMeth" />
+          <ScalarProperty Name="RestockRate" ColumnName="RestockRate" />
+          <ScalarProperty Name="SalesAcctKey" ColumnName="SalesAcctKey" />
+          <ScalarProperty Name="SalesOffsetAcctKey" ColumnName="SalesOffsetAcctKey" />
+          <ScalarProperty Name="SalesReturnAcctKey" ColumnName="SalesReturnAcctKey" />
+          <ScalarProperty Name="ShipAddrKey" ColumnName="ShipAddrKey" />
+          <ScalarProperty Name="ShipComplete" ColumnName="ShipComplete" />
+          <ScalarProperty Name="SortPickTckt" ColumnName="SortPickTckt" />
+          <ScalarProperty Name="STaxSchdKey" ColumnName="STaxSchdKey" />
+          <ScalarProperty Name="TrackQtyAtBin" ColumnName="TrackQtyAtBin" />
+          <ScalarProperty Name="Transit" ColumnName="Transit" />
+          <ScalarProperty Name="TrendPct" ColumnName="TrendPct" />
+          <ScalarProperty Name="TrnsfrExpAcctKey" ColumnName="TrnsfrExpAcctKey" />
+          <ScalarProperty Name="TrnsfrFrtChrgOpt" ColumnName="TrnsfrFrtChrgOpt" />
+          <ScalarProperty Name="TrnsfrMrkupAcctKey" ColumnName="TrnsfrMrkupAcctKey" />
+          <ScalarProperty Name="TrnsfrSrchrgOpt" ColumnName="TrnsfrSrchrgOpt" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+          <ScalarProperty Name="UseBins" ColumnName="UseBins" />
+          <ScalarProperty Name="UseZones" ColumnName="UseZones" />
+          <ScalarProperty Name="WhseID" ColumnName="WhseID" />
+          <ScalarProperty Name="WhseMgrCntctKey" ColumnName="WhseMgrCntctKey" />
+          <ScalarProperty Name="WhseOvrdSegValue" ColumnName="WhseOvrdSegValue" />
+          <ScalarProperty Name="WillCallPickPrinterDest" ColumnName="WillCallPickPrinterDest" />
+          <ScalarProperty Name="WillCallPickRptSettingKey" ColumnName="WillCallPickRptSettingKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WhseBins">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.WhseBin">
+        <MappingFragment StoreEntitySet="timWhseBins">
+          <ScalarProperty Name="WhseBinKey" ColumnName="WhseBinKey" />
+          <ScalarProperty Name="DfltBin" ColumnName="DfltBin" />
+          <ScalarProperty Name="ExclFromAvail" ColumnName="ExclFromAvail" />
+          <ScalarProperty Name="ImportLogKey" ColumnName="ImportLogKey" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="LockedForPick" ColumnName="LockedForPick" />
+          <ScalarProperty Name="LockedForPutaway" ColumnName="LockedForPutaway" />
+          <ScalarProperty Name="PhysCountCycleKey" ColumnName="PhysCountCycleKey" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="TempBin" ColumnName="TempBin" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+          <ScalarProperty Name="VolCapacity" ColumnName="VolCapacity" />
+          <ScalarProperty Name="VolCapUnitMeasKey" ColumnName="VolCapUnitMeasKey" />
+          <ScalarProperty Name="WghtCapacity" ColumnName="WghtCapacity" />
+          <ScalarProperty Name="WghtCapUnitMeasKey" ColumnName="WghtCapUnitMeasKey" />
+          <ScalarProperty Name="WhseBinID" ColumnName="WhseBinID" />
+          <ScalarProperty Name="WhseKey" ColumnName="WhseKey" />
+          <ScalarProperty Name="WhseZoneKey" ColumnName="WhseZoneKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Inventories">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.Inventory">
+        <MappingFragment StoreEntitySet="timInventories">
+          <ScalarProperty Name="WhseKey" ColumnName="WhseKey" />
+          <ScalarProperty Name="ItemKey" ColumnName="ItemKey" />
+          <ScalarProperty Name="AvgUnitCost" ColumnName="AvgUnitCost" />
+          <ScalarProperty Name="BuyerKey" ColumnName="BuyerKey" />
+          <ScalarProperty Name="CloseSOLineOnFirstShip" ColumnName="CloseSOLineOnFirstShip" />
+          <ScalarProperty Name="COSAcctKey" ColumnName="COSAcctKey" />
+          <ScalarProperty Name="CostOfCarry" ColumnName="CostOfCarry" />
+          <ScalarProperty Name="CostTierAdjAcctKey" ColumnName="CostTierAdjAcctKey" />
+          <ScalarProperty Name="CostToReplenish" ColumnName="CostToReplenish" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateType" ColumnName="CreateType" />
+          <ScalarProperty Name="CreateUserID" ColumnName="CreateUserID" />
+          <ScalarProperty Name="DateEstab" ColumnName="DateEstab" />
+          <ScalarProperty Name="Demand" ColumnName="Demand" />
+          <ScalarProperty Name="DemandCalcKey" ColumnName="DemandCalcKey" />
+          <ScalarProperty Name="ImportLogKey" ColumnName="ImportLogKey" />
+          <ScalarProperty Name="InvtAcctKey" ColumnName="InvtAcctKey" />
+          <ScalarProperty Name="IssueAcctKey" ColumnName="IssueAcctKey" />
+          <ScalarProperty Name="LandedUnitCost" ColumnName="LandedUnitCost" />
+          <ScalarProperty Name="LastDemandCalcInvtPerKey" ColumnName="LastDemandCalcInvtPerKey" />
+          <ScalarProperty Name="LastPhysCount" ColumnName="LastPhysCount" />
+          <ScalarProperty Name="LastPhysCountVar" ColumnName="LastPhysCountVar" />
+          <ScalarProperty Name="LastReplParamCalcInvtPerKey" ColumnName="LastReplParamCalcInvtPerKey" />
+          <ScalarProperty Name="LastStockOut" ColumnName="LastStockOut" />
+          <ScalarProperty Name="LastUnitCost" ColumnName="LastUnitCost" />
+          <ScalarProperty Name="LeadTime" ColumnName="LeadTime" />
+          <ScalarProperty Name="LeadTimeCalcKey" ColumnName="LeadTimeCalcKey" />
+          <ScalarProperty Name="LinePoint" ColumnName="LinePoint" />
+          <ScalarProperty Name="MaxStockQty" ColumnName="MaxStockQty" />
+          <ScalarProperty Name="MinStockQty" ColumnName="MinStockQty" />
+          <ScalarProperty Name="MiscAdjAcctKey" ColumnName="MiscAdjAcctKey" />
+          <ScalarProperty Name="NonStock" ColumnName="NonStock" />
+          <ScalarProperty Name="OrderPoint" ColumnName="OrderPoint" />
+          <ScalarProperty Name="PhysCountAcctKey" ColumnName="PhysCountAcctKey" />
+          <ScalarProperty Name="PhysCountCycleKey" ColumnName="PhysCountCycleKey" />
+          <ScalarProperty Name="PhysCountTolPct" ColumnName="PhysCountTolPct" />
+          <ScalarProperty Name="PickMethod" ColumnName="PickMethod" />
+          <ScalarProperty Name="PickOneLotOnly" ColumnName="PickOneLotOnly" />
+          <ScalarProperty Name="PickPrefBinsFirst" ColumnName="PickPrefBinsFirst" />
+          <ScalarProperty Name="PrimaryVendKey" ColumnName="PrimaryVendKey" />
+          <ScalarProperty Name="PurchAcctKey" ColumnName="PurchAcctKey" />
+          <ScalarProperty Name="PurchProdLineKey" ColumnName="PurchProdLineKey" />
+          <ScalarProperty Name="QtyOnBO" ColumnName="QtyOnBO" />
+          <ScalarProperty Name="QtyOnPO" ColumnName="QtyOnPO" />
+          <ScalarProperty Name="QtyOnSO" ColumnName="QtyOnSO" />
+          <ScalarProperty Name="QtyOnTrnsfr" ColumnName="QtyOnTrnsfr" />
+          <ScalarProperty Name="QtyOnWO" ColumnName="QtyOnWO" />
+          <ScalarProperty Name="QtyReqForTrnsfr" ColumnName="QtyReqForTrnsfr" />
+          <ScalarProperty Name="QtyReqForWO" ColumnName="QtyReqForWO" />
+          <ScalarProperty Name="RankByCOS" ColumnName="RankByCOS" />
+          <ScalarProperty Name="RankByGrMargin" ColumnName="RankByGrMargin" />
+          <ScalarProperty Name="RankByHits" ColumnName="RankByHits" />
+          <ScalarProperty Name="RankByQtySold" ColumnName="RankByQtySold" />
+          <ScalarProperty Name="ReordMeth" ColumnName="ReordMeth" />
+          <ScalarProperty Name="RplcmntUnitCost" ColumnName="RplcmntUnitCost" />
+          <ScalarProperty Name="RplnsmntLevel" ColumnName="RplnsmntLevel" />
+          <ScalarProperty Name="RplnsmntParmFreeze" ColumnName="RplnsmntParmFreeze" />
+          <ScalarProperty Name="RplnsmntWhseKey" ColumnName="RplnsmntWhseKey" />
+          <ScalarProperty Name="SafetyStockCalcKey" ColumnName="SafetyStockCalcKey" />
+          <ScalarProperty Name="SafetyStockQty" ColumnName="SafetyStockQty" />
+          <ScalarProperty Name="SalesAcctKey" ColumnName="SalesAcctKey" />
+          <ScalarProperty Name="SalesOffsetAcctKey" ColumnName="SalesOffsetAcctKey" />
+          <ScalarProperty Name="SalesReturnAcctKey" ColumnName="SalesReturnAcctKey" />
+          <ScalarProperty Name="SerialNoLinesOnPickList" ColumnName="SerialNoLinesOnPickList" />
+          <ScalarProperty Name="ShipComplete" ColumnName="ShipComplete" />
+          <ScalarProperty Name="ShowAvailLots" ColumnName="ShowAvailLots" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="StdOrdQty" ColumnName="StdOrdQty" />
+          <ScalarProperty Name="StdUnitCost" ColumnName="StdUnitCost" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="UpdateUserID" ColumnName="UpdateUserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Items">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.Item">
+        <MappingFragment StoreEntitySet="timItems">
+          <ScalarProperty Name="ItemKey" ColumnName="ItemKey" />
+          <ScalarProperty Name="AllowCostOvrd" ColumnName="AllowCostOvrd" />
+          <ScalarProperty Name="AllowDecimalQty" ColumnName="AllowDecimalQty" />
+          <ScalarProperty Name="AllowDropShip" ColumnName="AllowDropShip" />
+          <ScalarProperty Name="AllowPriceOvrd" ColumnName="AllowPriceOvrd" />
+          <ScalarProperty Name="AllowRtrns" ColumnName="AllowRtrns" />
+          <ScalarProperty Name="AvailForSale" ColumnName="AvailForSale" />
+          <ScalarProperty Name="CommClassKey" ColumnName="CommClassKey" />
+          <ScalarProperty Name="CommodityCodeKey" ColumnName="CommodityCodeKey" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="COSAcctKey" ColumnName="COSAcctKey" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateType" ColumnName="CreateType" />
+          <ScalarProperty Name="CreateUserID" ColumnName="CreateUserID" />
+          <ScalarProperty Name="CRMItemID" ColumnName="CRMItemID" />
+          <ScalarProperty Name="DateEstab" ColumnName="DateEstab" />
+          <ScalarProperty Name="DfltSaleQty" ColumnName="DfltSaleQty" />
+          <ScalarProperty Name="DfltWhseKey" ColumnName="DfltWhseKey" />
+          <ScalarProperty Name="ExpAcctKey" ColumnName="ExpAcctKey" />
+          <ScalarProperty Name="FASAssetTemplate" ColumnName="FASAssetTemplate" />
+          <ScalarProperty Name="FreightClassKey" ColumnName="FreightClassKey" />
+          <ScalarProperty Name="HazMat" ColumnName="HazMat" />
+          <ScalarProperty Name="ImportLogKey" ColumnName="ImportLogKey" />
+          <ScalarProperty Name="InclOnPackList" ColumnName="InclOnPackList" />
+          <ScalarProperty Name="InternalLongDesc" ColumnName="InternalLongDesc" />
+          <ScalarProperty Name="IntrnlDeliveryReq" ColumnName="IntrnlDeliveryReq" />
+          <ScalarProperty Name="ItemClassKey" ColumnName="ItemClassKey" />
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="ItemSubType" ColumnName="ItemSubType" />
+          <ScalarProperty Name="ItemType" ColumnName="ItemType" />
+          <ScalarProperty Name="MatchToleranceKey" ColumnName="MatchToleranceKey" />
+          <ScalarProperty Name="MatSafetySheetKey" ColumnName="MatSafetySheetKey" />
+          <ScalarProperty Name="MinGrossProfitPct" ColumnName="MinGrossProfitPct" />
+          <ScalarProperty Name="MinSaleQty" ColumnName="MinSaleQty" />
+          <ScalarProperty Name="PerUsageOrdLimit" ColumnName="PerUsageOrdLimit" />
+          <ScalarProperty Name="PriceSeq" ColumnName="PriceSeq" />
+          <ScalarProperty Name="PriceUnitMeasKey" ColumnName="PriceUnitMeasKey" />
+          <ScalarProperty Name="ProdDetlLink" ColumnName="ProdDetlLink" />
+          <ScalarProperty Name="ProdPriceGroupKey" ColumnName="ProdPriceGroupKey" />
+          <ScalarProperty Name="PurchProdLineKey" ColumnName="PurchProdLineKey" />
+          <ScalarProperty Name="PurchUnitMeasKey" ColumnName="PurchUnitMeasKey" />
+          <ScalarProperty Name="RcptReq" ColumnName="RcptReq" />
+          <ScalarProperty Name="RcvgCmnt" ColumnName="RcvgCmnt" />
+          <ScalarProperty Name="RestockRate" ColumnName="RestockRate" />
+          <ScalarProperty Name="ReturnsAcctKey" ColumnName="ReturnsAcctKey" />
+          <ScalarProperty Name="SaleMultiple" ColumnName="SaleMultiple" />
+          <ScalarProperty Name="SalesAcctKey" ColumnName="SalesAcctKey" />
+          <ScalarProperty Name="SalesProdLineKey" ColumnName="SalesProdLineKey" />
+          <ScalarProperty Name="SalesUnitMeasKey" ColumnName="SalesUnitMeasKey" />
+          <ScalarProperty Name="Seasonal" ColumnName="Seasonal" />
+          <ScalarProperty Name="SerialIncrement" ColumnName="SerialIncrement" />
+          <ScalarProperty Name="SerialMask" ColumnName="SerialMask" />
+          <ScalarProperty Name="ShelfLife" ColumnName="ShelfLife" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="STaxClassKey" ColumnName="STaxClassKey" />
+          <ScalarProperty Name="StdPrice" ColumnName="StdPrice" />
+          <ScalarProperty Name="StdUnitCost" ColumnName="StdUnitCost" />
+          <ScalarProperty Name="StockUnitMeasKey" ColumnName="StockUnitMeasKey" />
+          <ScalarProperty Name="SubjToTradeDisc" ColumnName="SubjToTradeDisc" />
+          <ScalarProperty Name="SuccessorDate" ColumnName="SuccessorDate" />
+          <ScalarProperty Name="SuccessorItemKey" ColumnName="SuccessorItemKey" />
+          <ScalarProperty Name="TargetMargin" ColumnName="TargetMargin" />
+          <ScalarProperty Name="TrackMeth" ColumnName="TrackMeth" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="UpdateUserID" ColumnName="UpdateUserID" />
+          <ScalarProperty Name="UserFld1" ColumnName="UserFld1" />
+          <ScalarProperty Name="UserFld2" ColumnName="UserFld2" />
+          <ScalarProperty Name="UserFld3" ColumnName="UserFld3" />
+          <ScalarProperty Name="UserFld4" ColumnName="UserFld4" />
+          <ScalarProperty Name="UserFld5" ColumnName="UserFld5" />
+          <ScalarProperty Name="UserFld6" ColumnName="UserFld6" />
+          <ScalarProperty Name="ValuationMeth" ColumnName="ValuationMeth" />
+          <ScalarProperty Name="VendFamilyKey" ColumnName="VendFamilyKey" />
+          <ScalarProperty Name="WarrantyDays" ColumnName="WarrantyDays" />
+          <ScalarProperty Name="WarrantyProvider" ColumnName="WarrantyProvider" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IMTranTypes">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.IMTranType">
+        <MappingFragment StoreEntitySet="timTranTypes">
+          <ScalarProperty Name="TranType" ColumnName="TranType" />
+          <ScalarProperty Name="InvtOffsetAcctKey" ColumnName="InvtOffsetAcctKey" />
+          <ScalarProperty Name="InvtTranClass" ColumnName="InvtTranClass" />
+          <ScalarProperty Name="QtyOnHandEffect" ColumnName="QtyOnHandEffect" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BatchLogs">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.BatchLog">
+        <MappingFragment StoreEntitySet="tciBatchLogs">
+          <ScalarProperty Name="BatchKey" ColumnName="BatchKey" />
+          <ScalarProperty Name="BatchCmnt" ColumnName="BatchCmnt" />
+          <ScalarProperty Name="BatchID" ColumnName="BatchID" />
+          <ScalarProperty Name="BatchNo" ColumnName="BatchNo" />
+          <ScalarProperty Name="BatchOvrdSegKey" ColumnName="BatchOvrdSegKey" />
+          <ScalarProperty Name="BatchOvrdSegValue" ColumnName="BatchOvrdSegValue" />
+          <ScalarProperty Name="BatchTotal" ColumnName="BatchTotal" />
+          <ScalarProperty Name="BatchType" ColumnName="BatchType" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateType" ColumnName="CreateType" />
+          <ScalarProperty Name="ImportLogKey" ColumnName="ImportLogKey" />
+          <ScalarProperty Name="NextSeqNo" ColumnName="NextSeqNo" />
+          <ScalarProperty Name="OrigUserID" ColumnName="OrigUserID" />
+          <ScalarProperty Name="PostCompanyID" ColumnName="PostCompanyID" />
+          <ScalarProperty Name="PostDate" ColumnName="PostDate" />
+          <ScalarProperty Name="PostError" ColumnName="PostError" />
+          <ScalarProperty Name="PostStatus" ColumnName="PostStatus" />
+          <ScalarProperty Name="PostUserID" ColumnName="PostUserID" />
+          <ScalarProperty Name="RevrsBatchKey" ColumnName="RevrsBatchKey" />
+          <ScalarProperty Name="RgstrPrinted" ColumnName="RgstrPrinted" />
+          <ScalarProperty Name="SourceCompanyID" ColumnName="SourceCompanyID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GLBatches">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.GLBatch">
+        <MappingFragment StoreEntitySet="tglBatches">
+          <ScalarProperty Name="BatchKey" ColumnName="BatchKey" />
+          <ScalarProperty Name="BatchCmnt" ColumnName="BatchCmnt" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateType" ColumnName="CreateType" />
+          <ScalarProperty Name="GeneralJrnlType" ColumnName="GeneralJrnlType" />
+          <ScalarProperty Name="Hold" ColumnName="Hold" />
+          <ScalarProperty Name="HoldReason" ColumnName="HoldReason" />
+          <ScalarProperty Name="InterCompany" ColumnName="InterCompany" />
+          <ScalarProperty Name="InterCompBatchKey" ColumnName="InterCompBatchKey" />
+          <ScalarProperty Name="InterCompUsage" ColumnName="InterCompUsage" />
+          <ScalarProperty Name="OrigUserID" ColumnName="OrigUserID" />
+          <ScalarProperty Name="PostDate" ColumnName="PostDate" />
+          <ScalarProperty Name="Private" ColumnName="Private" />
+          <ScalarProperty Name="ReversingDate" ColumnName="ReversingDate" />
+          <ScalarProperty Name="TranCtrl" ColumnName="TranCtrl" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JournalDetails">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.JournalDetail">
+        <MappingFragment StoreEntitySet="tglJournalDetls">
+          <ScalarProperty Name="JrnlHdrKey" ColumnName="JrnlHdrKey" />
+          <ScalarProperty Name="EntryNo" ColumnName="EntryNo" />
+          <ScalarProperty Name="AcctRefKey" ColumnName="AcctRefKey" />
+          <ScalarProperty Name="GLAcctKey" ColumnName="GLAcctKey" />
+          <ScalarProperty Name="PostAmt" ColumnName="PostAmt" />
+          <ScalarProperty Name="PostAmtHC" ColumnName="PostAmtHC" />
+          <ScalarProperty Name="PostCmnt" ColumnName="PostCmnt" />
+          <ScalarProperty Name="PostQty" ColumnName="PostQty" />
+          <ScalarProperty Name="RefNo" ColumnName="RefNo" />
+          <ScalarProperty Name="SeqNo" ColumnName="SeqNo" />
+          <ScalarProperty Name="TargetCompanyID" ColumnName="TargetCompanyID" />
+          <ScalarProperty Name="TranDate" ColumnName="TranDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JournalHdrs">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.JournalHdr">
+        <MappingFragment StoreEntitySet="tglJournalHdrs">
+          <ScalarProperty Name="JrnlHdrKey" ColumnName="JrnlHdrKey" />
+          <ScalarProperty Name="AcctRefKey" ColumnName="AcctRefKey" />
+          <ScalarProperty Name="AllocateKey" ColumnName="AllocateKey" />
+          <ScalarProperty Name="BatchKey" ColumnName="BatchKey" />
+          <ScalarProperty Name="CheckNo" ColumnName="CheckNo" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateType" ColumnName="CreateType" />
+          <ScalarProperty Name="CreateUserID" ColumnName="CreateUserID" />
+          <ScalarProperty Name="CurrExchRate" ColumnName="CurrExchRate" />
+          <ScalarProperty Name="CurrExchSchdKey" ColumnName="CurrExchSchdKey" />
+          <ScalarProperty Name="CurrID" ColumnName="CurrID" />
+          <ScalarProperty Name="DfltAcctRefKey" ColumnName="DfltAcctRefKey" />
+          <ScalarProperty Name="Financial" ColumnName="Financial" />
+          <ScalarProperty Name="GLAcctKey" ColumnName="GLAcctKey" />
+          <ScalarProperty Name="ImportLogKey" ColumnName="ImportLogKey" />
+          <ScalarProperty Name="JrnlKey" ColumnName="JrnlKey" />
+          <ScalarProperty Name="JrnlNo" ColumnName="JrnlNo" />
+          <ScalarProperty Name="JrnlTotalHC" ColumnName="JrnlTotalHC" />
+          <ScalarProperty Name="NextEntryNo" ColumnName="NextEntryNo" />
+          <ScalarProperty Name="OffsetAmt" ColumnName="OffsetAmt" />
+          <ScalarProperty Name="OffsetAmtHC" ColumnName="OffsetAmtHC" />
+          <ScalarProperty Name="OffsetPost" ColumnName="OffsetPost" />
+          <ScalarProperty Name="OutOfBalance" ColumnName="OutOfBalance" />
+          <ScalarProperty Name="OutOfBalOverride" ColumnName="OutOfBalOverride" />
+          <ScalarProperty Name="PostCmnt" ColumnName="PostCmnt" />
+          <ScalarProperty Name="RecurJrnlKey" ColumnName="RecurJrnlKey" />
+          <ScalarProperty Name="ReqOffsetAmt" ColumnName="ReqOffsetAmt" />
+          <ScalarProperty Name="ReverseJrnl" ColumnName="ReverseJrnl" />
+          <ScalarProperty Name="SourceModule" ColumnName="SourceModule" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="TranDate" ColumnName="TranDate" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="UpdateUserID" ColumnName="UpdateUserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GLAccounts">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.GLAccount">
+        <MappingFragment StoreEntitySet="tglAccounts">
+          <ScalarProperty Name="GLAcctKey" ColumnName="GLAcctKey" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateType" ColumnName="CreateType" />
+          <ScalarProperty Name="CreateUserID" ColumnName="CreateUserID" />
+          <ScalarProperty Name="CurrRestriction" ColumnName="CurrRestriction" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="EffEndDate" ColumnName="EffEndDate" />
+          <ScalarProperty Name="EffStartDate" ColumnName="EffStartDate" />
+          <ScalarProperty Name="ExtCmnt" ColumnName="ExtCmnt" />
+          <ScalarProperty Name="GLAcctNo" ColumnName="GLAcctNo" />
+          <ScalarProperty Name="ImportLogKey" ColumnName="ImportLogKey" />
+          <ScalarProperty Name="NaturalAcctKey" ColumnName="NaturalAcctKey" />
+          <ScalarProperty Name="PostingType" ColumnName="PostingType" />
+          <ScalarProperty Name="RestrictedCurrID" ColumnName="RestrictedCurrID" />
+          <ScalarProperty Name="Revalue" ColumnName="Revalue" />
+          <ScalarProperty Name="StatUnit" ColumnName="StatUnit" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="UpdateUserID" ColumnName="UpdateUserID" />
+          <ScalarProperty Name="UserFld1" ColumnName="UserFld1" />
+          <ScalarProperty Name="UserFld2" ColumnName="UserFld2" />
+          <ScalarProperty Name="UserFld3" ColumnName="UserFld3" />
+          <ScalarProperty Name="UserFld4" ColumnName="UserFld4" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ItemDescriptions">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.ItemDescription">
+        <MappingFragment StoreEntitySet="timItemDescriptions">
+          <ScalarProperty Name="ItemKey" ColumnName="ItemKey" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="LongDesc" ColumnName="LongDesc" />
+          <ScalarProperty Name="ShortDesc" ColumnName="ShortDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Currencies">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.Currency">
+        <MappingFragment StoreEntitySet="tmcCurrencies">
+          <ScalarProperty Name="CurrID" ColumnName="CurrID" />
+          <ScalarProperty Name="CurrLocale" ColumnName="CurrLocale" />
+          <ScalarProperty Name="CurrSymbol" ColumnName="CurrSymbol" />
+          <ScalarProperty Name="CurrSymbolPosition" ColumnName="CurrSymbolPosition" />
+          <ScalarProperty Name="DecimalSymbol" ColumnName="DecimalSymbol" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="DigitGroupSymbol" ColumnName="DigitGroupSymbol" />
+          <ScalarProperty Name="DigitsAfterDecimal" ColumnName="DigitsAfterDecimal" />
+          <ScalarProperty Name="DigitsInGroup" ColumnName="DigitsInGroup" />
+          <ScalarProperty Name="IsUsed" ColumnName="IsUsed" />
+          <ScalarProperty Name="RoundMeth" ColumnName="RoundMeth" />
+          <ScalarProperty Name="RoundPrecision" ColumnName="RoundPrecision" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Journals">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.Journal">
+        <MappingFragment StoreEntitySet="tglJournals">
+          <ScalarProperty Name="JrnlKey" ColumnName="JrnlKey" />
+          <ScalarProperty Name="BegBalance" ColumnName="BegBalance" />
+          <ScalarProperty Name="CheckNo" ColumnName="CheckNo" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="GLAcctKey" ColumnName="GLAcctKey" />
+          <ScalarProperty Name="JrnlID" ColumnName="JrnlID" />
+          <ScalarProperty Name="NextJrnlNo" ColumnName="NextJrnlNo" />
+          <ScalarProperty Name="OffsetPost" ColumnName="OffsetPost" />
+          <ScalarProperty Name="ReqOffsetAmt" ColumnName="ReqOffsetAmt" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JournalLogs">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.JournalLog">
+        <MappingFragment StoreEntitySet="tglJournalLogs">
+          <ScalarProperty Name="JrnlKey" ColumnName="JrnlKey" />
+          <ScalarProperty Name="JrnlNo" ColumnName="JrnlNo" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="PostDate" ColumnName="PostDate" />
+          <ScalarProperty Name="TranStatus" ColumnName="TranStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Companies">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.Company">
+        <MappingFragment StoreEntitySet="tsmCompanies">
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="AddrLine1" ColumnName="AddrLine1" />
+          <ScalarProperty Name="AddrLine2" ColumnName="AddrLine2" />
+          <ScalarProperty Name="AddrLine3" ColumnName="AddrLine3" />
+          <ScalarProperty Name="AddrLine4" ColumnName="AddrLine4" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="Contact" ColumnName="Contact" />
+          <ScalarProperty Name="CountryCurrLocale" ColumnName="CountryCurrLocale" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="CurrID" ColumnName="CurrID" />
+          <ScalarProperty Name="CurrLocale" ColumnName="CurrLocale" />
+          <ScalarProperty Name="DBServerName" ColumnName="DBServerName" />
+          <ScalarProperty Name="DemoData" ColumnName="DemoData" />
+          <ScalarProperty Name="EMailAddr" ColumnName="EMailAddr" />
+          <ScalarProperty Name="FAX" ColumnName="FAX" />
+          <ScalarProperty Name="FAXExt" ColumnName="FAXExt" />
+          <ScalarProperty Name="FedID" ColumnName="FedID" />
+          <ScalarProperty Name="FullGL" ColumnName="FullGL" />
+          <ScalarProperty Name="IncludeInOLAP" ColumnName="IncludeInOLAP" />
+          <ScalarProperty Name="LastArchive" ColumnName="LastArchive" />
+          <ScalarProperty Name="LastRecover" ColumnName="LastRecover" />
+          <ScalarProperty Name="LogoBlobKey" ColumnName="LogoBlobKey" />
+          <ScalarProperty Name="PathToArchive" ColumnName="PathToArchive" />
+          <ScalarProperty Name="PathToDBase" ColumnName="PathToDBase" />
+          <ScalarProperty Name="PathToLog" ColumnName="PathToLog" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="PhoneExt" ColumnName="PhoneExt" />
+          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="StateTaxID" ColumnName="StateTaxID" />
+          <ScalarProperty Name="UseMultLang" ColumnName="UseMultLang" />
+          <ScalarProperty Name="V1099CombStateFed" ColumnName="V1099CombStateFed" />
+          <ScalarProperty Name="V1099PayerNameCtrl" ColumnName="V1099PayerNameCtrl" />
+          <ScalarProperty Name="V1099XmitCtrlCode" ColumnName="V1099XmitCtrlCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomersClasses">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.CustomersClass">
+        <MappingFragment StoreEntitySet="tarCustClasses">
+          <ScalarProperty Name="CustClassKey" ColumnName="CustClassKey" />
+          <ScalarProperty Name="AcctsRecAcctKey" ColumnName="AcctsRecAcctKey" />
+          <ScalarProperty Name="AllowCustRefund" ColumnName="AllowCustRefund" />
+          <ScalarProperty Name="AllowInvtSubst" ColumnName="AllowInvtSubst" />
+          <ScalarProperty Name="AllowWriteOff" ColumnName="AllowWriteOff" />
+          <ScalarProperty Name="BadDebtAcctKey" ColumnName="BadDebtAcctKey" />
+          <ScalarProperty Name="BillingType" ColumnName="BillingType" />
+          <ScalarProperty Name="ClassOvrdSegValue" ColumnName="ClassOvrdSegValue" />
+          <ScalarProperty Name="CommExpAcctKey" ColumnName="CommExpAcctKey" />
+          <ScalarProperty Name="CommPayableAcctKey" ColumnName="CommPayableAcctKey" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateType" ColumnName="CreateType" />
+          <ScalarProperty Name="CreateUserID" ColumnName="CreateUserID" />
+          <ScalarProperty Name="CreditLimit" ColumnName="CreditLimit" />
+          <ScalarProperty Name="CreditLimitAgeCat" ColumnName="CreditLimitAgeCat" />
+          <ScalarProperty Name="CurrID" ColumnName="CurrID" />
+          <ScalarProperty Name="CustClassID" ColumnName="CustClassID" />
+          <ScalarProperty Name="CustClassName" ColumnName="CustClassName" />
+          <ScalarProperty Name="DfltSalesAcctKey" ColumnName="DfltSalesAcctKey" />
+          <ScalarProperty Name="DiscTakenAcctKey" ColumnName="DiscTakenAcctKey" />
+          <ScalarProperty Name="FinChgAcctKey" ColumnName="FinChgAcctKey" />
+          <ScalarProperty Name="FinChgFlatAmt" ColumnName="FinChgFlatAmt" />
+          <ScalarProperty Name="FinChgPct" ColumnName="FinChgPct" />
+          <ScalarProperty Name="FOBKey" ColumnName="FOBKey" />
+          <ScalarProperty Name="InvcFormKey" ColumnName="InvcFormKey" />
+          <ScalarProperty Name="InvcMsg" ColumnName="InvcMsg" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="PmtTermsKey" ColumnName="PmtTermsKey" />
+          <ScalarProperty Name="PrintDunnMsg" ColumnName="PrintDunnMsg" />
+          <ScalarProperty Name="RefundAcctKey" ColumnName="RefundAcctKey" />
+          <ScalarProperty Name="ReqPO" ColumnName="ReqPO" />
+          <ScalarProperty Name="RequireSOAck" ColumnName="RequireSOAck" />
+          <ScalarProperty Name="RetntPct" ColumnName="RetntPct" />
+          <ScalarProperty Name="RetntRecAcctKey" ColumnName="RetntRecAcctKey" />
+          <ScalarProperty Name="SalesReturnAcctKey" ColumnName="SalesReturnAcctKey" />
+          <ScalarProperty Name="ShipComplete" ColumnName="ShipComplete" />
+          <ScalarProperty Name="ShipLabelFormKey" ColumnName="ShipLabelFormKey" />
+          <ScalarProperty Name="ShipMethKey" ColumnName="ShipMethKey" />
+          <ScalarProperty Name="SOAckFormKey" ColumnName="SOAckFormKey" />
+          <ScalarProperty Name="SperKey" ColumnName="SperKey" />
+          <ScalarProperty Name="STaxAcctKey" ColumnName="STaxAcctKey" />
+          <ScalarProperty Name="STaxSchdKey" ColumnName="STaxSchdKey" />
+          <ScalarProperty Name="StmtCycleKey" ColumnName="StmtCycleKey" />
+          <ScalarProperty Name="StmtFormKey" ColumnName="StmtFormKey" />
+          <ScalarProperty Name="TradeDiscAcctKey" ColumnName="TradeDiscAcctKey" />
+          <ScalarProperty Name="TradeDiscPct" ColumnName="TradeDiscPct" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="UpdateUserID" ColumnName="UpdateUserID" />
+          <ScalarProperty Name="UserFld1" ColumnName="UserFld1" />
+          <ScalarProperty Name="UserFld2" ColumnName="UserFld2" />
+          <ScalarProperty Name="UserFld3" ColumnName="UserFld3" />
+          <ScalarProperty Name="UserFld4" ColumnName="UserFld4" />
+          <ScalarProperty Name="WriteOffAcctKey" ColumnName="WriteOffAcctKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.Customer">
+        <MappingFragment StoreEntitySet="tarCustomers">
+          <ScalarProperty Name="CustKey" ColumnName="CustKey" />
+          <ScalarProperty Name="ABANo" ColumnName="ABANo" />
+          <ScalarProperty Name="AllowCustRefund" ColumnName="AllowCustRefund" />
+          <ScalarProperty Name="AllowWriteOff" ColumnName="AllowWriteOff" />
+          <ScalarProperty Name="BillingType" ColumnName="BillingType" />
+          <ScalarProperty Name="BillToNationalAcctParent" ColumnName="BillToNationalAcctParent" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="ConsolidatedStatement" ColumnName="ConsolidatedStatement" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateType" ColumnName="CreateType" />
+          <ScalarProperty Name="CreateUserID" ColumnName="CreateUserID" />
+          <ScalarProperty Name="CreditLimit" ColumnName="CreditLimit" />
+          <ScalarProperty Name="CreditLimitAgeCat" ColumnName="CreditLimitAgeCat" />
+          <ScalarProperty Name="CreditLimitUsed" ColumnName="CreditLimitUsed" />
+          <ScalarProperty Name="CRMCustID" ColumnName="CRMCustID" />
+          <ScalarProperty Name="CurrExchSchdKey" ColumnName="CurrExchSchdKey" />
+          <ScalarProperty Name="CustClassKey" ColumnName="CustClassKey" />
+          <ScalarProperty Name="CustID" ColumnName="CustID" />
+          <ScalarProperty Name="CustName" ColumnName="CustName" />
+          <ScalarProperty Name="CustRefNo" ColumnName="CustRefNo" />
+          <ScalarProperty Name="DateEstab" ColumnName="DateEstab" />
+          <ScalarProperty Name="DfltBillToAddrKey" ColumnName="DfltBillToAddrKey" />
+          <ScalarProperty Name="DfltItemKey" ColumnName="DfltItemKey" />
+          <ScalarProperty Name="DfltMaxUpCharge" ColumnName="DfltMaxUpCharge" />
+          <ScalarProperty Name="DfltMaxUpChargeType" ColumnName="DfltMaxUpChargeType" />
+          <ScalarProperty Name="DfltSalesAcctKey" ColumnName="DfltSalesAcctKey" />
+          <ScalarProperty Name="DfltSalesReturnAcctKey" ColumnName="DfltSalesReturnAcctKey" />
+          <ScalarProperty Name="DfltShipToAddrKey" ColumnName="DfltShipToAddrKey" />
+          <ScalarProperty Name="FinChgFlatAmt" ColumnName="FinChgFlatAmt" />
+          <ScalarProperty Name="FinChgPct" ColumnName="FinChgPct" />
+          <ScalarProperty Name="Hold" ColumnName="Hold" />
+          <ScalarProperty Name="ImportLogKey" ColumnName="ImportLogKey" />
+          <ScalarProperty Name="NationalAcctLevelKey" ColumnName="NationalAcctLevelKey" />
+          <ScalarProperty Name="PmtByNationalAcctParent" ColumnName="PmtByNationalAcctParent" />
+          <ScalarProperty Name="PrimaryAddrKey" ColumnName="PrimaryAddrKey" />
+          <ScalarProperty Name="PrimaryCntctKey" ColumnName="PrimaryCntctKey" />
+          <ScalarProperty Name="PrintDunnMsg" ColumnName="PrintDunnMsg" />
+          <ScalarProperty Name="ReqCreditLimit" ColumnName="ReqCreditLimit" />
+          <ScalarProperty Name="ReqPO" ColumnName="ReqPO" />
+          <ScalarProperty Name="RetntPct" ColumnName="RetntPct" />
+          <ScalarProperty Name="SalesSourceKey" ColumnName="SalesSourceKey" />
+          <ScalarProperty Name="ShipPriority" ColumnName="ShipPriority" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="StdIndusCodeID" ColumnName="StdIndusCodeID" />
+          <ScalarProperty Name="StmtCycleKey" ColumnName="StmtCycleKey" />
+          <ScalarProperty Name="StmtFormKey" ColumnName="StmtFormKey" />
+          <ScalarProperty Name="TradeDiscPct" ColumnName="TradeDiscPct" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="UpdateUserID" ColumnName="UpdateUserID" />
+          <ScalarProperty Name="UserFld1" ColumnName="UserFld1" />
+          <ScalarProperty Name="UserFld2" ColumnName="UserFld2" />
+          <ScalarProperty Name="UserFld3" ColumnName="UserFld3" />
+          <ScalarProperty Name="UserFld4" ColumnName="UserFld4" />
+          <ScalarProperty Name="VendKey" ColumnName="VendKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NationalAccounts">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.NationalAccount">
+        <MappingFragment StoreEntitySet="tarNationalAccts">
+          <ScalarProperty Name="NationalAcctKey" ColumnName="NationalAcctKey" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="CreditLimit" ColumnName="CreditLimit" />
+          <ScalarProperty Name="CreditLimitUsed" ColumnName="CreditLimitUsed" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Hold" ColumnName="Hold" />
+          <ScalarProperty Name="NationalAcctID" ColumnName="NationalAcctID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NationalAccountLevels">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.NationalAccountLevel">
+        <MappingFragment StoreEntitySet="tarNationalAcctLevels">
+          <ScalarProperty Name="NationalAcctLevelKey" ColumnName="NationalAcctLevelKey" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="NationalAcctKey" ColumnName="NationalAcctKey" />
+          <ScalarProperty Name="NationalAcctLevel" ColumnName="NationalAcctLevel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SalesTerritories">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.SalesTerritory">
+        <MappingFragment StoreEntitySet="tarSalesTerritories">
+          <ScalarProperty Name="SalesTerritoryKey" ColumnName="SalesTerritoryKey" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="SalesTerritoryID" ColumnName="SalesTerritoryID" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerAddresses">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.CustomerAddress">
+        <MappingFragment StoreEntitySet="tarCustAddrs">
+          <ScalarProperty Name="AddrKey" ColumnName="AddrKey" />
+          <ScalarProperty Name="AllowInvtSubst" ColumnName="AllowInvtSubst" />
+          <ScalarProperty Name="BackOrdPrice" ColumnName="BackOrdPrice" />
+          <ScalarProperty Name="BOLReqd" ColumnName="BOLReqd" />
+          <ScalarProperty Name="CarrierAcctNo" ColumnName="CarrierAcctNo" />
+          <ScalarProperty Name="CarrierBillMeth" ColumnName="CarrierBillMeth" />
+          <ScalarProperty Name="CloseSOLineOnFirstShip" ColumnName="CloseSOLineOnFirstShip" />
+          <ScalarProperty Name="CloseSOOnFirstShip" ColumnName="CloseSOOnFirstShip" />
+          <ScalarProperty Name="CommPlanKey" ColumnName="CommPlanKey" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateType" ColumnName="CreateType" />
+          <ScalarProperty Name="CreateUserID" ColumnName="CreateUserID" />
+          <ScalarProperty Name="CreditCardKey" ColumnName="CreditCardKey" />
+          <ScalarProperty Name="CurrExchSchdKey" ColumnName="CurrExchSchdKey" />
+          <ScalarProperty Name="CurrID" ColumnName="CurrID" />
+          <ScalarProperty Name="CustAddrID" ColumnName="CustAddrID" />
+          <ScalarProperty Name="CustKey" ColumnName="CustKey" />
+          <ScalarProperty Name="CustPriceGroupKey" ColumnName="CustPriceGroupKey" />
+          <ScalarProperty Name="DfltCntctKey" ColumnName="DfltCntctKey" />
+          <ScalarProperty Name="FOBKey" ColumnName="FOBKey" />
+          <ScalarProperty Name="FreightMethod" ColumnName="FreightMethod" />
+          <ScalarProperty Name="ImportLogKey" ColumnName="ImportLogKey" />
+          <ScalarProperty Name="InvcFormKey" ColumnName="InvcFormKey" />
+          <ScalarProperty Name="InvcMsg" ColumnName="InvcMsg" />
+          <ScalarProperty Name="InvoiceReqd" ColumnName="InvoiceReqd" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="PackListContentsReqd" ColumnName="PackListContentsReqd" />
+          <ScalarProperty Name="PackListFormKey" ColumnName="PackListFormKey" />
+          <ScalarProperty Name="PackListReqd" ColumnName="PackListReqd" />
+          <ScalarProperty Name="PmtTermsKey" ColumnName="PmtTermsKey" />
+          <ScalarProperty Name="PriceAdj" ColumnName="PriceAdj" />
+          <ScalarProperty Name="PriceBase" ColumnName="PriceBase" />
+          <ScalarProperty Name="PrintOrderAck" ColumnName="PrintOrderAck" />
+          <ScalarProperty Name="RequireSOAck" ColumnName="RequireSOAck" />
+          <ScalarProperty Name="SalesTerritoryKey" ColumnName="SalesTerritoryKey" />
+          <ScalarProperty Name="ShipComplete" ColumnName="ShipComplete" />
+          <ScalarProperty Name="ShipDays" ColumnName="ShipDays" />
+          <ScalarProperty Name="ShipLabelFormKey" ColumnName="ShipLabelFormKey" />
+          <ScalarProperty Name="ShipLabelsReqd" ColumnName="ShipLabelsReqd" />
+          <ScalarProperty Name="ShipMethKey" ColumnName="ShipMethKey" />
+          <ScalarProperty Name="ShipZoneKey" ColumnName="ShipZoneKey" />
+          <ScalarProperty Name="SOAckFormKey" ColumnName="SOAckFormKey" />
+          <ScalarProperty Name="SOAckMeth" ColumnName="SOAckMeth" />
+          <ScalarProperty Name="SperKey" ColumnName="SperKey" />
+          <ScalarProperty Name="STaxSchdKey" ColumnName="STaxSchdKey" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="UpdateUserID" ColumnName="UpdateUserID" />
+          <ScalarProperty Name="WhseKey" ColumnName="WhseKey" />
+          <ScalarProperty Name="UsePromoPrice" ColumnName="UsePromoPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UnitMeasures">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.UnitMeasure">
+        <MappingFragment StoreEntitySet="tciUnitMeasures">
+          <ScalarProperty Name="UnitMeasKey" ColumnName="UnitMeasKey" />
+          <ScalarProperty Name="Base" ColumnName="Base" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="MeasType" ColumnName="MeasType" />
+          <ScalarProperty Name="UnitMeasID" ColumnName="UnitMeasID" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ItemUMs">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.ItemUM">
+        <MappingFragment StoreEntitySet="timItemUnitOfMeas">
+          <ScalarProperty Name="ItemKey" ColumnName="ItemKey" />
+          <ScalarProperty Name="TargetUnitMeasKey" ColumnName="TargetUnitMeasKey" />
+          <ScalarProperty Name="ConversionFactor" ColumnName="ConversionFactor" />
+          <ScalarProperty Name="ConversionType" ColumnName="ConversionType" />
+          <ScalarProperty Name="IsSmallestUOM" ColumnName="IsSmallestUOM" />
+          <ScalarProperty Name="UnitVolume" ColumnName="UnitVolume" />
+          <ScalarProperty Name="UnitWeight" ColumnName="UnitWeight" />
+          <ScalarProperty Name="UPC" ColumnName="UPC" />
+          <ScalarProperty Name="UseForPurchases" ColumnName="UseForPurchases" />
+          <ScalarProperty Name="UseForSales" ColumnName="UseForSales" />
+          <ScalarProperty Name="UseStdConv" ColumnName="UseStdConv" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReasonCodes">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.ReasonCode">
+        <MappingFragment StoreEntitySet="tciReasonCodes">
+          <ScalarProperty Name="ReasonCodeKey" ColumnName="ReasonCodeKey" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ReasonCodeID" ColumnName="ReasonCodeID" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+          <ScalarProperty Name="ModuleNo" ColumnName="ModuleNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FiscalPeriods">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.FiscalPeriod">
+        <MappingFragment StoreEntitySet="tglFiscalPeriods">
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="FiscYear" ColumnName="FiscYear" />
+          <ScalarProperty Name="FiscPer" ColumnName="FiscPer" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="FiscYearPer" ColumnName="FiscYearPer" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FiscalYears">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.FiscalYear">
+        <MappingFragment StoreEntitySet="tglFiscalYears">
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="FiscYear" ColumnName="FiscYear" />
+          <ScalarProperty Name="NoOfPeriods" ColumnName="NoOfPeriods" />
+          <ScalarProperty Name="Purged" ColumnName="Purged" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SalesProductLines">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.SalesProductLine">
+        <MappingFragment StoreEntitySet="timSalesProdLines">
+          <ScalarProperty Name="SalesProdLineKey" ColumnName="SalesProdLineKey" />
+          <ScalarProperty Name="AllowPriceOvrd" ColumnName="AllowPriceOvrd" />
+          <ScalarProperty Name="CommClassKey" ColumnName="CommClassKey" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="MinGrossProfitPct" ColumnName="MinGrossProfitPct" />
+          <ScalarProperty Name="SalesProdLineID" ColumnName="SalesProdLineID" />
+          <ScalarProperty Name="SPLineOvrdSegValue" ColumnName="SPLineOvrdSegValue" />
+          <ScalarProperty Name="SubjToTradeDisc" ColumnName="SubjToTradeDisc" />
+          <ScalarProperty Name="TargetMargin" ColumnName="TargetMargin" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductCategories">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.ProductCategory">
+        <MappingFragment StoreEntitySet="timProdCategories">
+          <ScalarProperty Name="ProdCategoryKey" ColumnName="ProdCategoryKey" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="ParentProdCatKey" ColumnName="ParentProdCatKey" />
+          <ScalarProperty Name="ProdCategoryID" ColumnName="ProdCategoryID" />
+          <ScalarProperty Name="SeqNo" ColumnName="SeqNo" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductCategoryItems">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.ProductCategoryItem">
+        <MappingFragment StoreEntitySet="timProdCatItems">
+          <ScalarProperty Name="ProdCategoryKey" ColumnName="ProdCategoryKey" />
+          <ScalarProperty Name="ItemKey" ColumnName="ItemKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SalesPeople">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.SalesPerson">
+        <MappingFragment StoreEntitySet="tarSalespersons">
+          <ScalarProperty Name="SperKey" ColumnName="SperKey" />
+          <ScalarProperty Name="AddrKey" ColumnName="AddrKey" />
+          <ScalarProperty Name="CommPlanKey" ColumnName="CommPlanKey" />
+          <ScalarProperty Name="CommPmtMeth" ColumnName="CommPmtMeth" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="CRMUserID" ColumnName="CRMUserID" />
+          <ScalarProperty Name="EMailAddr" ColumnName="EMailAddr" />
+          <ScalarProperty Name="SalesMgrSperKey" ColumnName="SalesMgrSperKey" />
+          <ScalarProperty Name="SperID" ColumnName="SperID" />
+          <ScalarProperty Name="SperName" ColumnName="SperName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+          <ScalarProperty Name="UserFld1" ColumnName="UserFld1" />
+          <ScalarProperty Name="UserFld2" ColumnName="UserFld2" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="VendKey" ColumnName="VendKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SalesTeams">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.SalesTeam">
+        <MappingFragment StoreEntitySet="tarSalesTeams">
+          <ScalarProperty Name="SalesTeamKey" ColumnName="SalesTeamKey" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="SalesTeamID" ColumnName="SalesTeamID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SalesOrders">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.SalesOrder">
+        <MappingFragment StoreEntitySet="tsoSalesOrders">
+          <ScalarProperty Name="SOKey" ColumnName="SOKey" />
+          <ScalarProperty Name="AckDate" ColumnName="AckDate" />
+          <ScalarProperty Name="BillToAddrKey" ColumnName="BillToAddrKey" />
+          <ScalarProperty Name="BillToCustAddrKey" ColumnName="BillToCustAddrKey" />
+          <ScalarProperty Name="BlnktRelNo" ColumnName="BlnktRelNo" />
+          <ScalarProperty Name="BlnktSOKey" ColumnName="BlnktSOKey" />
+          <ScalarProperty Name="CCCustCode" ColumnName="CCCustCode" />
+          <ScalarProperty Name="ChngOrdDate" ColumnName="ChngOrdDate" />
+          <ScalarProperty Name="ChngOrdNo" ColumnName="ChngOrdNo" />
+          <ScalarProperty Name="ChngReason" ColumnName="ChngReason" />
+          <ScalarProperty Name="ChngUserID" ColumnName="ChngUserID" />
+          <ScalarProperty Name="CloseDate" ColumnName="CloseDate" />
+          <ScalarProperty Name="CntctKey" ColumnName="CntctKey" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="ConfirmNo" ColumnName="ConfirmNo" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateType" ColumnName="CreateType" />
+          <ScalarProperty Name="CreateUserID" ColumnName="CreateUserID" />
+          <ScalarProperty Name="CreditApprovedAmt" ColumnName="CreditApprovedAmt" />
+          <ScalarProperty Name="CreditAuthUserID" ColumnName="CreditAuthUserID" />
+          <ScalarProperty Name="CrHold" ColumnName="CrHold" />
+          <ScalarProperty Name="CRMOpportunityID" ColumnName="CRMOpportunityID" />
+          <ScalarProperty Name="CurrExchRate" ColumnName="CurrExchRate" />
+          <ScalarProperty Name="CurrExchSchdKey" ColumnName="CurrExchSchdKey" />
+          <ScalarProperty Name="CurrID" ColumnName="CurrID" />
+          <ScalarProperty Name="CustClassKey" ColumnName="CustClassKey" />
+          <ScalarProperty Name="CustKey" ColumnName="CustKey" />
+          <ScalarProperty Name="CustPONo" ColumnName="CustPONo" />
+          <ScalarProperty Name="CustQuoteKey" ColumnName="CustQuoteKey" />
+          <ScalarProperty Name="DfltAcctRefKey" ColumnName="DfltAcctRefKey" />
+          <ScalarProperty Name="DfltCommPlanKey" ColumnName="DfltCommPlanKey" />
+          <ScalarProperty Name="DfltCreatePO" ColumnName="DfltCreatePO" />
+          <ScalarProperty Name="DfltDeliveryMeth" ColumnName="DfltDeliveryMeth" />
+          <ScalarProperty Name="DfltFOBKey" ColumnName="DfltFOBKey" />
+          <ScalarProperty Name="DfltPromDate" ColumnName="DfltPromDate" />
+          <ScalarProperty Name="DfltPurchVAddrKey" ColumnName="DfltPurchVAddrKey" />
+          <ScalarProperty Name="DfltRequestDate" ColumnName="DfltRequestDate" />
+          <ScalarProperty Name="DfltShipDate" ColumnName="DfltShipDate" />
+          <ScalarProperty Name="DfltShipMethKey" ColumnName="DfltShipMethKey" />
+          <ScalarProperty Name="DfltShipPriority" ColumnName="DfltShipPriority" />
+          <ScalarProperty Name="DfltShipToAddrKey" ColumnName="DfltShipToAddrKey" />
+          <ScalarProperty Name="DfltShipToCAddrKey" ColumnName="DfltShipToCAddrKey" />
+          <ScalarProperty Name="DfltShipZoneKey" ColumnName="DfltShipZoneKey" />
+          <ScalarProperty Name="DfltVendKey" ColumnName="DfltVendKey" />
+          <ScalarProperty Name="DfltWhseKey" ColumnName="DfltWhseKey" />
+          <ScalarProperty Name="DutyAmount" ColumnName="DutyAmount" />
+          <ScalarProperty Name="Expiration" ColumnName="Expiration" />
+          <ScalarProperty Name="FixedCurrExchRate" ColumnName="FixedCurrExchRate" />
+          <ScalarProperty Name="FreightAmt" ColumnName="FreightAmt" />
+          <ScalarProperty Name="FreightMethod" ColumnName="FreightMethod" />
+          <ScalarProperty Name="Hold" ColumnName="Hold" />
+          <ScalarProperty Name="HoldReason" ColumnName="HoldReason" />
+          <ScalarProperty Name="ImportLogKey" ColumnName="ImportLogKey" />
+          <ScalarProperty Name="NationalTaxAmount" ColumnName="NationalTaxAmount" />
+          <ScalarProperty Name="NextLineNo" ColumnName="NextLineNo" />
+          <ScalarProperty Name="OpenAmt" ColumnName="OpenAmt" />
+          <ScalarProperty Name="OpenAmtHC" ColumnName="OpenAmtHC" />
+          <ScalarProperty Name="PmtTermsKey" ColumnName="PmtTermsKey" />
+          <ScalarProperty Name="PrimarySperKey" ColumnName="PrimarySperKey" />
+          <ScalarProperty Name="QuoteFormKey" ColumnName="QuoteFormKey" />
+          <ScalarProperty Name="RecurSOKey" ColumnName="RecurSOKey" />
+          <ScalarProperty Name="RequireSOAck" ColumnName="RequireSOAck" />
+          <ScalarProperty Name="SalesAmt" ColumnName="SalesAmt" />
+          <ScalarProperty Name="SalesAmtHC" ColumnName="SalesAmtHC" />
+          <ScalarProperty Name="SalesSourceKey" ColumnName="SalesSourceKey" />
+          <ScalarProperty Name="SOAckFormKey" ColumnName="SOAckFormKey" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="STaxAmt" ColumnName="STaxAmt" />
+          <ScalarProperty Name="STaxCalc" ColumnName="STaxCalc" />
+          <ScalarProperty Name="STaxTranKey" ColumnName="STaxTranKey" />
+          <ScalarProperty Name="TradeDiscAmt" ColumnName="TradeDiscAmt" />
+          <ScalarProperty Name="TranAmt" ColumnName="TranAmt" />
+          <ScalarProperty Name="TranAmtHC" ColumnName="TranAmtHC" />
+          <ScalarProperty Name="TranCmnt" ColumnName="TranCmnt" />
+          <ScalarProperty Name="TranDate" ColumnName="TranDate" />
+          <ScalarProperty Name="TranID" ColumnName="TranID" />
+          <ScalarProperty Name="TranNo" ColumnName="TranNo" />
+          <ScalarProperty Name="TranNoChngOrd" ColumnName="TranNoChngOrd" />
+          <ScalarProperty Name="TranNoRel" ColumnName="TranNoRel" />
+          <ScalarProperty Name="TranNoRelChngOrd" ColumnName="TranNoRelChngOrd" />
+          <ScalarProperty Name="TranType" ColumnName="TranType" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="UpdateUserID" ColumnName="UpdateUserID" />
+          <ScalarProperty Name="UserFld1" ColumnName="UserFld1" />
+          <ScalarProperty Name="UserFld2" ColumnName="UserFld2" />
+          <ScalarProperty Name="UserFld3" ColumnName="UserFld3" />
+          <ScalarProperty Name="UserFld4" ColumnName="UserFld4" />
+          <ScalarProperty Name="VATInvoiceNumber" ColumnName="VATInvoiceNumber" />
+          <ScalarProperty Name="VATNumber" ColumnName="VATNumber" />
+          <ScalarProperty Name="VATTaxAmount" ColumnName="VATTaxAmount" />
+          <ScalarProperty Name="VATTaxRate" ColumnName="VATTaxRate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SOLines">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.SOLine">
+        <MappingFragment StoreEntitySet="tsoSOLines">
+          <ScalarProperty Name="SOLineKey" ColumnName="SOLineKey" />
+          <ScalarProperty Name="AlternateTaxID" ColumnName="AlternateTaxID" />
+          <ScalarProperty Name="CloseDate" ColumnName="CloseDate" />
+          <ScalarProperty Name="CmntOnly" ColumnName="CmntOnly" />
+          <ScalarProperty Name="CommClassKey" ColumnName="CommClassKey" />
+          <ScalarProperty Name="CommPlanKey" ColumnName="CommPlanKey" />
+          <ScalarProperty Name="CustomBTOKit" ColumnName="CustomBTOKit" />
+          <ScalarProperty Name="CustQuoteLineKey" ColumnName="CustQuoteLineKey" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="EstimateKey" ColumnName="EstimateKey" />
+          <ScalarProperty Name="ExtCmnt" ColumnName="ExtCmnt" />
+          <ScalarProperty Name="InclOnPackList" ColumnName="InclOnPackList" />
+          <ScalarProperty Name="InclOnPickList" ColumnName="InclOnPickList" />
+          <ScalarProperty Name="ItemAliasKey" ColumnName="ItemAliasKey" />
+          <ScalarProperty Name="ItemKey" ColumnName="ItemKey" />
+          <ScalarProperty Name="OrigItemKey" ColumnName="OrigItemKey" />
+          <ScalarProperty Name="POLineKey" ColumnName="POLineKey" />
+          <ScalarProperty Name="ReqCert" ColumnName="ReqCert" />
+          <ScalarProperty Name="SalesPromotionID" ColumnName="SalesPromotionID" />
+          <ScalarProperty Name="SalesPromotionKey" ColumnName="SalesPromotionKey" />
+          <ScalarProperty Name="SOKey" ColumnName="SOKey" />
+          <ScalarProperty Name="SOLineNo" ColumnName="SOLineNo" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="STaxClassKey" ColumnName="STaxClassKey" />
+          <ScalarProperty Name="SystemPriceDetermination" ColumnName="SystemPriceDetermination" />
+          <ScalarProperty Name="TaxTypeApplied" ColumnName="TaxTypeApplied" />
+          <ScalarProperty Name="UnitMeasKey" ColumnName="UnitMeasKey" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="UnitPriceFromSalesPromo" ColumnName="UnitPriceFromSalesPromo" />
+          <ScalarProperty Name="UnitPriceFromSchedule" ColumnName="UnitPriceFromSchedule" />
+          <ScalarProperty Name="UnitPriceOvrd" ColumnName="UnitPriceOvrd" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+          <ScalarProperty Name="UserFld1" ColumnName="UserFld1" />
+          <ScalarProperty Name="UserFld2" ColumnName="UserFld2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SOLineDists">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.SOLineDist">
+        <MappingFragment StoreEntitySet="tsoSOLineDists">
+          <ScalarProperty Name="SOLineDistKey" ColumnName="SOLineDistKey" />
+          <ScalarProperty Name="AcctRefKey" ColumnName="AcctRefKey" />
+          <ScalarProperty Name="AmtInvcd" ColumnName="AmtInvcd" />
+          <ScalarProperty Name="BlnktSOLineDistKey" ColumnName="BlnktSOLineDistKey" />
+          <ScalarProperty Name="CreatePO" ColumnName="CreatePO" />
+          <ScalarProperty Name="DeliveryMeth" ColumnName="DeliveryMeth" />
+          <ScalarProperty Name="ExtAmt" ColumnName="ExtAmt" />
+          <ScalarProperty Name="FOBKey" ColumnName="FOBKey" />
+          <ScalarProperty Name="FreightAmt" ColumnName="FreightAmt" />
+          <ScalarProperty Name="GLAcctKey" ColumnName="GLAcctKey" />
+          <ScalarProperty Name="Hold" ColumnName="Hold" />
+          <ScalarProperty Name="HoldReason" ColumnName="HoldReason" />
+          <ScalarProperty Name="OrigOrdered" ColumnName="OrigOrdered" />
+          <ScalarProperty Name="OrigPromiseDate" ColumnName="OrigPromiseDate" />
+          <ScalarProperty Name="OrigWhseKey" ColumnName="OrigWhseKey" />
+          <ScalarProperty Name="PromiseDate" ColumnName="PromiseDate" />
+          <ScalarProperty Name="PurchVendAddrKey" ColumnName="PurchVendAddrKey" />
+          <ScalarProperty Name="QtyInvcd" ColumnName="QtyInvcd" />
+          <ScalarProperty Name="QtyOnBO" ColumnName="QtyOnBO" />
+          <ScalarProperty Name="QtyOpenToShip" ColumnName="QtyOpenToShip" />
+          <ScalarProperty Name="QtyOrd" ColumnName="QtyOrd" />
+          <ScalarProperty Name="QtyRtrnCredit" ColumnName="QtyRtrnCredit" />
+          <ScalarProperty Name="QtyRtrnReplacement" ColumnName="QtyRtrnReplacement" />
+          <ScalarProperty Name="QtyShip" ColumnName="QtyShip" />
+          <ScalarProperty Name="RequestDate" ColumnName="RequestDate" />
+          <ScalarProperty Name="ShipDate" ColumnName="ShipDate" />
+          <ScalarProperty Name="ShipMethKey" ColumnName="ShipMethKey" />
+          <ScalarProperty Name="ShipPriority" ColumnName="ShipPriority" />
+          <ScalarProperty Name="ShipToAddrKey" ColumnName="ShipToAddrKey" />
+          <ScalarProperty Name="ShipToCustAddrKey" ColumnName="ShipToCustAddrKey" />
+          <ScalarProperty Name="ShipToCustAddrUpdateCntr" ColumnName="ShipToCustAddrUpdateCntr" />
+          <ScalarProperty Name="ShipZoneKey" ColumnName="ShipZoneKey" />
+          <ScalarProperty Name="SOLineKey" ColumnName="SOLineKey" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="STaxTranKey" ColumnName="STaxTranKey" />
+          <ScalarProperty Name="TradeDiscAmt" ColumnName="TradeDiscAmt" />
+          <ScalarProperty Name="TradeDiscPct" ColumnName="TradeDiscPct" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+          <ScalarProperty Name="VendKey" ColumnName="VendKey" />
+          <ScalarProperty Name="WhseKey" ColumnName="WhseKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Addresses">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.Address">
+        <MappingFragment StoreEntitySet="tciAddresses">
+          <ScalarProperty Name="AddrKey" ColumnName="AddrKey" />
+          <ScalarProperty Name="AddrLine1" ColumnName="AddrLine1" />
+          <ScalarProperty Name="AddrLine2" ColumnName="AddrLine2" />
+          <ScalarProperty Name="AddrLine3" ColumnName="AddrLine3" />
+          <ScalarProperty Name="AddrLine4" ColumnName="AddrLine4" />
+          <ScalarProperty Name="AddrLine5" ColumnName="AddrLine5" />
+          <ScalarProperty Name="AddrName" ColumnName="AddrName" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="CRMAddrID" ColumnName="CRMAddrID" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="FaxExt" ColumnName="FaxExt" />
+          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+          <ScalarProperty Name="MobilePhone" ColumnName="MobilePhone" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="PhoneExt" ColumnName="PhoneExt" />
+          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+          <ScalarProperty Name="Residential" ColumnName="Residential" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="TransactionOverride" ColumnName="TransactionOverride" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AcctSegments">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.AcctSegment">
+        <MappingFragment StoreEntitySet="tglAcctSegments">
+          <ScalarProperty Name="GLAcctKey" ColumnName="GLAcctKey" />
+          <ScalarProperty Name="SegmentKey" ColumnName="SegmentKey" />
+          <ScalarProperty Name="AcctSegValue" ColumnName="AcctSegValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Segments">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.Segment">
+        <MappingFragment StoreEntitySet="tglSegments">
+          <ScalarProperty Name="SegmentKey" ColumnName="SegmentKey" />
+          <ScalarProperty Name="AcctSegID" ColumnName="AcctSegID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Mask" ColumnName="Mask" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="SegmentType" ColumnName="SegmentType" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SegmentCodes">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.SegmentCode">
+        <MappingFragment StoreEntitySet="tglSegmentCodes">
+          <ScalarProperty Name="SegmentKey" ColumnName="SegmentKey" />
+          <ScalarProperty Name="AcctSegValue" ColumnName="AcctSegValue" />
+          <ScalarProperty Name="ConsolAcctSegValue" ColumnName="ConsolAcctSegValue" />
+          <ScalarProperty Name="ConsolSegKey" ColumnName="ConsolSegKey" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateType" ColumnName="CreateType" />
+          <ScalarProperty Name="CreateUserID" ColumnName="CreateUserID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="EffEndDate" ColumnName="EffEndDate" />
+          <ScalarProperty Name="EffStartDate" ColumnName="EffStartDate" />
+          <ScalarProperty Name="ImportLogKey" ColumnName="ImportLogKey" />
+          <ScalarProperty Name="ShortDesc" ColumnName="ShortDesc" />
+          <ScalarProperty Name="SubsidCurrID" ColumnName="SubsidCurrID" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="UpdateUserID" ColumnName="UpdateUserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AcctHists">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.AcctHist">
+        <MappingFragment StoreEntitySet="tglAcctHists">
+          <ScalarProperty Name="FiscYear" ColumnName="FiscYear" />
+          <ScalarProperty Name="FiscPer" ColumnName="FiscPer" />
+          <ScalarProperty Name="GLAcctKey" ColumnName="GLAcctKey" />
+          <ScalarProperty Name="BegBal" ColumnName="BegBal" />
+          <ScalarProperty Name="CreditAmt" ColumnName="CreditAmt" />
+          <ScalarProperty Name="DebitAmt" ColumnName="DebitAmt" />
+          <ScalarProperty Name="StatBegBal" ColumnName="StatBegBal" />
+          <ScalarProperty Name="StatQty" ColumnName="StatQty" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Budgets">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.Budget">
+        <MappingFragment StoreEntitySet="tglBudgets">
+          <ScalarProperty Name="FiscYear" ColumnName="FiscYear" />
+          <ScalarProperty Name="FiscPer" ColumnName="FiscPer" />
+          <ScalarProperty Name="BudgetTypeKey" ColumnName="BudgetTypeKey" />
+          <ScalarProperty Name="GLAcctKey" ColumnName="GLAcctKey" />
+          <ScalarProperty Name="BudgetAmt" ColumnName="BudgetAmt" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CommodityCodes">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.CommodityCode">
+        <MappingFragment StoreEntitySet="timCommodityCodes">
+          <ScalarProperty Name="CommodityCodeKey" ColumnName="CommodityCodeKey" />
+          <ScalarProperty Name="CommodityCodeID" ColumnName="CommodityCodeID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="STaxClassKey" ColumnName="STaxClassKey" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RcvrLines">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.RcvrLine">
+        <MappingFragment StoreEntitySet="tpoRcvrLines">
+          <ScalarProperty Name="RcvrLineKey" ColumnName="RcvrLineKey" />
+          <ScalarProperty Name="CloseSrcLine" ColumnName="CloseSrcLine" />
+          <ScalarProperty Name="DiscAmt" ColumnName="DiscAmt" />
+          <ScalarProperty Name="InvtTranKey" ColumnName="InvtTranKey" />
+          <ScalarProperty Name="ItemRcvdKey" ColumnName="ItemRcvdKey" />
+          <ScalarProperty Name="ItemVol" ColumnName="ItemVol" />
+          <ScalarProperty Name="ItemWght" ColumnName="ItemWght" />
+          <ScalarProperty Name="MatchStatus" ColumnName="MatchStatus" />
+          <ScalarProperty Name="OtherAmt" ColumnName="OtherAmt" />
+          <ScalarProperty Name="POLineKey" ColumnName="POLineKey" />
+          <ScalarProperty Name="RcvrKey" ColumnName="RcvrKey" />
+          <ScalarProperty Name="RtrnRcvrLineKey" ColumnName="RtrnRcvrLineKey" />
+          <ScalarProperty Name="RtrnReasonCodeKey" ColumnName="RtrnReasonCodeKey" />
+          <ScalarProperty Name="RtrnType" ColumnName="RtrnType" />
+          <ScalarProperty Name="SeqNo" ColumnName="SeqNo" />
+          <ScalarProperty Name="TaxAmt" ColumnName="TaxAmt" />
+          <ScalarProperty Name="TranCmnt" ColumnName="TranCmnt" />
+          <ScalarProperty Name="TransitInvtTranKey" ColumnName="TransitInvtTranKey" />
+          <ScalarProperty Name="TrnsfrOrderLineKey" ColumnName="TrnsfrOrderLineKey" />
+          <ScalarProperty Name="UnitCost" ColumnName="UnitCost" />
+          <ScalarProperty Name="UnitCostExact" ColumnName="UnitCostExact" />
+          <ScalarProperty Name="UnitMeasKey" ColumnName="UnitMeasKey" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+          <ScalarProperty Name="VendPerfCarrierDamage" ColumnName="VendPerfCarrierDamage" />
+          <ScalarProperty Name="VendPerfComment" ColumnName="VendPerfComment" />
+          <ScalarProperty Name="VendPerfDamagedGoods" ColumnName="VendPerfDamagedGoods" />
+          <ScalarProperty Name="VendPerfDefectiveGoods" ColumnName="VendPerfDefectiveGoods" />
+          <ScalarProperty Name="VendPerfImproperLabeling" ColumnName="VendPerfImproperLabeling" />
+          <ScalarProperty Name="VendPerfImproperPackaging" ColumnName="VendPerfImproperPackaging" />
+          <ScalarProperty Name="VendPerfMissingDoc" ColumnName="VendPerfMissingDoc" />
+          <ScalarProperty Name="VendPerfNotToSpec" ColumnName="VendPerfNotToSpec" />
+          <ScalarProperty Name="VendPerfOtherProblem" ColumnName="VendPerfOtherProblem" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RcvrLineDists">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.RcvrLineDist">
+        <MappingFragment StoreEntitySet="tpoRcvrLineDists">
+          <ScalarProperty Name="RcvrLineDistKey" ColumnName="RcvrLineDistKey" />
+          <ScalarProperty Name="AcctRefKey" ColumnName="AcctRefKey" />
+          <ScalarProperty Name="FreightAmt" ColumnName="FreightAmt" />
+          <ScalarProperty Name="GLAcctKey" ColumnName="GLAcctKey" />
+          <ScalarProperty Name="POLineDistKey" ColumnName="POLineDistKey" />
+          <ScalarProperty Name="QtyRcvd" ColumnName="QtyRcvd" />
+          <ScalarProperty Name="QtyRcvdInSrcUOM" ColumnName="QtyRcvdInSrcUOM" />
+          <ScalarProperty Name="RcvrLineKey" ColumnName="RcvrLineKey" />
+          <ScalarProperty Name="RtrnRcvrLineDstKey" ColumnName="RtrnRcvrLineDstKey" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Receivers">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.Receiver">
+        <MappingFragment StoreEntitySet="tpoReceivers">
+          <ScalarProperty Name="RcvrKey" ColumnName="RcvrKey" />
+          <ScalarProperty Name="BatchKey" ColumnName="BatchKey" />
+          <ScalarProperty Name="BillOfLadingNo" ColumnName="BillOfLadingNo" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateType" ColumnName="CreateType" />
+          <ScalarProperty Name="CreateUserID" ColumnName="CreateUserID" />
+          <ScalarProperty Name="CurrExchRate" ColumnName="CurrExchRate" />
+          <ScalarProperty Name="CurrID" ColumnName="CurrID" />
+          <ScalarProperty Name="LTExcptReasCodeKey" ColumnName="LTExcptReasCodeKey" />
+          <ScalarProperty Name="POKey" ColumnName="POKey" />
+          <ScalarProperty Name="PostDate" ColumnName="PostDate" />
+          <ScalarProperty Name="PurchCompanyID" ColumnName="PurchCompanyID" />
+          <ScalarProperty Name="RMA" ColumnName="RMA" />
+          <ScalarProperty Name="RtrnRcvrKey" ColumnName="RtrnRcvrKey" />
+          <ScalarProperty Name="TranCmnt" ColumnName="TranCmnt" />
+          <ScalarProperty Name="TranDate" ColumnName="TranDate" />
+          <ScalarProperty Name="TranID" ColumnName="TranID" />
+          <ScalarProperty Name="TranNo" ColumnName="TranNo" />
+          <ScalarProperty Name="TranType" ColumnName="TranType" />
+          <ScalarProperty Name="TrnsfrOrderKey" ColumnName="TrnsfrOrderKey" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="UpdateUserID" ColumnName="UpdateUserID" />
+          <ScalarProperty Name="VendKey" ColumnName="VendKey" />
+          <ScalarProperty Name="VendPerfComment" ColumnName="VendPerfComment" />
+          <ScalarProperty Name="VendPerfDeliveryWrongDate" ColumnName="VendPerfDeliveryWrongDate" />
+          <ScalarProperty Name="VendPerfDeliveryWrongDest" ColumnName="VendPerfDeliveryWrongDest" />
+          <ScalarProperty Name="VendPerfDeliveryWrongTime" ColumnName="VendPerfDeliveryWrongTime" />
+          <ScalarProperty Name="VendPerfExceptional" ColumnName="VendPerfExceptional" />
+          <ScalarProperty Name="VendPerfOtherProblem" ColumnName="VendPerfOtherProblem" />
+          <ScalarProperty Name="VendPerfPoorCustService" ColumnName="VendPerfPoorCustService" />
+          <ScalarProperty Name="VendPerfUpgradeSubstItem" ColumnName="VendPerfUpgradeSubstItem" />
+          <ScalarProperty Name="VendPerfUnauthSubstItem" ColumnName="VendPerfUnauthSubstItem" />
+          <ScalarProperty Name="WhseKey" ColumnName="WhseKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VendPmts">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.VendPmt">
+        <MappingFragment StoreEntitySet="tapVendPmts">
+          <ScalarProperty Name="VendPmtKey" ColumnName="VendPmtKey" />
+          <ScalarProperty Name="AddrKey" ColumnName="AddrKey" />
+          <ScalarProperty Name="BatchKey" ColumnName="BatchKey" />
+          <ScalarProperty Name="CashAcctKey" ColumnName="CashAcctKey" />
+          <ScalarProperty Name="CashTranKey" ColumnName="CashTranKey" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateType" ColumnName="CreateType" />
+          <ScalarProperty Name="CreateUserID" ColumnName="CreateUserID" />
+          <ScalarProperty Name="CurrExchRate" ColumnName="CurrExchRate" />
+          <ScalarProperty Name="CurrExchSchdKey" ColumnName="CurrExchSchdKey" />
+          <ScalarProperty Name="CurrID" ColumnName="CurrID" />
+          <ScalarProperty Name="DiscTakenAmt" ColumnName="DiscTakenAmt" />
+          <ScalarProperty Name="GuarntdExchRate" ColumnName="GuarntdExchRate" />
+          <ScalarProperty Name="ImportLogKey" ColumnName="ImportLogKey" />
+          <ScalarProperty Name="NextApplEntryNo" ColumnName="NextApplEntryNo" />
+          <ScalarProperty Name="POKey" ColumnName="POKey" />
+          <ScalarProperty Name="PostDate" ColumnName="PostDate" />
+          <ScalarProperty Name="PrepaidVendInvcNo" ColumnName="PrepaidVendInvcNo" />
+          <ScalarProperty Name="RevrsStatus" ColumnName="RevrsStatus" />
+          <ScalarProperty Name="RevVendPmtKey" ColumnName="RevVendPmtKey" />
+          <ScalarProperty Name="TranAmt" ColumnName="TranAmt" />
+          <ScalarProperty Name="TranAmtHC" ColumnName="TranAmtHC" />
+          <ScalarProperty Name="TranCmnt" ColumnName="TranCmnt" />
+          <ScalarProperty Name="TranDate" ColumnName="TranDate" />
+          <ScalarProperty Name="TranID" ColumnName="TranID" />
+          <ScalarProperty Name="TranNo" ColumnName="TranNo" />
+          <ScalarProperty Name="TranType" ColumnName="TranType" />
+          <ScalarProperty Name="UnappliedAmt" ColumnName="UnappliedAmt" />
+          <ScalarProperty Name="UnappliedAmtHC" ColumnName="UnappliedAmtHC" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="UpdateUserID" ColumnName="UpdateUserID" />
+          <ScalarProperty Name="VendClassKey" ColumnName="VendClassKey" />
+          <ScalarProperty Name="VendKey" ColumnName="VendKey" />
+          <ScalarProperty Name="VendPmtMethKey" ColumnName="VendPmtMethKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VendPmtAppls">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.VendPmtAppl">
+        <MappingFragment StoreEntitySet="tapVendPmtAppls">
+          <ScalarProperty Name="ApplyFromPmtKey" ColumnName="ApplyFromPmtKey" />
+          <ScalarProperty Name="EntryNo" ColumnName="EntryNo" />
+          <ScalarProperty Name="ApplyToTranDate" ColumnName="ApplyToTranDate" />
+          <ScalarProperty Name="ApplyToTranID" ColumnName="ApplyToTranID" />
+          <ScalarProperty Name="ApplyToVouchKey" ColumnName="ApplyToVouchKey" />
+          <ScalarProperty Name="BatchKey" ColumnName="BatchKey" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateUserID" ColumnName="CreateUserID" />
+          <ScalarProperty Name="CurrExchRate" ColumnName="CurrExchRate" />
+          <ScalarProperty Name="DiscTakenAmt" ColumnName="DiscTakenAmt" />
+          <ScalarProperty Name="DiscTakenAmtHC" ColumnName="DiscTakenAmtHC" />
+          <ScalarProperty Name="PmtAmt" ColumnName="PmtAmt" />
+          <ScalarProperty Name="PmtAmtHC" ColumnName="PmtAmtHC" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="UpdateUserID" ColumnName="UpdateUserID" />
+          <ScalarProperty Name="V1099Amt" ColumnName="V1099Amt" />
+          <ScalarProperty Name="V1099Box" ColumnName="V1099Box" />
+          <ScalarProperty Name="V1099Form" ColumnName="V1099Form" />
+          <ScalarProperty Name="Vend1099SubmitKey" ColumnName="Vend1099SubmitKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vouchers">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.Voucher">
+        <MappingFragment StoreEntitySet="tapVouchers">
+          <ScalarProperty Name="VoucherKey" ColumnName="VoucherKey" />
+          <ScalarProperty Name="ApplySeqNo" ColumnName="ApplySeqNo" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+          <ScalarProperty Name="BalanceHC" ColumnName="BalanceHC" />
+          <ScalarProperty Name="BatchKey" ColumnName="BatchKey" />
+          <ScalarProperty Name="CashAcctKey" ColumnName="CashAcctKey" />
+          <ScalarProperty Name="CCGLAcctKey" ColumnName="CCGLAcctKey" />
+          <ScalarProperty Name="CCVendorKey" ColumnName="CCVendorKey" />
+          <ScalarProperty Name="CCVoucherKey" ColumnName="CCVoucherKey" />
+          <ScalarProperty Name="ClosingPostDate" ColumnName="ClosingPostDate" />
+          <ScalarProperty Name="ClosingTranDate" ColumnName="ClosingTranDate" />
+          <ScalarProperty Name="CntctKey" ColumnName="CntctKey" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateType" ColumnName="CreateType" />
+          <ScalarProperty Name="CreateUserID" ColumnName="CreateUserID" />
+          <ScalarProperty Name="CurrExchRate" ColumnName="CurrExchRate" />
+          <ScalarProperty Name="CurrExchSchdKey" ColumnName="CurrExchSchdKey" />
+          <ScalarProperty Name="CurrID" ColumnName="CurrID" />
+          <ScalarProperty Name="DiscAmt" ColumnName="DiscAmt" />
+          <ScalarProperty Name="DiscTakenAmt" ColumnName="DiscTakenAmt" />
+          <ScalarProperty Name="DiscDate" ColumnName="DiscDate" />
+          <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+          <ScalarProperty Name="FOBKey" ColumnName="FOBKey" />
+          <ScalarProperty Name="FreightAmt" ColumnName="FreightAmt" />
+          <ScalarProperty Name="HoldPmt" ColumnName="HoldPmt" />
+          <ScalarProperty Name="ImportLogKey" ColumnName="ImportLogKey" />
+          <ScalarProperty Name="InvcRcptDate" ColumnName="InvcRcptDate" />
+          <ScalarProperty Name="IsCCVoucher" ColumnName="IsCCVoucher" />
+          <ScalarProperty Name="NextApplEntryNo" ColumnName="NextApplEntryNo" />
+          <ScalarProperty Name="PmtTermsKey" ColumnName="PmtTermsKey" />
+          <ScalarProperty Name="PostDate" ColumnName="PostDate" />
+          <ScalarProperty Name="PurchAddrKey" ColumnName="PurchAddrKey" />
+          <ScalarProperty Name="PurchAmt" ColumnName="PurchAmt" />
+          <ScalarProperty Name="PurchVendAddrKey" ColumnName="PurchVendAddrKey" />
+          <ScalarProperty Name="ReasonCodeKey" ColumnName="ReasonCodeKey" />
+          <ScalarProperty Name="RecurVouchKey" ColumnName="RecurVouchKey" />
+          <ScalarProperty Name="RemitToAddrKey" ColumnName="RemitToAddrKey" />
+          <ScalarProperty Name="RemitToVendAddrKey" ColumnName="RemitToVendAddrKey" />
+          <ScalarProperty Name="RetntAmt" ColumnName="RetntAmt" />
+          <ScalarProperty Name="SeparateChk" ColumnName="SeparateChk" />
+          <ScalarProperty Name="ShipMethKey" ColumnName="ShipMethKey" />
+          <ScalarProperty Name="ShipZoneKey" ColumnName="ShipZoneKey" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="STaxAmt" ColumnName="STaxAmt" />
+          <ScalarProperty Name="STaxTranKey" ColumnName="STaxTranKey" />
+          <ScalarProperty Name="TranAmt" ColumnName="TranAmt" />
+          <ScalarProperty Name="TranAmtHC" ColumnName="TranAmtHC" />
+          <ScalarProperty Name="TranCmnt" ColumnName="TranCmnt" />
+          <ScalarProperty Name="TranDate" ColumnName="TranDate" />
+          <ScalarProperty Name="TranID" ColumnName="TranID" />
+          <ScalarProperty Name="TranNo" ColumnName="TranNo" />
+          <ScalarProperty Name="TranType" ColumnName="TranType" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="UpdateUserID" ColumnName="UpdateUserID" />
+          <ScalarProperty Name="V1099Box" ColumnName="V1099Box" />
+          <ScalarProperty Name="V1099BoxText" ColumnName="V1099BoxText" />
+          <ScalarProperty Name="V1099Form" ColumnName="V1099Form" />
+          <ScalarProperty Name="VendClassKey" ColumnName="VendClassKey" />
+          <ScalarProperty Name="VendKey" ColumnName="VendKey" />
+          <ScalarProperty Name="VouchNo" ColumnName="VouchNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VoucherAppls">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.VoucherAppl">
+        <MappingFragment StoreEntitySet="tapVoucherAppls">
+          <ScalarProperty Name="ApplyToVoucherKey" ColumnName="ApplyToVoucherKey" />
+          <ScalarProperty Name="EntryNo" ColumnName="EntryNo" />
+          <ScalarProperty Name="ApplyFromPmtKey" ColumnName="ApplyFromPmtKey" />
+          <ScalarProperty Name="ApplyFromTranDate" ColumnName="ApplyFromTranDate" />
+          <ScalarProperty Name="ApplyFromTranID" ColumnName="ApplyFromTranID" />
+          <ScalarProperty Name="ApplyFromTranType" ColumnName="ApplyFromTranType" />
+          <ScalarProperty Name="ApplyFromVouchKey" ColumnName="ApplyFromVouchKey" />
+          <ScalarProperty Name="BatchKey" ColumnName="BatchKey" />
+          <ScalarProperty Name="DiscTakenAmt" ColumnName="DiscTakenAmt" />
+          <ScalarProperty Name="DiscTakenAmtHC" ColumnName="DiscTakenAmtHC" />
+          <ScalarProperty Name="PmtAmt" ColumnName="PmtAmt" />
+          <ScalarProperty Name="PmtAmtHC" ColumnName="PmtAmtHC" />
+          <ScalarProperty Name="PostDate" ColumnName="PostDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VendorClasses">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.VendorClass">
+        <MappingFragment StoreEntitySet="tapVendClasses">
+          <ScalarProperty Name="VendClassKey" ColumnName="VendClassKey" />
+          <ScalarProperty Name="AcctsPaybleAcctKey" ColumnName="AcctsPaybleAcctKey" />
+          <ScalarProperty Name="BuyerKey" ColumnName="BuyerKey" />
+          <ScalarProperty Name="CashAcctKey" ColumnName="CashAcctKey" />
+          <ScalarProperty Name="ClassOvrdSegValue" ColumnName="ClassOvrdSegValue" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateType" ColumnName="CreateType" />
+          <ScalarProperty Name="CreateUserID" ColumnName="CreateUserID" />
+          <ScalarProperty Name="CurrID" ColumnName="CurrID" />
+          <ScalarProperty Name="DfltPurchAcctKey" ColumnName="DfltPurchAcctKey" />
+          <ScalarProperty Name="DiscEarnAcctKey" ColumnName="DiscEarnAcctKey" />
+          <ScalarProperty Name="DiscLostAcctKey" ColumnName="DiscLostAcctKey" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="MatchToleranceKey" ColumnName="MatchToleranceKey" />
+          <ScalarProperty Name="PmtTermsKey" ColumnName="PmtTermsKey" />
+          <ScalarProperty Name="POFormKey" ColumnName="POFormKey" />
+          <ScalarProperty Name="RequirePOIssue" ColumnName="RequirePOIssue" />
+          <ScalarProperty Name="RetntPaybleAcctKey" ColumnName="RetntPaybleAcctKey" />
+          <ScalarProperty Name="STaxAcctKey" ColumnName="STaxAcctKey" />
+          <ScalarProperty Name="STaxSchdKey" ColumnName="STaxSchdKey" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="UpdateUserID" ColumnName="UpdateUserID" />
+          <ScalarProperty Name="UserFld1" ColumnName="UserFld1" />
+          <ScalarProperty Name="UserFld2" ColumnName="UserFld2" />
+          <ScalarProperty Name="UserFld3" ColumnName="UserFld3" />
+          <ScalarProperty Name="UserFld4" ColumnName="UserFld4" />
+          <ScalarProperty Name="V1099FATCA" ColumnName="V1099FATCA" />
+          <ScalarProperty Name="V1099Box" ColumnName="V1099Box" />
+          <ScalarProperty Name="V1099Form" ColumnName="V1099Form" />
+          <ScalarProperty Name="V1099Type" ColumnName="V1099Type" />
+          <ScalarProperty Name="VendClassID" ColumnName="VendClassID" />
+          <ScalarProperty Name="VendClassName" ColumnName="VendClassName" />
+          <ScalarProperty Name="VendPmtMethKey" ColumnName="VendPmtMethKey" />
+          <ScalarProperty Name="WriteOffAcctKey" ColumnName="WriteOffAcctKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vendors">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.Vendor">
+        <MappingFragment StoreEntitySet="tapVendors">
+          <ScalarProperty Name="VendKey" ColumnName="VendKey" />
+          <ScalarProperty Name="ACHTranCode" ColumnName="ACHTranCode" />
+          <ScalarProperty Name="AllowPOBackOrder" ColumnName="AllowPOBackOrder" />
+          <ScalarProperty Name="BuyerKey" ColumnName="BuyerKey" />
+          <ScalarProperty Name="CashAcctKey" ColumnName="CashAcctKey" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="CreditCardVendor" ColumnName="CreditCardVendor" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateType" ColumnName="CreateType" />
+          <ScalarProperty Name="CreateUserID" ColumnName="CreateUserID" />
+          <ScalarProperty Name="CreditLimit" ColumnName="CreditLimit" />
+          <ScalarProperty Name="CurrExchSchdKey" ColumnName="CurrExchSchdKey" />
+          <ScalarProperty Name="DfltItemKey" ColumnName="DfltItemKey" />
+          <ScalarProperty Name="DfltPurchAcctKey" ColumnName="DfltPurchAcctKey" />
+          <ScalarProperty Name="DfltPurchAddrKey" ColumnName="DfltPurchAddrKey" />
+          <ScalarProperty Name="DfltRemitToAddrKey" ColumnName="DfltRemitToAddrKey" />
+          <ScalarProperty Name="HoldPmt" ColumnName="HoldPmt" />
+          <ScalarProperty Name="ImportLogKey" ColumnName="ImportLogKey" />
+          <ScalarProperty Name="MatchToleranceKey" ColumnName="MatchToleranceKey" />
+          <ScalarProperty Name="PmtTermsKey" ColumnName="PmtTermsKey" />
+          <ScalarProperty Name="POFormKey" ColumnName="POFormKey" />
+          <ScalarProperty Name="PrimaryAddrKey" ColumnName="PrimaryAddrKey" />
+          <ScalarProperty Name="PrimaryCntctKey" ColumnName="PrimaryCntctKey" />
+          <ScalarProperty Name="RcvgCmnt" ColumnName="RcvgCmnt" />
+          <ScalarProperty Name="RequirePOIssue" ColumnName="RequirePOIssue" />
+          <ScalarProperty Name="RequireRMA" ColumnName="RequireRMA" />
+          <ScalarProperty Name="RetntRate" ColumnName="RetntRate" />
+          <ScalarProperty Name="SeparateChk" ColumnName="SeparateChk" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="TaxPayerID" ColumnName="TaxPayerID" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="UpdateUserID" ColumnName="UpdateUserID" />
+          <ScalarProperty Name="UserFld1" ColumnName="UserFld1" />
+          <ScalarProperty Name="UserFld2" ColumnName="UserFld2" />
+          <ScalarProperty Name="UserFld3" ColumnName="UserFld3" />
+          <ScalarProperty Name="UserFld4" ColumnName="UserFld4" />
+          <ScalarProperty Name="V1099Control" ColumnName="V1099Control" />
+          <ScalarProperty Name="V1099Box" ColumnName="V1099Box" />
+          <ScalarProperty Name="V1099FATCA" ColumnName="V1099FATCA" />
+          <ScalarProperty Name="V1099Form" ColumnName="V1099Form" />
+          <ScalarProperty Name="V1099Type" ColumnName="V1099Type" />
+          <ScalarProperty Name="VendClassKey" ColumnName="VendClassKey" />
+          <ScalarProperty Name="VendDBA" ColumnName="VendDBA" />
+          <ScalarProperty Name="VendID" ColumnName="VendID" />
+          <ScalarProperty Name="VendName" ColumnName="VendName" />
+          <ScalarProperty Name="VendPmtMethKey" ColumnName="VendPmtMethKey" />
+          <ScalarProperty Name="VendRefNo" ColumnName="VendRefNo" />
+          <ScalarProperty Name="VouchCmnt" ColumnName="VouchCmnt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerPmts">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.CustomerPmt">
+        <MappingFragment StoreEntitySet="tarCustPmts">
+          <ScalarProperty Name="CustPmtKey" ColumnName="CustPmtKey" />
+          <ScalarProperty Name="BatchKey" ColumnName="BatchKey" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateType" ColumnName="CreateType" />
+          <ScalarProperty Name="CreateUserID" ColumnName="CreateUserID" />
+          <ScalarProperty Name="CurrExchRate" ColumnName="CurrExchRate" />
+          <ScalarProperty Name="CurrExchSchdKey" ColumnName="CurrExchSchdKey" />
+          <ScalarProperty Name="CurrID" ColumnName="CurrID" />
+          <ScalarProperty Name="CustClassKey" ColumnName="CustClassKey" />
+          <ScalarProperty Name="CustKey" ColumnName="CustKey" />
+          <ScalarProperty Name="DiscTakenAmt" ColumnName="DiscTakenAmt" />
+          <ScalarProperty Name="GuarntdExchRate" ColumnName="GuarntdExchRate" />
+          <ScalarProperty Name="ManualChk" ColumnName="ManualChk" />
+          <ScalarProperty Name="NextApplEntryNo" ColumnName="NextApplEntryNo" />
+          <ScalarProperty Name="PmtRcptDate" ColumnName="PmtRcptDate" />
+          <ScalarProperty Name="PostDate" ColumnName="PostDate" />
+          <ScalarProperty Name="PrepaidCustInvcNo" ColumnName="PrepaidCustInvcNo" />
+          <ScalarProperty Name="RefundAmt" ColumnName="RefundAmt" />
+          <ScalarProperty Name="RefundAmtHC" ColumnName="RefundAmtHC" />
+          <ScalarProperty Name="RefundCustPmtKey" ColumnName="RefundCustPmtKey" />
+          <ScalarProperty Name="RevrsCustPmtKey" ColumnName="RevrsCustPmtKey" />
+          <ScalarProperty Name="TranAmt" ColumnName="TranAmt" />
+          <ScalarProperty Name="TranAmtHC" ColumnName="TranAmtHC" />
+          <ScalarProperty Name="TranCmnt" ColumnName="TranCmnt" />
+          <ScalarProperty Name="TranDate" ColumnName="TranDate" />
+          <ScalarProperty Name="TranID" ColumnName="TranID" />
+          <ScalarProperty Name="TranNo" ColumnName="TranNo" />
+          <ScalarProperty Name="TranType" ColumnName="TranType" />
+          <ScalarProperty Name="UnappliedAmt" ColumnName="UnappliedAmt" />
+          <ScalarProperty Name="UnappliedAmtHC" ColumnName="UnappliedAmtHC" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="UpdateUserID" ColumnName="UpdateUserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Invoices">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.Invoice">
+        <MappingFragment StoreEntitySet="tarInvoices">
+          <ScalarProperty Name="InvcKey" ColumnName="InvcKey" />
+          <ScalarProperty Name="AuthOvrdAmt" ColumnName="AuthOvrdAmt" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+          <ScalarProperty Name="BalanceHC" ColumnName="BalanceHC" />
+          <ScalarProperty Name="BatchKey" ColumnName="BatchKey" />
+          <ScalarProperty Name="BillToAddrKey" ColumnName="BillToAddrKey" />
+          <ScalarProperty Name="BillToCustAddrKey" ColumnName="BillToCustAddrKey" />
+          <ScalarProperty Name="ClosingPostDate" ColumnName="ClosingPostDate" />
+          <ScalarProperty Name="ClosingTranDate" ColumnName="ClosingTranDate" />
+          <ScalarProperty Name="CommPlanKey" ColumnName="CommPlanKey" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="ConfirmToCntctKey" ColumnName="ConfirmToCntctKey" />
+          <ScalarProperty Name="CostOfSales" ColumnName="CostOfSales" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateType" ColumnName="CreateType" />
+          <ScalarProperty Name="CreateUserID" ColumnName="CreateUserID" />
+          <ScalarProperty Name="CurrExchRate" ColumnName="CurrExchRate" />
+          <ScalarProperty Name="CurrExchSchdKey" ColumnName="CurrExchSchdKey" />
+          <ScalarProperty Name="CurrID" ColumnName="CurrID" />
+          <ScalarProperty Name="CustClassKey" ColumnName="CustClassKey" />
+          <ScalarProperty Name="CustKey" ColumnName="CustKey" />
+          <ScalarProperty Name="CustPONo" ColumnName="CustPONo" />
+          <ScalarProperty Name="DiscAmt" ColumnName="DiscAmt" />
+          <ScalarProperty Name="DiscDate" ColumnName="DiscDate" />
+          <ScalarProperty Name="DiscTakenAmt" ColumnName="DiscTakenAmt" />
+          <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+          <ScalarProperty Name="FOBKey" ColumnName="FOBKey" />
+          <ScalarProperty Name="HandlAmt" ColumnName="HandlAmt" />
+          <ScalarProperty Name="ImportLogKey" ColumnName="ImportLogKey" />
+          <ScalarProperty Name="InDispute" ColumnName="InDispute" />
+          <ScalarProperty Name="InvcFormKey" ColumnName="InvcFormKey" />
+          <ScalarProperty Name="NextApplEntryNo" ColumnName="NextApplEntryNo" />
+          <ScalarProperty Name="PmtTermsKey" ColumnName="PmtTermsKey" />
+          <ScalarProperty Name="PostDate" ColumnName="PostDate" />
+          <ScalarProperty Name="PrimarySperKey" ColumnName="PrimarySperKey" />
+          <ScalarProperty Name="Printed" ColumnName="Printed" />
+          <ScalarProperty Name="ReasonCodeKey" ColumnName="ReasonCodeKey" />
+          <ScalarProperty Name="RecurInvoiceKey" ColumnName="RecurInvoiceKey" />
+          <ScalarProperty Name="RetntAmt" ColumnName="RetntAmt" />
+          <ScalarProperty Name="RetntPct" ColumnName="RetntPct" />
+          <ScalarProperty Name="SalesAmt" ColumnName="SalesAmt" />
+          <ScalarProperty Name="ShipAmt" ColumnName="ShipAmt" />
+          <ScalarProperty Name="ShipMethKey" ColumnName="ShipMethKey" />
+          <ScalarProperty Name="ShipToAddrKey" ColumnName="ShipToAddrKey" />
+          <ScalarProperty Name="ShipToCustAddrKey" ColumnName="ShipToCustAddrKey" />
+          <ScalarProperty Name="ShipZoneKey" ColumnName="ShipZoneKey" />
+          <ScalarProperty Name="SourceModule" ColumnName="SourceModule" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="STaxAmt" ColumnName="STaxAmt" />
+          <ScalarProperty Name="STaxCalc" ColumnName="STaxCalc" />
+          <ScalarProperty Name="STaxTranKey" ColumnName="STaxTranKey" />
+          <ScalarProperty Name="TradeDiscAmt" ColumnName="TradeDiscAmt" />
+          <ScalarProperty Name="TranAmt" ColumnName="TranAmt" />
+          <ScalarProperty Name="TranAmtHC" ColumnName="TranAmtHC" />
+          <ScalarProperty Name="TranCmnt" ColumnName="TranCmnt" />
+          <ScalarProperty Name="TranDate" ColumnName="TranDate" />
+          <ScalarProperty Name="TranID" ColumnName="TranID" />
+          <ScalarProperty Name="TranNo" ColumnName="TranNo" />
+          <ScalarProperty Name="Transmitted" ColumnName="Transmitted" />
+          <ScalarProperty Name="TranType" ColumnName="TranType" />
+          <ScalarProperty Name="UpdateCounter" ColumnName="UpdateCounter" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="UpdateUserID" ColumnName="UpdateUserID" />
+          <ScalarProperty Name="VoucherKey" ColumnName="VoucherKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InvoiceAppls">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.InvoiceAppl">
+        <MappingFragment StoreEntitySet="tarInvoiceAppls">
+          <ScalarProperty Name="ApplyToInvcKey" ColumnName="ApplyToInvcKey" />
+          <ScalarProperty Name="EntryNo" ColumnName="EntryNo" />
+          <ScalarProperty Name="AppliedAtCreation" ColumnName="AppliedAtCreation" />
+          <ScalarProperty Name="ApplyFromInvcKey" ColumnName="ApplyFromInvcKey" />
+          <ScalarProperty Name="ApplyFromPmtKey" ColumnName="ApplyFromPmtKey" />
+          <ScalarProperty Name="ApplyFromTranDate" ColumnName="ApplyFromTranDate" />
+          <ScalarProperty Name="ApplyFromTranID" ColumnName="ApplyFromTranID" />
+          <ScalarProperty Name="ApplyFromTranType" ColumnName="ApplyFromTranType" />
+          <ScalarProperty Name="BatchKey" ColumnName="BatchKey" />
+          <ScalarProperty Name="DiscTakenAmt" ColumnName="DiscTakenAmt" />
+          <ScalarProperty Name="DiscTakenAmtHC" ColumnName="DiscTakenAmtHC" />
+          <ScalarProperty Name="PmtAmt" ColumnName="PmtAmt" />
+          <ScalarProperty Name="PmtAmtHC" ColumnName="PmtAmtHC" />
+          <ScalarProperty Name="PostDate" ColumnName="PostDate" />
+          <ScalarProperty Name="RevrsApplBatchKey" ColumnName="RevrsApplBatchKey" />
+          <ScalarProperty Name="RevrsApplEntryNo" ColumnName="RevrsApplEntryNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GLTransactions">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.GLTransaction">
+        <MappingFragment StoreEntitySet="tglTransactions">
+          <ScalarProperty Name="GlTranKey" ColumnName="glTranKey" />
+          <ScalarProperty Name="AcctRefKey" ColumnName="AcctRefKey" />
+          <ScalarProperty Name="BatchKey" ColumnName="BatchKey" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateType" ColumnName="CreateType" />
+          <ScalarProperty Name="CurrExchRate" ColumnName="CurrExchRate" />
+          <ScalarProperty Name="CurrID" ColumnName="CurrID" />
+          <ScalarProperty Name="ExtCmnt" ColumnName="ExtCmnt" />
+          <ScalarProperty Name="FiscPer" ColumnName="FiscPer" />
+          <ScalarProperty Name="FiscYear" ColumnName="FiscYear" />
+          <ScalarProperty Name="GLAcctKey" ColumnName="GLAcctKey" />
+          <ScalarProperty Name="JrnlKey" ColumnName="JrnlKey" />
+          <ScalarProperty Name="JrnlNo" ColumnName="JrnlNo" />
+          <ScalarProperty Name="PostAmt" ColumnName="PostAmt" />
+          <ScalarProperty Name="PostAmtHC" ColumnName="PostAmtHC" />
+          <ScalarProperty Name="PostCmnt" ColumnName="PostCmnt" />
+          <ScalarProperty Name="PostDate" ColumnName="PostDate" />
+          <ScalarProperty Name="PostQty" ColumnName="PostQty" />
+          <ScalarProperty Name="SourceModuleNo" ColumnName="SourceModuleNo" />
+          <ScalarProperty Name="TranDate" ColumnName="TranDate" />
+          <ScalarProperty Name="TranKey" ColumnName="TranKey" />
+          <ScalarProperty Name="TranNo" ColumnName="TranNo" />
+          <ScalarProperty Name="TranType" ColumnName="TranType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomForms">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.CustomForm">
+        <MappingFragment StoreEntitySet="tsmCustomForms">
+          <ScalarProperty Name="CustomFormKey" ColumnName="CustomFormKey" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="CustomFormEnabled" ColumnName="CustomFormEnabled" />
+          <ScalarProperty Name="CustomVersionNo" ColumnName="CustomVersionNo" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="FormName" ColumnName="FormName" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="Precedence" ColumnName="Precedence" />
+          <ScalarProperty Name="TaskID" ColumnName="TaskID" />
+          <ScalarProperty Name="UserGroupID" ColumnName="UserGroupID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomFormDetls">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.CustomFormDetl">
+        <MappingFragment StoreEntitySet="tsmCustomFormDetls">
+          <ScalarProperty Name="CustomFormKey" ColumnName="CustomFormKey" />
+          <ScalarProperty Name="ArrayIndex" ColumnName="ArrayIndex" />
+          <ScalarProperty Name="BackColor" ColumnName="BackColor" />
+          <ScalarProperty Name="Caption" ColumnName="Caption" />
+          <ScalarProperty Name="ControlName" ColumnName="ControlName" />
+          <ScalarProperty Name="CtrlSpecProperty" ColumnName="CtrlSpecProperty" />
+          <ScalarProperty Name="CtrlSpecPropMask" ColumnName="CtrlSpecPropMask" />
+          <ScalarProperty Name="CustomBindingKey" ColumnName="CustomBindingKey" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="FontBold" ColumnName="FontBold" />
+          <ScalarProperty Name="FontItalic" ColumnName="FontItalic" />
+          <ScalarProperty Name="FontName" ColumnName="FontName" />
+          <ScalarProperty Name="FontSize" ColumnName="FontSize" />
+          <ScalarProperty Name="FontStrikethru" ColumnName="FontStrikethru" />
+          <ScalarProperty Name="FontUnderline" ColumnName="FontUnderline" />
+          <ScalarProperty Name="ForeColor" ColumnName="ForeColor" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="LeftPos" ColumnName="LeftPos" />
+          <ScalarProperty Name="ParentCtrlArrIndex" ColumnName="ParentCtrlArrIndex" />
+          <ScalarProperty Name="ParentCtrlName" ColumnName="ParentCtrlName" />
+          <ScalarProperty Name="PropertyMask" ColumnName="PropertyMask" />
+          <ScalarProperty Name="ScriptKey" ColumnName="ScriptKey" />
+          <ScalarProperty Name="TabIndex" ColumnName="TabIndex" />
+          <ScalarProperty Name="TabStop" ColumnName="TabStop" />
+          <ScalarProperty Name="TopPos" ColumnName="TopPos" />
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+          <ScalarProperty Name="UserDefined" ColumnName="UserDefined" />
+          <ScalarProperty Name="Visible" ColumnName="Visible" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tasks">
+      <EntityTypeMapping TypeName="Net4Sage.DataAccessModel.Task">
+        <MappingFragment StoreEntitySet="tsmTasks">
+          <ScalarProperty Name="TaskID" ColumnName="TaskID" />
+          <ScalarProperty Name="ClientEnabled" ColumnName="ClientEnabled" />
+          <ScalarProperty Name="ModuleNo" ColumnName="ModuleNo" />
+          <ScalarProperty Name="SystemTask" ColumnName="SystemTask" />
+          <ScalarProperty Name="TaskConstName" ColumnName="TaskConstName" />
+          <ScalarProperty Name="TaskInterfaceType" ColumnName="TaskInterfaceType" />
+          <ScalarProperty Name="TaskInvokeFlags" ColumnName="TaskInvokeFlags" />
+          <ScalarProperty Name="TaskInvokeMethod" ColumnName="TaskInvokeMethod" />
+          <ScalarProperty Name="TaskOleClsID" ColumnName="TaskOleClsID" />
+          <ScalarProperty Name="TaskOleProgID" ColumnName="TaskOleProgID" />
+          <ScalarProperty Name="TaskParamInt" ColumnName="TaskParamInt" />
+          <ScalarProperty Name="TaskParamStr" ColumnName="TaskParamStr" />
+          <ScalarProperty Name="TaskTypeID" ColumnName="TaskTypeID" />
+          <ScalarProperty Name="WebEnabled" ColumnName="WebEnabled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="GetNextSurrogateKey" FunctionName="Net4Sage.DataAccessModel.Store.spGetNextSurrogateKey" />
+    <FunctionImportMapping FunctionImportName="CreateWorkOrderSteps" FunctionName="Net4Sage.DataAccessModel.Store.spmfWOCreateSteps" />
+    <FunctionImportMapping FunctionImportName="GetNextBatch" FunctionName="Net4Sage.DataAccessModel.Store.spGetNextBatch" />
+    <FunctionImportMapping FunctionImportName="GiveNextJrnlNo" FunctionName="Net4Sage.DataAccessModel.Store.spglGiveNextJrnlNo" />
+    <FunctionImportMapping FunctionImportName="IMSaveBinTransferTrnx" FunctionName="Net4Sage.DataAccessModel.Store.spimSaveBinTransferTrnxs" />
+  </EntityContainerMapping>
+</Mapping>

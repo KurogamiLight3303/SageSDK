@@ -1,0 +1,660 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityDeveloper Version="6.6.872.0">
+  <ModelSettings xmlns:ed="http://devart.com/schemas/EntityDeveloper/1.0" AppConnectionStringName="Net4Sage.DataAccessModelConnectionString" ConnectionStringInAppConfig="True" RegenareteConnectionStringInAppConfig="True" TargetFramework="Net45" DetectTPTInheritance="False" EntityFrameworkVersion="Version5" IncludeForeignKeysInModel="true" DetectFunctionBasedColumnDefault="false">
+    <Connection ConnectionString="Data Source=192.168.10.133;Initial Catalog=sage500_app;Integrated Security=False;Persist Security Info=True;User ID=admin" Provider="System.Data.SqlClient" />
+    <Generation />
+    <DatabaseFirstNamingRules>
+      <EntitySet PluralizationName="Pluralize" />
+      <Class UseSchemaAsPrefix="False" PluralizeCollectionNavigationPropertyName="True" AddConstraintColumnsToNavigationPropertyName="False" RemoveUnderscores="True" AddUnderscores="False" RemoveInvalidCharacters="True" CodeCase="FirstLetterUppercase" AddPrefix="" AddSuffix="" RemovePrefixes="" RemoveSuffixes="" PluralizationName="Singularize" />
+      <Property RemoveUnderscores="True" AddUnderscores="False" RemoveInvalidCharacters="True" CodeCase="FirstLetterUppercase" AddPrefix="" AddSuffix="" RemovePrefixes="" RemoveSuffixes="" PluralizationName="Unchanged" />
+    </DatabaseFirstNamingRules>
+    <ModelFirst StorageSynchronizationEnabled="False" TargetSchema="dbo" TargetProviderName="System.Data.SqlClient">
+      <TargetServer Server="SQL Server" ServerVersion="2017" />
+      <ModelFirstNamingRules>
+        <Table RemoveUnderscores="False" AddUnderscores="False" RemoveInvalidCharacters="True" CodeCase="Unchanged" AddPrefix="" AddSuffix="" RemovePrefixes="" RemoveSuffixes="" PluralizationName="Pluralize" />
+        <Column RemoveUnderscores="False" AddUnderscores="False" RemoveInvalidCharacters="True" CodeCase="Unchanged" AddPrefix="" AddSuffix="" RemovePrefixes="" RemoveSuffixes="" PluralizationName="Unchanged" />
+      </ModelFirstNamingRules>
+    </ModelFirst>
+    <Diagrams>
+      <Diagram Name="Diagram1" DefaultDiagram="True" />
+      <Diagram Name="IM" />
+      <Diagram Name="CI" />
+      <Diagram Name="GL" />
+      <Diagram Name="SM" />
+      <Diagram Name="AR" />
+      <Diagram Name="SO" />
+      <Diagram Name="PO" />
+      <Diagram Name="AP" />
+      <Diagram Name="Customizer" />
+    </Diagrams>
+    <Templates>
+      <Template Name="EntityObject" Description="Use this template to generate a strongly-typed ObjectContext class and persistence-aware classes." Enabled="True" PredefinedTemplateName="Entity C#">
+        <ed:Property Name="ValidationFramework" Type="EntityDeveloper.TemplateEngine.ValidationFramework, EntityDeveloper.Common, Version=6.6.872.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <ValidationFramework>None</ValidationFramework>
+        </ed:Property>
+        <ed:Property Name="ValidationErrorMessages" Type="EntityDeveloper.TemplateEngine.ValidationErrorMessages, EntityDeveloper.Common, Version=6.6.872.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <ValidationErrorMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+        </ed:Property>
+        <ed:Property Name="FilePerClass" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="ModelNameAsFilesPrefix" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>true</boolean>
+        </ed:Property>
+        <ed:Property Name="HeaderTimestampVersionControlTag" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string d6p1:nil="true" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance" />
+        </ed:Property>
+        <ed:Property Name="EntitiesOutput" Type="EntityDeveloper.TemplateEngine.OutputInfo, EntityDeveloper.Common, Version=6.6.872.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <OutputInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <Project />
+            <ProjectFolder />
+            <DestinationFolder />
+          </OutputInfo>
+        </ed:Property>
+        <ed:Property Name="ContextOutput" Type="EntityDeveloper.TemplateEngine.OutputInfo, EntityDeveloper.Common, Version=6.6.872.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <OutputInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <Project />
+            <ProjectFolder />
+            <DestinationFolder />
+          </OutputInfo>
+        </ed:Property>
+        <ed:Property Name="GeneratePartialClass" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>true</boolean>
+        </ed:Property>
+        <ed:Property Name="ImplementCloneable" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="ImplementEquals" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="JsonFileBasePath" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string d6p1:nil="true" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance" />
+        </ed:Property>
+        <ed:Property Name="IncludeEnvironmentVariables" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+      </Template>
+    </Templates>
+    <AttributeAssemblies>
+      <AttributeAssembly Name="Net4Sage, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" File="..\..\Net4Sage\bin\Debug\Net4Sage.dll">
+        <AttributeType Name="LookupAutoShowColumns" AttributeNamespace="Net4Sage.Controls.Lookup" AttributeAllowMultiple="False" AttributeValidOn="Class">
+          <AttributeConstructor>
+            <ed:Property Name="autoShow" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Default="False" />
+          </AttributeConstructor>
+        </AttributeType>
+        <AttributeType Name="LookupFormTitle" AttributeNamespace="Net4Sage.Controls.Lookup" AttributeAllowMultiple="False" AttributeValidOn="All">
+          <AttributeConstructor>
+            <ed:Property Name="Text" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+          </AttributeConstructor>
+        </AttributeType>
+        <AttributeType Name="LookupShowColumn" AttributeNamespace="Net4Sage.Controls.Lookup" AttributeAllowMultiple="False" AttributeValidOn="Property">
+          <AttributeConstructor />
+        </AttributeType>
+        <AttributeType Name="LookupHideColumn" AttributeNamespace="Net4Sage.Controls.Lookup" AttributeAllowMultiple="False" AttributeValidOn="Property">
+          <AttributeConstructor />
+        </AttributeType>
+        <AttributeType Name="LookupColumnHeader" AttributeNamespace="Net4Sage.Controls.Lookup" AttributeAllowMultiple="False" AttributeValidOn="Property">
+          <AttributeConstructor>
+            <ed:Property Name="Header" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+          </AttributeConstructor>
+        </AttributeType>
+        <AttributeType Name="LookupColumnFilter" AttributeNamespace="Net4Sage.Controls.Lookup" AttributeAllowMultiple="False" AttributeValidOn="Property">
+          <AttributeConstructor>
+            <ed:Property Name="Header" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+          </AttributeConstructor>
+        </AttributeType>
+        <AttributeType Name="LookupTextReturn" AttributeNamespace="Net4Sage.Controls.Lookup" AttributeAllowMultiple="False" AttributeValidOn="All">
+          <AttributeConstructor />
+        </AttributeType>
+        <AttributeType Name="LookupKeyReturn" AttributeNamespace="Net4Sage.Controls.Lookup" AttributeAllowMultiple="False" AttributeValidOn="All">
+          <AttributeConstructor />
+        </AttributeType>
+      </AttributeAssembly>
+    </AttributeAssemblies>
+    <UpdateFromDatabaseExcludes>
+      <Exclude Name="VoucherKey" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="ApplySeqNo" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="Balance" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="BalanceHC" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="BatchKey" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="CashAcctKey" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="CCGLAcctKey" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="CCVendorKey" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="CCVoucherKey" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="ClosingPostDate" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="ClosingTranDate" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="CntctKey" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="CompanyID" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="CreateDate" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="CreateType" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="CreateUserID" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="CurrExchRate" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="CurrExchSchdKey" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="CurrID" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="DiscAmt" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="DiscTakenAmt" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="DiscDate" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="DueDate" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="FOBKey" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="FreightAmt" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="HoldPmt" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="ImportLogKey" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="InvcRcptDate" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="IsCCVoucher" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="NextApplEntryNo" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="PmtTermsKey" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="PostDate" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="PurchAddrKey" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="PurchAmt" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="PurchVendAddrKey" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="ReasonCodeKey" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="RecurVouchKey" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="RemitToAddrKey" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="RemitToVendAddrKey" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="RetntAmt" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="SeparateChk" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="ShipMethKey" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="ShipZoneKey" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="Status" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="STaxAmt" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="STaxTranKey" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="TranAmt" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="TranAmtHC" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="TranCmnt" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="TranDate" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="TranID" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="TranNo" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="TranType" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="UpdateCounter" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="UpdateDate" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="UpdateUserID" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="V1099Box" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="V1099BoxText" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="V1099Form" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="VendClassKey" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="VendKey" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="VouchNo" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="PK__tapVouch__E53DB653E8EE59F8" Table="dbo.tapVoucher" Type="Constraint" />
+      <Exclude Name="XAK1tapVoucher" Table="dbo.tapVoucher" Type="Constraint" />
+      <Exclude Name="CustKey" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="ABANo" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="AllowCustRefund" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="AllowWriteOff" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="BillingType" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="BillToNationalAcctParent" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="CompanyID" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="ConsolidatedStatement" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="CreateDate" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="CreateType" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="CreateUserID" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="CreditLimit" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="CreditLimitAgeCat" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="CreditLimitUsed" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="CRMCustID" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="CurrExchSchdKey" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="CustClassKey" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="CustID" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="CustName" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="CustRefNo" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="DateEstab" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="DfltBillToAddrKey" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="DfltItemKey" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="DfltMaxUpCharge" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="DfltMaxUpChargeType" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="DfltSalesAcctKey" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="DfltSalesReturnAcctKey" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="DfltShipToAddrKey" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="FinChgFlatAmt" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="FinChgPct" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="Hold" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="ImportLogKey" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="NationalAcctLevelKey" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="PmtByNationalAcctParent" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="PrimaryAddrKey" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="PrimaryCntctKey" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="PrintDunnMsg" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="ReqCreditLimit" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="ReqPO" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="RetntPct" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="SalesSourceKey" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="ShipPriority" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="Status" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="StdIndusCodeID" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="StmtCycleKey" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="StmtFormKey" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="TradeDiscPct" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="UpdateCounter" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="UpdateDate" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="UpdateUserID" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="UserFld1" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="UserFld2" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="UserFld3" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="UserFld4" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="VendKey" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="CodONENo" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="RCCNo" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="NITNo" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="CtaBancMNNo" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="CtaBancCUCNo" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="PK__tarCusto__8CCAE2DB5308D78F" Table="dbo.tarCustomer" Type="Constraint" />
+      <Exclude Name="XAK1tarCustomer" Table="dbo.tarCustomer" Type="Constraint" />
+      <Exclude Name="BatchKey" Table="dbo.tciBatchLog" Type="Column" />
+      <Exclude Name="ActualUserID" Table="dbo.tciBatchLog" Type="Column" />
+      <Exclude Name="BatchCmnt" Table="dbo.tciBatchLog" Type="Column" />
+      <Exclude Name="BatchID" Table="dbo.tciBatchLog" Type="Column" />
+      <Exclude Name="BatchNo" Table="dbo.tciBatchLog" Type="Column" />
+      <Exclude Name="BatchOvrdSegKey" Table="dbo.tciBatchLog" Type="Column" />
+      <Exclude Name="BatchOvrdSegValue" Table="dbo.tciBatchLog" Type="Column" />
+      <Exclude Name="BatchTotal" Table="dbo.tciBatchLog" Type="Column" />
+      <Exclude Name="BatchType" Table="dbo.tciBatchLog" Type="Column" />
+      <Exclude Name="CreateDate" Table="dbo.tciBatchLog" Type="Column" />
+      <Exclude Name="CreateType" Table="dbo.tciBatchLog" Type="Column" />
+      <Exclude Name="ImportLogKey" Table="dbo.tciBatchLog" Type="Column" />
+      <Exclude Name="NextSeqNo" Table="dbo.tciBatchLog" Type="Column" />
+      <Exclude Name="OrigUserID" Table="dbo.tciBatchLog" Type="Column" />
+      <Exclude Name="PostCompanyID" Table="dbo.tciBatchLog" Type="Column" />
+      <Exclude Name="PostDate" Table="dbo.tciBatchLog" Type="Column" />
+      <Exclude Name="PostError" Table="dbo.tciBatchLog" Type="Column" />
+      <Exclude Name="PostStatus" Table="dbo.tciBatchLog" Type="Column" />
+      <Exclude Name="PostUserID" Table="dbo.tciBatchLog" Type="Column" />
+      <Exclude Name="RevrsBatchKey" Table="dbo.tciBatchLog" Type="Column" />
+      <Exclude Name="RgstrPrinted" Table="dbo.tciBatchLog" Type="Column" />
+      <Exclude Name="SourceCompanyID" Table="dbo.tciBatchLog" Type="Column" />
+      <Exclude Name="Status" Table="dbo.tciBatchLog" Type="Column" />
+      <Exclude Name="UpdateCounter" Table="dbo.tciBatchLog" Type="Column" />
+      <Exclude Name="PK__tciBatch__2C53C5C46CA97958" Table="dbo.tciBatchLog" Type="Constraint" />
+      <Exclude Name="ReasonCodeKey" Table="dbo.tciReasonCode" Type="Column" />
+      <Exclude Name="CompanyID" Table="dbo.tciReasonCode" Type="Column" />
+      <Exclude Name="Description" Table="dbo.tciReasonCode" Type="Column" />
+      <Exclude Name="ReasonCodeID" Table="dbo.tciReasonCode" Type="Column" />
+      <Exclude Name="UpdateCounter" Table="dbo.tciReasonCode" Type="Column" />
+      <Exclude Name="PK__tciReaso__62BD9AD16CA3E9F7" Table="dbo.tciReasonCode" Type="Constraint" />
+      <Exclude Name="XAK1tciReasonCode" Table="dbo.tciReasonCode" Type="Constraint" />
+      <Exclude Name="ItemKey" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="AdjQtyRoundMeth" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="AllowCostOvrd" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="AllowDecimalQty" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="AllowDropShip" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="AllowPriceOvrd" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="AllowRtrns" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="AvailForSale" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="CommClassKey" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="CommodityCodeKey" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="CompanyID" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="COSAcctKey" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="CreateDate" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="CreateType" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="CreateUserID" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="CRMItemID" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="DateEstab" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="DfltSaleQty" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="DfltWhseKey" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="ExpAcctKey" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="FASAssetTemplate" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="FreightClassKey" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="HazMat" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="ImportLogKey" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="InclOnPackList" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="InternalLongDesc" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="IntrnlDeliveryReq" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="ItemClassKey" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="ItemID" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="ItemSubType" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="ItemType" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="MatchToleranceKey" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="MatSafetySheetKey" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="MinFactorUnitMeasKey" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="MinGrossProfitPct" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="MinSaleQty" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="PerUsageOrdLimit" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="PriceSeq" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="PriceUnitMeasKey" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="ProdDetlLink" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="ProdPriceGroupKey" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="PurchProdLineKey" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="PurchUnitMeasKey" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="RcptReq" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="RcvgCmnt" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="RestockRate" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="ReturnsAcctKey" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="SaleMultiple" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="SalesAcctKey" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="SalesProdLineKey" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="SalesUnitMeasKey" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="Seasonal" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="SerialIncrement" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="SerialMask" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="ShelfLife" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="Status" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="STaxClassKey" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="StdPrice" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="StdUnitCost" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="StockUnitMeasKey" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="SubjToTradeDisc" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="SuccessorDate" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="SuccessorItemKey" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="TargetMargin" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="TrackMeth" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="UpdateCounter" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="UpdateDate" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="UpdateUserID" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="UserFld1" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="UserFld2" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="UserFld3" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="UserFld4" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="UserFld5" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="UserFld6" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="ValuationMeth" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="VendFamilyKey" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="WarrantyDays" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="WarrantyProvider" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="Trazability" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="PK__timItem__136EF54322DAA180" Table="dbo.timItem" Type="Constraint" />
+      <Exclude Name="XAK1timItem" Table="dbo.timItem" Type="Constraint" />
+      <Exclude Name="POLineKey" Table="dbo.tpoPOLine" Type="Column" />
+      <Exclude Name="CloseDate" Table="dbo.tpoPOLine" Type="Column" />
+      <Exclude Name="ClosedForInvc" Table="dbo.tpoPOLine" Type="Column" />
+      <Exclude Name="ClosedForRcvg" Table="dbo.tpoPOLine" Type="Column" />
+      <Exclude Name="CmntOnly" Table="dbo.tpoPOLine" Type="Column" />
+      <Exclude Name="Description" Table="dbo.tpoPOLine" Type="Column" />
+      <Exclude Name="ExclLastCost" Table="dbo.tpoPOLine" Type="Column" />
+      <Exclude Name="ExtAmt" Table="dbo.tpoPOLine" Type="Column" />
+      <Exclude Name="ExtCmnt" Table="dbo.tpoPOLine" Type="Column" />
+      <Exclude Name="ItemAliasKey" Table="dbo.tpoPOLine" Type="Column" />
+      <Exclude Name="ItemKey" Table="dbo.tpoPOLine" Type="Column" />
+      <Exclude Name="MatchToleranceKey" Table="dbo.tpoPOLine" Type="Column" />
+      <Exclude Name="POKey" Table="dbo.tpoPOLine" Type="Column" />
+      <Exclude Name="POLineNo" Table="dbo.tpoPOLine" Type="Column" />
+      <Exclude Name="RcptReq" Table="dbo.tpoPOLine" Type="Column" />
+      <Exclude Name="Status" Table="dbo.tpoPOLine" Type="Column" />
+      <Exclude Name="STaxClassKey" Table="dbo.tpoPOLine" Type="Column" />
+      <Exclude Name="TargetCompanyID" Table="dbo.tpoPOLine" Type="Column" />
+      <Exclude Name="UnitCost" Table="dbo.tpoPOLine" Type="Column" />
+      <Exclude Name="UnitCostExact" Table="dbo.tpoPOLine" Type="Column" />
+      <Exclude Name="UnitMeasKey" Table="dbo.tpoPOLine" Type="Column" />
+      <Exclude Name="UpdateCounter" Table="dbo.tpoPOLine" Type="Column" />
+      <Exclude Name="UserFld1" Table="dbo.tpoPOLine" Type="Column" />
+      <Exclude Name="UserFld2" Table="dbo.tpoPOLine" Type="Column" />
+      <Exclude Name="VendQuoteLineKey" Table="dbo.tpoPOLine" Type="Column" />
+      <Exclude Name="Invoicekey" Table="dbo.tpoPOLine" Type="Column" />
+      <Exclude Name="PK__tpoPOLin__CFFA3E60299D78FF" Table="dbo.tpoPOLine" Type="Constraint" />
+      <Exclude Name="XAK1tpoPOLine" Table="dbo.tpoPOLine" Type="Constraint" />
+      <Exclude Name="POKey" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="AmtInvcd" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="ApprovalDate" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="ApprovalStatus" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="BlnktPOKey" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="BlnktRelNo" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="BuyerKey" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="ChngOrdDate" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="ChngOrdNo" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="ChngReason" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="ChngUserID" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="CloseDate" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="ClosedForInvc" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="ClosedForRcvg" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="CntctKey" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="CompanyID" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="CreateDate" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="CreateType" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="CreateUserID" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="CreditHold" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="CurrExchRate" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="CurrExchSchdKey" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="CurrID" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="DfltAcctRefKey" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="DfltDropShip" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="DfltExclLastCost" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="DfltExclLeadTime" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="DfltExclLTReasKey" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="DfltExpedite" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="DfltExpediteRsnKey" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="DfltPurchDeptKey" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="DfltRequestDate" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="DfltShipMethKey" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="DfltShipToAddrKey" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="DfltShipToCAddrKey" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="DfltShipToCustKey" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="DfltShipToWhseKey" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="DfltShipZoneKey" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="DfltTargetCompID" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="FixedCurrExchRate" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="FOBKey" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="FreightAllocMeth" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="FreightAmt" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="Hold" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="HoldReason" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="ImportLogKey" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="IssueDate" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="MatchToleranceKey" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="NextLineNo" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="OpenAmt" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="OpenAmtHC" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="OriginationDate" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="PmtTermsKey" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="POFormKey" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="PurchAddrKey" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="PurchAmt" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="PurchAmtHC" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="PurchVendAddrKey" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="RecurPOKey" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="RemitToAddrKey" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="RemitToVendAddrKey" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="RequirePOIssue" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="Status" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="STaxAmt" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="STaxTranKey" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="TranAmt" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="TranAmtHC" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="TranCmnt" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="TranDate" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="TranID" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="TranNo" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="TranNoChngOrd" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="TranNoRel" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="TranNoRelChngOrd" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="TranType" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="UpdateCounter" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="UpdateDate" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="UpdateUserID" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="UserFld1" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="UserFld2" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="UserFld3" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="UserFld4" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="V1099Box" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="V1099BoxText" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="V1099Form" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="VendClassKey" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="VendKey" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="VendQuoteKey" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="ContractKey" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="Type" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="PK__tpoPurch__53A924E9313E9AC7" Table="dbo.tpoPurchOrder" Type="Constraint" />
+      <Exclude Name="XAK1tpoPurchOrder" Table="dbo.tpoPurchOrder" Type="Constraint" />
+      <Exclude Name="RcvrLineKey" Table="dbo.tpoRcvrLine" Type="Column" />
+      <Exclude Name="CloseSrcLine" Table="dbo.tpoRcvrLine" Type="Column" />
+      <Exclude Name="DiscAmt" Table="dbo.tpoRcvrLine" Type="Column" />
+      <Exclude Name="InvtTranKey" Table="dbo.tpoRcvrLine" Type="Column" />
+      <Exclude Name="ItemRcvdKey" Table="dbo.tpoRcvrLine" Type="Column" />
+      <Exclude Name="ItemVol" Table="dbo.tpoRcvrLine" Type="Column" />
+      <Exclude Name="ItemWght" Table="dbo.tpoRcvrLine" Type="Column" />
+      <Exclude Name="MatchStatus" Table="dbo.tpoRcvrLine" Type="Column" />
+      <Exclude Name="OtherAmt" Table="dbo.tpoRcvrLine" Type="Column" />
+      <Exclude Name="POLineKey" Table="dbo.tpoRcvrLine" Type="Column" />
+      <Exclude Name="RcvrKey" Table="dbo.tpoRcvrLine" Type="Column" />
+      <Exclude Name="RtrnRcvrLineKey" Table="dbo.tpoRcvrLine" Type="Column" />
+      <Exclude Name="RtrnReasonCodeKey" Table="dbo.tpoRcvrLine" Type="Column" />
+      <Exclude Name="RtrnType" Table="dbo.tpoRcvrLine" Type="Column" />
+      <Exclude Name="SeqNo" Table="dbo.tpoRcvrLine" Type="Column" />
+      <Exclude Name="TaxAmt" Table="dbo.tpoRcvrLine" Type="Column" />
+      <Exclude Name="TranCmnt" Table="dbo.tpoRcvrLine" Type="Column" />
+      <Exclude Name="TransitInvtTranKey" Table="dbo.tpoRcvrLine" Type="Column" />
+      <Exclude Name="TrnsfrOrderLineKey" Table="dbo.tpoRcvrLine" Type="Column" />
+      <Exclude Name="UnitCost" Table="dbo.tpoRcvrLine" Type="Column" />
+      <Exclude Name="UnitCostExact" Table="dbo.tpoRcvrLine" Type="Column" />
+      <Exclude Name="UnitMeasKey" Table="dbo.tpoRcvrLine" Type="Column" />
+      <Exclude Name="UpdateCounter" Table="dbo.tpoRcvrLine" Type="Column" />
+      <Exclude Name="VendPerfCarrierDamage" Table="dbo.tpoRcvrLine" Type="Column" />
+      <Exclude Name="VendPerfComment" Table="dbo.tpoRcvrLine" Type="Column" />
+      <Exclude Name="VendPerfDamagedGoods" Table="dbo.tpoRcvrLine" Type="Column" />
+      <Exclude Name="VendPerfDefectiveGoods" Table="dbo.tpoRcvrLine" Type="Column" />
+      <Exclude Name="VendPerfImproperLabeling" Table="dbo.tpoRcvrLine" Type="Column" />
+      <Exclude Name="VendPerfImproperPackaging" Table="dbo.tpoRcvrLine" Type="Column" />
+      <Exclude Name="VendPerfMissingDoc" Table="dbo.tpoRcvrLine" Type="Column" />
+      <Exclude Name="VendPerfNotToSpec" Table="dbo.tpoRcvrLine" Type="Column" />
+      <Exclude Name="VendPerfOtherProblem" Table="dbo.tpoRcvrLine" Type="Column" />
+      <Exclude Name="FabricDate" Table="dbo.tpoRcvrLine" Type="Column" />
+      <Exclude Name="PK__tpoRcvrL__A36310D55B8FE6EC" Table="dbo.tpoRcvrLine" Type="Constraint" />
+      <Exclude Name="CompanyID" Table="dbo.tsmCompany" Type="Column" />
+      <Exclude Name="AddrLine1" Table="dbo.tsmCompany" Type="Column" />
+      <Exclude Name="AddrLine2" Table="dbo.tsmCompany" Type="Column" />
+      <Exclude Name="AddrLine3" Table="dbo.tsmCompany" Type="Column" />
+      <Exclude Name="AddrLine4" Table="dbo.tsmCompany" Type="Column" />
+      <Exclude Name="Backcolor" Table="dbo.tsmCompany" Type="Column" />
+      <Exclude Name="City" Table="dbo.tsmCompany" Type="Column" />
+      <Exclude Name="CompanyName" Table="dbo.tsmCompany" Type="Column" />
+      <Exclude Name="Contact" Table="dbo.tsmCompany" Type="Column" />
+      <Exclude Name="CountryCurrLocale" Table="dbo.tsmCompany" Type="Column" />
+      <Exclude Name="CountryID" Table="dbo.tsmCompany" Type="Column" />
+      <Exclude Name="CurrID" Table="dbo.tsmCompany" Type="Column" />
+      <Exclude Name="CurrLocale" Table="dbo.tsmCompany" Type="Column" />
+      <Exclude Name="DBServerName" Table="dbo.tsmCompany" Type="Column" />
+      <Exclude Name="DemoData" Table="dbo.tsmCompany" Type="Column" />
+      <Exclude Name="EMailAddr" Table="dbo.tsmCompany" Type="Column" />
+      <Exclude Name="FAX" Table="dbo.tsmCompany" Type="Column" />
+      <Exclude Name="FAXExt" Table="dbo.tsmCompany" Type="Column" />
+      <Exclude Name="FedID" Table="dbo.tsmCompany" Type="Column" />
+      <Exclude Name="FullGL" Table="dbo.tsmCompany" Type="Column" />
+      <Exclude Name="IncludeInOLAP" Table="dbo.tsmCompany" Type="Column" />
+      <Exclude Name="LastArchive" Table="dbo.tsmCompany" Type="Column" />
+      <Exclude Name="LastRecover" Table="dbo.tsmCompany" Type="Column" />
+      <Exclude Name="LogoBlobKey" Table="dbo.tsmCompany" Type="Column" />
+      <Exclude Name="PathToArchive" Table="dbo.tsmCompany" Type="Column" />
+      <Exclude Name="PathToDBase" Table="dbo.tsmCompany" Type="Column" />
+      <Exclude Name="PathToLog" Table="dbo.tsmCompany" Type="Column" />
+      <Exclude Name="Phone" Table="dbo.tsmCompany" Type="Column" />
+      <Exclude Name="PhoneExt" Table="dbo.tsmCompany" Type="Column" />
+      <Exclude Name="PostalCode" Table="dbo.tsmCompany" Type="Column" />
+      <Exclude Name="StateID" Table="dbo.tsmCompany" Type="Column" />
+      <Exclude Name="StateTaxID" Table="dbo.tsmCompany" Type="Column" />
+      <Exclude Name="UseMultLang" Table="dbo.tsmCompany" Type="Column" />
+      <Exclude Name="V1099CombStateFed" Table="dbo.tsmCompany" Type="Column" />
+      <Exclude Name="V1099PayerNameCtrl" Table="dbo.tsmCompany" Type="Column" />
+      <Exclude Name="V1099XmitCtrlCode" Table="dbo.tsmCompany" Type="Column" />
+      <Exclude Name="PK__tsmCompa__2D971C4CF50325D0" Table="dbo.tsmCompany" Type="Constraint" />
+      <Exclude Name="StateZoneName" Table="dbo.tsmStateZones" Type="Column" />
+      <Exclude Name="StateID" Table="dbo.tsmStateZones" Type="Column" />
+      <Exclude Name="CountryID" Table="dbo.tsmStateZones" Type="Column" />
+      <Exclude Name="" Table="dbo.tsmStateZones" Type="Constraint" />
+      <Exclude Name="SOKey" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="AckDate" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="BillToAddrKey" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="BillToCustAddrKey" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="BlnktRelNo" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="BlnktSOKey" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="CCCustCode" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="ChngOrdDate" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="ChngOrdNo" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="ChngReason" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="ChngUserID" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="CloseDate" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="CntctKey" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="CompanyID" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="ConfirmNo" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="CreateDate" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="CreateType" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="CreateUserID" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="CreditApprovedAmt" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="CreditAuthUserID" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="CrHold" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="CRMOpportunityID" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="CurrExchRate" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="CurrExchSchdKey" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="CurrID" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="CustClassKey" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="CustKey" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="CustPONo" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="CustQuoteKey" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="DfltAcctRefKey" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="DfltCommPlanKey" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="DfltCreatePO" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="DfltDeliveryMeth" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="DfltFOBKey" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="DfltPromDate" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="DfltPurchVAddrKey" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="DfltRequestDate" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="DfltShipDate" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="DfltShipMethKey" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="DfltShipPriority" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="DfltShipToAddrKey" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="DfltShipToCAddrKey" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="DfltShipZoneKey" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="DfltVendKey" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="DfltWhseKey" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="DutyAmount" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="Expiration" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="FixedCurrExchRate" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="FreightAmt" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="FreightMethod" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="Hold" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="HoldReason" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="ImportLogKey" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="NationalTaxAmount" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="NextLineNo" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="OpenAmt" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="OpenAmtHC" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="PmtTermsKey" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="PrimarySperKey" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="QuoteFormKey" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="RecurSOKey" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="RequireSOAck" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="SalesAmt" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="SalesAmtHC" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="SalesSourceKey" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="SOAckFormKey" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="Status" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="STaxAmt" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="STaxCalc" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="STaxTranKey" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="TradeDiscAmt" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="TranAmt" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="TranAmtHC" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="TranCmnt" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="TranDate" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="TranID" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="TranNo" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="TranNoChngOrd" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="TranNoRel" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="TranNoRelChngOrd" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="TranType" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="UpdateCounter" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="UpdateDate" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="UpdateUserID" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="UserFld1" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="UserFld2" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="UserFld3" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="UserFld4" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="VATInvoiceNumber" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="VATNumber" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="VATTaxAmount" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="VATTaxRate" Table="dbo.tsoSalesOrder" Type="Column" />
+      <Exclude Name="PK__tsoSales__83F931CEDE3B71BA" Table="dbo.tsoSalesOrder" Type="Constraint" />
+      <Exclude Name="XAK1tsoSalesOrder" Table="dbo.tsoSalesOrder" Type="Constraint" />
+      <Exclude Name="ContractKey" Table="dbo.tapVoucher" Type="Column" />
+      <Exclude Name="CodONENo" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="RCCNo" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="NITNo" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="CtaBancMNNo" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="CtaBancCUCNo" Table="dbo.tarCustomer" Type="Column" />
+      <Exclude Name="ActualUserID" Table="dbo.tciBatchLog" Type="Column" />
+      <Exclude Name="ModuleNo" Table="dbo.tciReasonCode" Type="Column" />
+      <Exclude Name="PurchCalendaryKey" Table="dbo.timItem" Type="Column" />
+      <Exclude Name="BLKey" Table="dbo.tpoPOLine" Type="Column" />
+      <Exclude Name="Invoicekey" Table="dbo.tpoPurchOrder" Type="Column" />
+      <Exclude Name="FabricDate" Table="dbo.tpoRcvrLine" Type="Column" />
+      <Exclude Name="Backcolor" Table="dbo.tsmCompany" Type="Column" />
+      <Exclude Name="EMailAddr" Table="dbo.tsmCompany" Type="Column" />
+      <Exclude Name="ContractKey" Table="dbo.tsoSalesOrder" Type="Column" />
+    </UpdateFromDatabaseExcludes>
+  </ModelSettings>
+</EntityDeveloper>

@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D196BAAF-8576-41C7-8312-BB64022CC428}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Net4Sage.DataAccessModel</RootNamespace>
+    <AssemblyName>Net4Sage.ModuleUtils.DataAccessModel</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PackageIcon>favicon.ico</PackageIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Net4Sage.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Net4Sage">
+      <HintPath>..\..\Net4Sage\bin\Debug\Net4Sage.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataModel.Designer.cs">
+      <DependentUpon>DataModel.edml</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="PartialClasses.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <DevartEntityDeploy Include="DataModel.edml">
+      <Generator>DevartEfGenerator</Generator>
+      <LastGenOutput>DataModel.Designer.cs</LastGenOutput>
+    </DevartEntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DataModel.AP.view">
+      <DependentUpon>DataModel.edml</DependentUpon>
+    </None>
+    <None Include="DataModel.AR.view">
+      <DependentUpon>DataModel.edml</DependentUpon>
+    </None>
+    <None Include="DataModel.CI.view">
+      <DependentUpon>DataModel.edml</DependentUpon>
+    </None>
+    <None Include="DataModel.Customizer.view">
+      <DependentUpon>DataModel.edml</DependentUpon>
+    </None>
+    <None Include="DataModel.Diagram1.view">
+      <DependentUpon>DataModel.edml</DependentUpon>
+    </None>
+    <None Include="DataModel.edps">
+      <DependentUpon>DataModel.edml</DependentUpon>
+    </None>
+    <None Include="DataModel.GL.view">
+      <DependentUpon>DataModel.edml</DependentUpon>
+    </None>
+    <None Include="DataModel.IM.view">
+      <DependentUpon>DataModel.edml</DependentUpon>
+    </None>
+    <None Include="DataModel.PO.view">
+      <DependentUpon>DataModel.edml</DependentUpon>
+    </None>
+    <None Include="DataModel.SM.view">
+      <DependentUpon>DataModel.edml</DependentUpon>
+    </None>
+    <None Include="DataModel.SO.view">
+      <DependentUpon>DataModel.edml</DependentUpon>
+    </None>
+    <None Include="Net4Sage.pfx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

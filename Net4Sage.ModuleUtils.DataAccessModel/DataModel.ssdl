@@ -1,0 +1,2306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Net4Sage.DataAccessModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:devart="http://devart.com/schemas/edml/StorageSchemaExtensions/1.0" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="Net4SageUtilsDBContextStoreContainer">
+    <EntitySet Name="tciTranTypeCompanies" EntityType="Net4Sage.DataAccessModel.Store.tciTranTypeCompany" store:Type="Tables" Schema="dbo" Table="tciTranTypeCompany" />
+    <EntitySet Name="tmfRoutDetl_HAIs" EntityType="Net4Sage.DataAccessModel.Store.tmfRoutDetl_HAI" store:Type="Tables" Schema="dbo" Table="tmfRoutDetl_HAI" />
+    <EntitySet Name="tmfRoutHead_HAIs" EntityType="Net4Sage.DataAccessModel.Store.tmfRoutHead_HAI" store:Type="Tables" Schema="dbo" Table="tmfRoutHead_HAI" />
+    <EntitySet Name="tmfWorkOrdDetl_HAIs" EntityType="Net4Sage.DataAccessModel.Store.tmfWorkOrdDetl_HAI" store:Type="Tables" Schema="dbo" Table="tmfWorkOrdDetl_HAI" />
+    <EntitySet Name="tmfWorkOrdHead_HAIs" EntityType="Net4Sage.DataAccessModel.Store.tmfWorkOrdHead_HAI" store:Type="Tables" Schema="dbo" Table="tmfWorkOrdHead_HAI" />
+    <EntitySet Name="tmfParameters_HAIs" EntityType="Net4Sage.DataAccessModel.Store.tmfParameters_HAI" store:Type="Tables" Schema="dbo" Table="tmfParameters_HAI" />
+    <EntitySet Name="tmfWorkOrdProd_HAIs" EntityType="Net4Sage.DataAccessModel.Store.tmfWorkOrdProd_HAI" store:Type="Tables" Schema="dbo" Table="tmfWorkOrdProd_HAI" />
+    <EntitySet Name="timInvtLots" EntityType="Net4Sage.DataAccessModel.Store.timInvtLot" store:Type="Tables" Schema="dbo" Table="timInvtLot" />
+    <EntitySet Name="timInvtLotBins" EntityType="Net4Sage.DataAccessModel.Store.timInvtLotBin" store:Type="Tables" Schema="dbo" Table="timInvtLotBin" />
+    <EntitySet Name="timInvtSerialCorrs" EntityType="Net4Sage.DataAccessModel.Store.timInvtSerialCorr" store:Type="Tables" Schema="dbo" Table="timInvtSerialCorr" />
+    <EntitySet Name="timInvtTrans" EntityType="Net4Sage.DataAccessModel.Store.timInvtTran" store:Type="Tables" Schema="dbo" Table="timInvtTran" />
+    <EntitySet Name="timInvtTranDists" EntityType="Net4Sage.DataAccessModel.Store.timInvtTranDist" store:Type="Tables" Schema="dbo" Table="timInvtTranDist" />
+    <EntitySet Name="tmfWorkCenter_HAIs" EntityType="Net4Sage.DataAccessModel.Store.tmfWorkCenter_HAI" store:Type="Tables" Schema="dbo" Table="tmfWorkCenter_HAI" />
+    <EntitySet Name="timWarehouses" EntityType="Net4Sage.DataAccessModel.Store.timWarehouse" store:Type="Tables" Schema="dbo" Table="timWarehouse" />
+    <EntitySet Name="timWhseBins" EntityType="Net4Sage.DataAccessModel.Store.timWhseBin" store:Type="Tables" Schema="dbo" Table="timWhseBin" />
+    <EntitySet Name="timInventories" EntityType="Net4Sage.DataAccessModel.Store.timInventory" store:Type="Tables" Schema="dbo" Table="timInventory" />
+    <EntitySet Name="timItems" EntityType="Net4Sage.DataAccessModel.Store.timItem" store:Type="Tables" Schema="dbo" Table="timItem" />
+    <EntitySet Name="timTranTypes" EntityType="Net4Sage.DataAccessModel.Store.timTranType" store:Type="Tables" Schema="dbo" Table="timTranType" />
+    <EntitySet Name="tciBatchLogs" EntityType="Net4Sage.DataAccessModel.Store.tciBatchLog" store:Type="Tables" Schema="dbo" Table="tciBatchLog" />
+    <EntitySet Name="tglBatches" EntityType="Net4Sage.DataAccessModel.Store.tglBatch" store:Type="Tables" Schema="dbo" Table="tglBatch" />
+    <EntitySet Name="tglJournalDetls" EntityType="Net4Sage.DataAccessModel.Store.tglJournalDetl" store:Type="Tables" Schema="dbo" Table="tglJournalDetl" />
+    <EntitySet Name="tglJournalHdrs" EntityType="Net4Sage.DataAccessModel.Store.tglJournalHdr" store:Type="Tables" Schema="dbo" Table="tglJournalHdr" />
+    <EntitySet Name="tglAccounts" EntityType="Net4Sage.DataAccessModel.Store.tglAccount" store:Type="Tables" Schema="dbo" Table="tglAccount" />
+    <EntitySet Name="timItemDescriptions" EntityType="Net4Sage.DataAccessModel.Store.timItemDescription" store:Type="Tables" Schema="dbo" Table="timItemDescription" />
+    <EntitySet Name="tmcCurrencies" EntityType="Net4Sage.DataAccessModel.Store.tmcCurrency" store:Type="Tables" Schema="dbo" Table="tmcCurrency" />
+    <EntitySet Name="tglJournals" EntityType="Net4Sage.DataAccessModel.Store.tglJournal" store:Type="Tables" Schema="dbo" Table="tglJournal" />
+    <EntitySet Name="tglJournalLogs" EntityType="Net4Sage.DataAccessModel.Store.tglJournalLog" store:Type="Tables" Schema="dbo" Table="tglJournalLog" />
+    <EntitySet Name="tsmCompanies" EntityType="Net4Sage.DataAccessModel.Store.tsmCompany" store:Type="Tables" Schema="dbo" Table="tsmCompany" />
+    <EntitySet Name="tarCustClasses" EntityType="Net4Sage.DataAccessModel.Store.tarCustClass" store:Type="Tables" Schema="dbo" Table="tarCustClass" />
+    <EntitySet Name="tarCustomers" EntityType="Net4Sage.DataAccessModel.Store.tarCustomer" store:Type="Tables" Schema="dbo" Table="tarCustomer" />
+    <EntitySet Name="tarNationalAccts" EntityType="Net4Sage.DataAccessModel.Store.tarNationalAcct" store:Type="Tables" Schema="dbo" Table="tarNationalAcct" />
+    <EntitySet Name="tarNationalAcctLevels" EntityType="Net4Sage.DataAccessModel.Store.tarNationalAcctLevel" store:Type="Tables" Schema="dbo" Table="tarNationalAcctLevel" />
+    <EntitySet Name="tarSalesTerritories" EntityType="Net4Sage.DataAccessModel.Store.tarSalesTerritory" store:Type="Tables" Schema="dbo" Table="tarSalesTerritory" />
+    <EntitySet Name="tarCustAddrs" EntityType="Net4Sage.DataAccessModel.Store.tarCustAddr" store:Type="Tables" Schema="dbo" Table="tarCustAddr" />
+    <EntitySet Name="tciUnitMeasures" EntityType="Net4Sage.DataAccessModel.Store.tciUnitMeasure" store:Type="Tables" Schema="dbo" Table="tciUnitMeasure" />
+    <EntitySet Name="timItemUnitOfMeas" EntityType="Net4Sage.DataAccessModel.Store.timItemUnitOfMeas" store:Type="Tables" Schema="dbo" Table="timItemUnitOfMeas" />
+    <EntitySet Name="tciReasonCodes" EntityType="Net4Sage.DataAccessModel.Store.tciReasonCode" store:Type="Tables" Schema="dbo" Table="tciReasonCode" />
+    <EntitySet Name="tglFiscalPeriods" EntityType="Net4Sage.DataAccessModel.Store.tglFiscalPeriod" store:Type="Tables" Schema="dbo" Table="tglFiscalPeriod" />
+    <EntitySet Name="tglFiscalYears" EntityType="Net4Sage.DataAccessModel.Store.tglFiscalYear" store:Type="Tables" Schema="dbo" Table="tglFiscalYear" />
+    <EntitySet Name="timSalesProdLines" EntityType="Net4Sage.DataAccessModel.Store.timSalesProdLine" store:Type="Tables" Schema="dbo" Table="timSalesProdLine" />
+    <EntitySet Name="timProdCategories" EntityType="Net4Sage.DataAccessModel.Store.timProdCategory" store:Type="Tables" Schema="dbo" Table="timProdCategory" />
+    <EntitySet Name="timProdCatItems" EntityType="Net4Sage.DataAccessModel.Store.timProdCatItem" store:Type="Tables" Schema="dbo" Table="timProdCatItem" />
+    <EntitySet Name="tarSalespersons" EntityType="Net4Sage.DataAccessModel.Store.tarSalesperson" store:Type="Tables" Schema="dbo" Table="tarSalesperson" />
+    <EntitySet Name="tarSalesTeams" EntityType="Net4Sage.DataAccessModel.Store.tarSalesTeam" store:Type="Tables" Schema="dbo" Table="tarSalesTeam" />
+    <EntitySet Name="tsoSalesOrders" EntityType="Net4Sage.DataAccessModel.Store.tsoSalesOrder" store:Type="Tables" Schema="dbo" Table="tsoSalesOrder" />
+    <EntitySet Name="tsoSOLines" EntityType="Net4Sage.DataAccessModel.Store.tsoSOLine" store:Type="Tables" Schema="dbo" Table="tsoSOLine" />
+    <EntitySet Name="tsoSOLineDists" EntityType="Net4Sage.DataAccessModel.Store.tsoSOLineDist" store:Type="Tables" Schema="dbo" Table="tsoSOLineDist" />
+    <EntitySet Name="tciAddresses" EntityType="Net4Sage.DataAccessModel.Store.tciAddress" store:Type="Tables" Schema="dbo" Table="tciAddress" />
+    <EntitySet Name="tglAcctSegments" EntityType="Net4Sage.DataAccessModel.Store.tglAcctSegment" store:Type="Tables" Schema="dbo" Table="tglAcctSegment" />
+    <EntitySet Name="tglSegments" EntityType="Net4Sage.DataAccessModel.Store.tglSegment" store:Type="Tables" Schema="dbo" Table="tglSegment" />
+    <EntitySet Name="tglSegmentCodes" EntityType="Net4Sage.DataAccessModel.Store.tglSegmentCode" store:Type="Tables" Schema="dbo" Table="tglSegmentCode" />
+    <EntitySet Name="tglAcctHists" EntityType="Net4Sage.DataAccessModel.Store.tglAcctHist" store:Type="Tables" Schema="dbo" Table="tglAcctHist" />
+    <EntitySet Name="tglBudgets" EntityType="Net4Sage.DataAccessModel.Store.tglBudget" store:Type="Tables" Schema="dbo" Table="tglBudget" />
+    <EntitySet Name="timCommodityCodes" EntityType="Net4Sage.DataAccessModel.Store.timCommodityCode" store:Type="Tables" Schema="dbo" Table="timCommodityCode" />
+    <EntitySet Name="tpoRcvrLines" EntityType="Net4Sage.DataAccessModel.Store.tpoRcvrLine" store:Type="Tables" Schema="dbo" Table="tpoRcvrLine" />
+    <EntitySet Name="tpoRcvrLineDists" EntityType="Net4Sage.DataAccessModel.Store.tpoRcvrLineDist" store:Type="Tables" Schema="dbo" Table="tpoRcvrLineDist" />
+    <EntitySet Name="tpoReceivers" EntityType="Net4Sage.DataAccessModel.Store.tpoReceiver" store:Type="Tables" Schema="dbo" Table="tpoReceiver" />
+    <EntitySet Name="tapVendPmts" EntityType="Net4Sage.DataAccessModel.Store.tapVendPmt" store:Type="Tables" Schema="dbo" Table="tapVendPmt" />
+    <EntitySet Name="tapVendPmtAppls" EntityType="Net4Sage.DataAccessModel.Store.tapVendPmtAppl" store:Type="Tables" Schema="dbo" Table="tapVendPmtAppl" />
+    <EntitySet Name="tapVouchers" EntityType="Net4Sage.DataAccessModel.Store.tapVoucher" store:Type="Tables" Schema="dbo" Table="tapVoucher" />
+    <EntitySet Name="tapVoucherAppls" EntityType="Net4Sage.DataAccessModel.Store.tapVoucherAppl" store:Type="Tables" Schema="dbo" Table="tapVoucherAppl" />
+    <EntitySet Name="tapVendClasses" EntityType="Net4Sage.DataAccessModel.Store.tapVendClass" store:Type="Tables" Schema="dbo" Table="tapVendClass" />
+    <EntitySet Name="tapVendors" EntityType="Net4Sage.DataAccessModel.Store.tapVendor" store:Type="Tables" Schema="dbo" Table="tapVendor" />
+    <EntitySet Name="tarCustPmts" EntityType="Net4Sage.DataAccessModel.Store.tarCustPmt" store:Type="Tables" Schema="dbo" Table="tarCustPmt" />
+    <EntitySet Name="tarInvoices" EntityType="Net4Sage.DataAccessModel.Store.tarInvoice" store:Type="Tables" Schema="dbo" Table="tarInvoice" />
+    <EntitySet Name="tarInvoiceAppls" EntityType="Net4Sage.DataAccessModel.Store.tarInvoiceAppl" store:Type="Tables" Schema="dbo" Table="tarInvoiceAppl" />
+    <EntitySet Name="tglTransactions" EntityType="Net4Sage.DataAccessModel.Store.tglTransaction" store:Type="Tables" Schema="dbo" Table="tglTransaction" />
+    <EntitySet Name="tsmCustomForms" EntityType="Net4Sage.DataAccessModel.Store.tsmCustomForm" store:Type="Tables" Schema="dbo" Table="tsmCustomForm" />
+    <EntitySet Name="tsmCustomFormDetls" EntityType="Net4Sage.DataAccessModel.Store.tsmCustomFormDetl" store:Type="Tables" Schema="dbo" Table="tsmCustomFormDetl" />
+    <EntitySet Name="tsmTasks" EntityType="Net4Sage.DataAccessModel.Store.tsmTask" store:Type="Tables" Schema="dbo" Table="tsmTask" />
+  </EntityContainer>
+  <EntityType Name="tciTranTypeCompany">
+    <Key>
+      <PropertyRef Name="CompanyID" />
+      <PropertyRef Name="TranType" />
+    </Key>
+    <Property Name="CompanyID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="TranType" Type="int" Nullable="false" />
+    <Property Name="JrnlKey" Type="int" />
+    <Property Name="NextTranNo" Type="int" Nullable="false" DefaultValue="1" />
+    <Property Name="TranTypeID" Type="varchar" Nullable="false" MaxLength="2" />
+  </EntityType>
+  <EntityType Name="tmfRoutDetl_HAI">
+    <Key>
+      <PropertyRef Name="RoutingStepKey" />
+    </Key>
+    <Property Name="RoutingStepKey" Type="int" Nullable="false" />
+    <Property Name="BackFlush" Type="varchar" Nullable="false" MaxLength="1" />
+    <Property Name="BackFlushFromPrefBin" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="BackFlushResetHours" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="BackFlushSetupHours" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="BackFlushWhseBinKey" Type="int" />
+    <Property Name="CompanyID" Type="varchar" MaxLength="3" />
+    <Property Name="EffectPcsHr" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="EffectPercent" Type="decimal" Nullable="false" Precision="6" Scale="2" DefaultValue="0" />
+    <Property Name="MachineKey" Type="int" />
+    <Property Name="MaterReqPer" Type="decimal" Nullable="false" Precision="4" Scale="0" DefaultValue="0" />
+    <Property Name="MaterValUOMKey" Type="int" />
+    <Property Name="MatItemKey" Type="int" />
+    <Property Name="MatNonInvtUnitCost" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="MatReqPc" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="MatRoutKey" Type="int" />
+    <Property Name="MoveHrs" Type="decimal" Nullable="false" Precision="6" Scale="2" DefaultValue="0" />
+    <Property Name="NotesKey" Type="int" />
+    <Property Name="OperationDesc1" Type="varchar" MaxLength="25" />
+    <Property Name="OperationDesc2" Type="varchar" MaxLength="25" />
+    <Property Name="OperationKey" Type="int" Nullable="false" />
+    <Property Name="OperationType" Type="varchar" Nullable="false" MaxLength="1" />
+    <Property Name="OperCostToWip" Type="varchar" Nullable="false" MaxLength="1" />
+    <Property Name="OvrdMatNonInvtUnitCost" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="PcHrHrPc" Type="varchar" MaxLength="1" />
+    <Property Name="PcsB4Reset" Type="decimal" Nullable="false" Precision="7" Scale="0" DefaultValue="0" />
+    <Property Name="PcsHr" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="PhantomPart" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="ProduceItemKey" Type="int" />
+    <Property Name="ProgressStep" Type="varchar" Nullable="false" MaxLength="1" />
+    <Property Name="QTYCycle" Type="decimal" Nullable="false" Precision="4" Scale="0" DefaultValue="0" />
+    <Property Name="QTYPerDesc" Type="varchar" MaxLength="25" />
+    <Property Name="QueueHrs" Type="decimal" Nullable="false" Precision="6" Scale="2" DefaultValue="0" />
+    <Property Name="ResetUpHr" Type="decimal" Nullable="false" Precision="7" Scale="2" DefaultValue="0" />
+    <Property Name="RoutingKey" Type="int" Nullable="false" />
+    <Property Name="ScrapPcs" Type="decimal" Nullable="false" Precision="5" Scale="2" DefaultValue="0" />
+    <Property Name="ScrapPercent" Type="decimal" Nullable="false" Precision="3" Scale="1" DefaultValue="0" />
+    <Property Name="SetUpHr" Type="decimal" Nullable="false" Precision="7" Scale="2" DefaultValue="0" />
+    <Property Name="StepID" Type="varchar" Nullable="false" MaxLength="6" />
+    <Property Name="ToolKey" Type="int" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="UseMostRecentECO" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="WhseKey" Type="int" />
+    <Property Name="WorkCenterKey" Type="int" />
+    <Property Name="WrkCntrOperFactor" Type="decimal" Nullable="false" Precision="5" Scale="3" DefaultValue="0" />
+  </EntityType>
+  <EntityType Name="tmfRoutHead_HAI">
+    <Key>
+      <PropertyRef Name="RoutingKey" />
+    </Key>
+    <Property Name="RoutingKey" Type="int" Nullable="false" />
+    <Property Name="Active" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="ApprovalKey" Type="int" />
+    <Property Name="BatchSize" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="CompanyID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateType" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CreateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="CustKey" Type="int" />
+    <Property Name="EconCycleQty" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="ECOTrackFlag" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="ItemClassKey" Type="int" Nullable="false" />
+    <Property Name="ItemKey" Type="int" Nullable="false" />
+    <Property Name="MaxWOQty" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="MinWOQty" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="NetWeightPerPart" Type="decimal" Nullable="false" Precision="10" Scale="4" DefaultValue="0" />
+    <Property Name="NotesKey" Type="int" />
+    <Property Name="ParentBackFlush" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="ParentRoutingKey" Type="int" />
+    <Property Name="ParentSource" Type="smallint" Nullable="false" DefaultValue="-1" />
+    <Property Name="PhantIncLabor" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="PhantIncMat" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="PhantIncOther" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="PhantIncOut" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="PhantIncProg" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="PlanOverPercent" Type="decimal" Nullable="false" Precision="5" Scale="2" DefaultValue="0" />
+    <Property Name="PlanWOWindow" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="QTYCycle" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="Reference" Type="varchar" MaxLength="25" />
+    <Property Name="Revision" Type="varchar" MaxLength="6" />
+    <Property Name="RevisionDate" Type="datetime" />
+    <Property Name="RollUpFlag" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="RoutingId" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="RoutType" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="UpdateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="VersionId" Type="varchar" Nullable="false" MaxLength="6" />
+    <Property Name="WhseKey" Type="int" />
+  </EntityType>
+  <EntityType Name="tmfWorkOrdDetl_HAI">
+    <Key>
+      <PropertyRef Name="WorkOrderStepKey" />
+    </Key>
+    <Property Name="WorkOrderStepKey" Type="int" Nullable="false" />
+    <Property Name="BackFlush" Type="varchar" Nullable="false" MaxLength="1" devart:DefaultValue="'N'" DefaultValue="N" />
+    <Property Name="BackFlushFromPrefBin" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="BackFlushResetHours" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="BackFlushSetupHours" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="BackFlushWhseBinKey" Type="int" />
+    <Property Name="CompanyID" Type="varchar" MaxLength="3" />
+    <Property Name="DownHrsSTD" Type="decimal" Nullable="false" Precision="8" Scale="2" DefaultValue="0" />
+    <Property Name="DownHrsTD" Type="decimal" Nullable="false" Precision="8" Scale="2" DefaultValue="0" />
+    <Property Name="EffectPcsHr" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="EffectPercent" Type="decimal" Nullable="false" Precision="6" Scale="2" DefaultValue="0" />
+    <Property Name="MachineKey" Type="int" />
+    <Property Name="MatCostSTD" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="MatCostTD" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="MaterReqPer" Type="decimal" Nullable="false" Precision="4" Scale="0" DefaultValue="0" />
+    <Property Name="MaterValUOMKey" Type="int" />
+    <Property Name="MatItemKey" Type="int" />
+    <Property Name="MatNonInvtUnitCost" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="MatReqPc" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="MatRoutKey" Type="int" />
+    <Property Name="MatTOT" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="MatUPD" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="MoveHrs" Type="decimal" Nullable="false" Precision="6" Scale="2" DefaultValue="0" />
+    <Property Name="NotesKey" Type="int" />
+    <Property Name="OperationDesc1" Type="varchar" MaxLength="25" />
+    <Property Name="OperationDesc2" Type="varchar" MaxLength="25" />
+    <Property Name="OperationKey" Type="int" />
+    <Property Name="OperationType" Type="varchar" Nullable="false" MaxLength="1" />
+    <Property Name="OperCostToWip" Type="varchar" Nullable="false" MaxLength="1" devart:DefaultValue="'N'" DefaultValue="N" />
+    <Property Name="OrigRoutingStepKey" Type="int" />
+    <Property Name="OtherTOT" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="OtherUPD" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="OutTOT" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="OutUPD" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="OvrdMatNonInvtUnitCost" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="PcHrHrPc" Type="varchar" MaxLength="1" />
+    <Property Name="PcsB4Reset" Type="decimal" Nullable="false" Precision="7" Scale="0" DefaultValue="0" />
+    <Property Name="PcsHr" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="PhantomPart" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="ProduceItemKey" Type="int" />
+    <Property Name="ProgressStep" Type="varchar" Nullable="false" MaxLength="1" devart:DefaultValue="'N'" DefaultValue="N" />
+    <Property Name="QTYCycle" Type="decimal" Nullable="false" Precision="4" Scale="0" DefaultValue="0" />
+    <Property Name="QTYPerDesc" Type="varchar" MaxLength="25" />
+    <Property Name="QTYReqEST" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="QTYReqSTD" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="QTYShipTD" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="QTYTD" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="QueueHrs" Type="decimal" Nullable="false" Precision="6" Scale="2" DefaultValue="0" />
+    <Property Name="ResetUpHr" Type="decimal" Nullable="false" Precision="7" Scale="2" DefaultValue="0" />
+    <Property Name="RoutingStepKey" Type="int" />
+    <Property Name="RunCostSTD" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="RunCostTD" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="RunFixTOT" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="RunFixUPD" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="RunHrsSTD" Type="decimal" Nullable="false" Precision="8" Scale="2" DefaultValue="0" />
+    <Property Name="RunHrsTD" Type="decimal" Nullable="false" Precision="8" Scale="2" DefaultValue="0" />
+    <Property Name="RunVarTOT" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="RunVarUPD" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="SchStepFinishDate" Type="datetime" />
+    <Property Name="SchStepStartDate" Type="datetime" />
+    <Property Name="ScrapPcs" Type="decimal" Nullable="false" Precision="5" Scale="2" DefaultValue="0" />
+    <Property Name="ScrapPcsSTD" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="ScrapPcsTD" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="ScrapPercent" Type="decimal" Nullable="false" Precision="3" Scale="1" DefaultValue="0" />
+    <Property Name="SetCostSTD" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="SetCostTD" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="SetFixTOT" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="SetFixUPD" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="SetHrsEST" Type="decimal" Nullable="false" Precision="8" Scale="2" DefaultValue="0" />
+    <Property Name="SetHrsSTD" Type="decimal" Nullable="false" Precision="8" Scale="2" DefaultValue="0" />
+    <Property Name="SetHrsTD" Type="decimal" Nullable="false" Precision="8" Scale="2" DefaultValue="0" />
+    <Property Name="SetupComplete" Type="varchar" Nullable="false" MaxLength="1" devart:DefaultValue="'N'" DefaultValue="N" />
+    <Property Name="SetUpHr" Type="decimal" Nullable="false" Precision="7" Scale="2" DefaultValue="0" />
+    <Property Name="SetVarTOT" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="SetVarUPD" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="StepComplete" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="StepID" Type="varchar" Nullable="false" MaxLength="6" />
+    <Property Name="StepStartDate" Type="datetime" />
+    <Property Name="ToolKey" Type="int" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="WhseKey" Type="int" />
+    <Property Name="WorkCenterKey" Type="int" />
+    <Property Name="WorkOrderKey" Type="int" Nullable="false" />
+    <Property Name="WrkCntrOperFactor" Type="decimal" Precision="5" Scale="3" DefaultValue="0" />
+  </EntityType>
+  <EntityType Name="tmfWorkOrdHead_HAI">
+    <Key>
+      <PropertyRef Name="WorkOrderKey" />
+    </Key>
+    <Property Name="WorkOrderKey" Type="int" Nullable="false" />
+    <Property Name="ActualStartDate" Type="datetime" />
+    <Property Name="ApprovalKey" Type="int" />
+    <Property Name="AppTrackFlag" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CompanyID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="Complete" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CompleteDate" Type="datetime" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateType" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CreateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="CustKey" Type="int" />
+    <Property Name="CustPONo" Type="varchar" MaxLength="30" />
+    <Property Name="EntryDate" Type="datetime" />
+    <Property Name="EstimateKey" Type="int" />
+    <Property Name="ItemClassKey" Type="int" Nullable="false" />
+    <Property Name="LastActDate" Type="datetime" />
+    <Property Name="MFGCommitDate" Type="datetime" />
+    <Property Name="NotesKey" Type="int" />
+    <Property Name="Printed" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="Priority" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="PriorityCode" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="ProjectKey" Type="int" />
+    <Property Name="Quantity" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="QuantityToDate" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="QTYCycle" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="ReasonCodeKey" Type="int" />
+    <Property Name="ReleaseDate" Type="datetime" />
+    <Property Name="RequiredDate" Type="datetime" />
+    <Property Name="RoutingKey" Type="int" Nullable="false" />
+    <Property Name="SchedFinish" Type="datetime" />
+    <Property Name="SchedStart" Type="datetime" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="UpdateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="WhseKey" Type="int" Nullable="false" />
+    <Property Name="WorkOrderNo" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="WorkOrderType" Type="smallint" Nullable="false" DefaultValue="0" />
+  </EntityType>
+  <EntityType Name="tmfParameters_HAI">
+    <Key>
+      <PropertyRef Name="CompanyID" />
+    </Key>
+    <Property Name="CompanyID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateType" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CreateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="GLPostRgstrFormat" Type="smallint" Nullable="false" DefaultValue="2" />
+    <Property Name="NonInvtForMatOperationTyp" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="NonInvtForOthOperationTyp" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="NonInvtForOutOperationTyp" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="NoOfFuturePer" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="ParentBackFlush" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="IntegrateWithGL" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="ParamCADImportDelim" Type="varchar" MaxLength="1" />
+    <Property Name="ParmEstExpiratDaysNum" Type="decimal" Nullable="false" Precision="10" Scale="0" DefaultValue="0" />
+    <Property Name="ParmNextEstimateNum" Type="decimal" Nullable="false" Precision="10" Scale="0" DefaultValue="0" />
+    <Property Name="ParmNextLotNum" Type="decimal" Nullable="false" Precision="10" Scale="0" DefaultValue="0" />
+    <Property Name="ParmNextLotTransNum" Type="decimal" Nullable="false" Precision="10" Scale="0" DefaultValue="0" />
+    <Property Name="ParmNextShipment" Type="decimal" Nullable="false" Precision="10" Scale="0" DefaultValue="0" />
+    <Property Name="ParmNextTranNum" Type="decimal" Nullable="false" Precision="10" Scale="0" DefaultValue="0" />
+    <Property Name="ParmNextWorkOrdNum" Type="decimal" Nullable="false" Precision="10" Scale="0" DefaultValue="0" />
+    <Property Name="ParmSchOutSideWC" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="ParmShipNumCopies" Type="decimal" Nullable="false" Precision="10" Scale="0" DefaultValue="0" />
+    <Property Name="PhantIncLabor" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="PhantIncMat" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="PhantIncOther" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="PhantIncOut" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="PhantIncProg" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="PhantStartStep" Type="varchar" Nullable="false" MaxLength="6" devart:DefaultValue="'000010'" DefaultValue="000010" />
+    <Property Name="PhantStepIncrement" Type="decimal" Nullable="false" Precision="3" Scale="0" DefaultValue="0" />
+    <Property Name="ReleaseDateDays" Type="decimal" Nullable="false" Precision="10" Scale="0" DefaultValue="0" />
+    <Property Name="SchedCompleteTime" Type="datetime" Nullable="false" devart:DefaultValue="'1/1/1900 11:59:00 PM'" />
+    <Property Name="UnlockAllFuturePer" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="UpdateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="WIPHiddenBatchKey" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tmfWorkOrdProd_HAI">
+    <Key>
+      <PropertyRef Name="WorkOrderKey" />
+      <PropertyRef Name="ItemKey" />
+    </Key>
+    <Property Name="WorkOrderKey" Type="int" Nullable="false" />
+    <Property Name="ItemKey" Type="int" Nullable="false" />
+    <Property Name="CompanyID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="QTYCycle" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="QTYToDate" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="QTYTotal" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="SOKey" Type="int" />
+    <Property Name="SOLineKey" Type="int" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+  </EntityType>
+  <EntityType Name="timInvtLot">
+    <Key>
+      <PropertyRef Name="InvtLotKey" />
+    </Key>
+    <Property Name="InvtLotKey" Type="int" Nullable="false" />
+    <Property Name="ExpirationDate" Type="datetime" />
+    <Property Name="ImportLogKey" Type="int" />
+    <Property Name="ItemKey" Type="int" Nullable="false" />
+    <Property Name="LotNo" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Status" Type="smallint" Nullable="false" DefaultValue="2" />
+    <Property Name="WhseKey" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="timInvtLotBin">
+    <Key>
+      <PropertyRef Name="InvtLotBinKey" />
+    </Key>
+    <Property Name="InvtLotBinKey" Type="int" Nullable="false" />
+    <Property Name="ImportLogKey" Type="int" />
+    <Property Name="InvtLotKey" Type="int" Nullable="false" />
+    <Property Name="OrigQty" Type="decimal" Nullable="false" Precision="25" Scale="13" DefaultValue="0" />
+    <Property Name="PendQtyDecrease" Type="decimal" Nullable="false" Precision="25" Scale="13" DefaultValue="0" />
+    <Property Name="PendQtyIncrease" Type="decimal" Nullable="false" Precision="25" Scale="13" DefaultValue="0" />
+    <Property Name="QtyUsed" Type="decimal" Nullable="false" Precision="25" Scale="13" DefaultValue="0" />
+    <Property Name="WhseBinKey" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="timInvtSerialCorr">
+    <Key>
+      <PropertyRef Name="InvtSerialKey" />
+      <PropertyRef Name="OldSerialNo" />
+    </Key>
+    <Property Name="InvtSerialKey" Type="int" Nullable="false" />
+    <Property Name="OldSerialNo" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateUserID" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="timInvtTran">
+    <Key>
+      <PropertyRef Name="InvtTranKey" />
+    </Key>
+    <Property Name="InvtTranKey" Type="int" Nullable="false" />
+    <Property Name="AcctRefKey" Type="int" />
+    <Property Name="BatchKey" Type="int" Nullable="false" />
+    <Property Name="CompanyID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateType" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CreateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="FreightAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="GLAcctKey" Type="int" Nullable="false" />
+    <Property Name="ImportLogKey" Type="int" />
+    <Property Name="ItemAliasKey" Type="int" />
+    <Property Name="ItemKey" Type="int" Nullable="false" />
+    <Property Name="MaterialAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="OtherAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="OtherMfgAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="OutsideAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="PostDate" Type="datetime" Nullable="false" />
+    <Property Name="PurchAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="QtyPerKit" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="ReasonCodeKey" Type="int" />
+    <Property Name="RunFixAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="RunVarAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="SalesAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="SetFixAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="SetVarAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="SourceInvtTranKey" Type="int" />
+    <Property Name="STaxAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="TranAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="TranCmnt" Type="varchar" MaxLength="50" />
+    <Property Name="TranDate" Type="datetime" Nullable="false" />
+    <Property Name="TranID" Type="varchar" Nullable="false" MaxLength="13" />
+    <Property Name="TranKey" Type="int" />
+    <Property Name="TranNo" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="TranQty" Type="decimal" Nullable="false" Precision="25" Scale="13" DefaultValue="0" />
+    <Property Name="TranType" Type="int" Nullable="false" />
+    <Property Name="TrnsfrOrderLineKey" Type="int" />
+    <Property Name="UnitCost" Type="decimal" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="UnitMeasKey" Type="int" />
+    <Property Name="UnitPrice" Type="decimal" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="UpdateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="WhseKey" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="timInvtTranDist">
+    <Key>
+      <PropertyRef Name="InvtTranDistKey" />
+    </Key>
+    <Property Name="InvtTranDistKey" Type="int" Nullable="false" />
+    <Property Name="AdjQty" Type="decimal" Nullable="false" Precision="25" Scale="13" DefaultValue="0" />
+    <Property Name="DistQty" Type="decimal" Nullable="false" Precision="25" Scale="13" DefaultValue="0" />
+    <Property Name="InvtLotBinKey" Type="int" />
+    <Property Name="InvtSerialKey" Type="int" />
+    <Property Name="InvtTranKey" Type="int" Nullable="false" />
+    <Property Name="ItemKey" Type="int" Nullable="false" />
+    <Property Name="TranQty" Type="decimal" Nullable="false" Precision="25" Scale="13" DefaultValue="0" />
+    <Property Name="WhseBinKey" Type="int" />
+    <Property Name="WhseKey" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tmfWorkCenter_HAI">
+    <Key>
+      <PropertyRef Name="WorkCenterKey" />
+    </Key>
+    <Property Name="WorkCenterKey" Type="int" Nullable="false" />
+    <Property Name="CompanyID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateType" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CreateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="DepartmentKey" Type="int" Nullable="false" />
+    <Property Name="FacilityKey" Type="int" />
+    <Property Name="FriStart1" Type="datetime" />
+    <Property Name="FriStart2" Type="datetime" />
+    <Property Name="FriStart3" Type="datetime" />
+    <Property Name="FriStart4" Type="datetime" />
+    <Property Name="FriStop1" Type="datetime" />
+    <Property Name="FriStop2" Type="datetime" />
+    <Property Name="FriStop3" Type="datetime" />
+    <Property Name="FriStop4" Type="datetime" />
+    <Property Name="MonStart1" Type="datetime" />
+    <Property Name="MonStart2" Type="datetime" />
+    <Property Name="MonStart3" Type="datetime" />
+    <Property Name="MonStart4" Type="datetime" />
+    <Property Name="MonStop1" Type="datetime" />
+    <Property Name="MonStop2" Type="datetime" />
+    <Property Name="MonStop3" Type="datetime" />
+    <Property Name="MonStop4" Type="datetime" />
+    <Property Name="SatStart1" Type="datetime" />
+    <Property Name="SatStart2" Type="datetime" />
+    <Property Name="SatStart3" Type="datetime" />
+    <Property Name="SatStart4" Type="datetime" />
+    <Property Name="SatStop1" Type="datetime" />
+    <Property Name="SatStop2" Type="datetime" />
+    <Property Name="SatStop3" Type="datetime" />
+    <Property Name="SatStop4" Type="datetime" />
+    <Property Name="SunStart1" Type="datetime" />
+    <Property Name="SunStart2" Type="datetime" />
+    <Property Name="SunStart3" Type="datetime" />
+    <Property Name="SunStart4" Type="datetime" />
+    <Property Name="SunStop1" Type="datetime" />
+    <Property Name="SunStop2" Type="datetime" />
+    <Property Name="SunStop3" Type="datetime" />
+    <Property Name="SunStop4" Type="datetime" />
+    <Property Name="ThuStart1" Type="datetime" />
+    <Property Name="ThuStart2" Type="datetime" />
+    <Property Name="ThuStart3" Type="datetime" />
+    <Property Name="ThuStart4" Type="datetime" />
+    <Property Name="ThuStop1" Type="datetime" />
+    <Property Name="ThuStop2" Type="datetime" />
+    <Property Name="ThuStop3" Type="datetime" />
+    <Property Name="ThuStop4" Type="datetime" />
+    <Property Name="TueStart1" Type="datetime" />
+    <Property Name="TueStart2" Type="datetime" />
+    <Property Name="TueStart3" Type="datetime" />
+    <Property Name="TueStart4" Type="datetime" />
+    <Property Name="TueStop1" Type="datetime" />
+    <Property Name="TueStop2" Type="datetime" />
+    <Property Name="TueStop3" Type="datetime" />
+    <Property Name="TueStop4" Type="datetime" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="UpdateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="WedStart1" Type="datetime" />
+    <Property Name="WedStart2" Type="datetime" />
+    <Property Name="WedStart3" Type="datetime" />
+    <Property Name="WedStart4" Type="datetime" />
+    <Property Name="WedStop1" Type="datetime" />
+    <Property Name="WedStop2" Type="datetime" />
+    <Property Name="WedStop3" Type="datetime" />
+    <Property Name="WedStop4" Type="datetime" />
+    <Property Name="WorkCenterDesc" Type="varchar" MaxLength="25" />
+    <Property Name="WorkCenterID" Type="varchar" Nullable="false" MaxLength="6" />
+    <Property Name="WrkCntrCapacity" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="WrkCntrCrewRate0" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="WrkCntrCrewRate1" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="WrkCntrCrewRate2" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="WrkCntrCrewRate3" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="WrkCntrCrewRate4" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="WrkCntrCrewRate5" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="WrkCntrCrewRate6" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="WrkCntrCrewRate7" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="WrkCntrCrewRate8" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="WrkCntrCrewRate9" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="WrkCntrEstRunRate" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="WrkCntrEstSetupRate" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="WrkCntrFixedRunRate" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="WrkCntrFixedSetupRate" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="WrkCntrPcHrHrPc" Type="varchar" Nullable="false" MaxLength="1" />
+    <Property Name="WrkCntrStdEffPercentage" Type="decimal" Nullable="false" Precision="6" Scale="2" DefaultValue="0" />
+    <Property Name="WrkCntrStdMoveHrs" Type="decimal" Nullable="false" Precision="6" Scale="2" DefaultValue="0" />
+    <Property Name="WrkCntrStdOprFactor" Type="decimal" Nullable="false" Precision="5" Scale="3" DefaultValue="0" />
+    <Property Name="WrkCntrStdPcsB4Reset" Type="decimal" Nullable="false" Precision="7" Scale="0" DefaultValue="0" />
+    <Property Name="WrkCntrStdPcsHrs" Type="decimal" Nullable="false" Precision="11" Scale="4" DefaultValue="0" />
+    <Property Name="WrkCntrStdResetHrs" Type="decimal" Nullable="false" Precision="7" Scale="2" DefaultValue="0" />
+    <Property Name="WrkCntrStdRunLaborRate" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="WrkCntrStdScrapPct" Type="decimal" Nullable="false" Precision="4" Scale="2" DefaultValue="0" />
+    <Property Name="WrkCntrStdSetupHrs" Type="decimal" Nullable="false" Precision="7" Scale="2" DefaultValue="0" />
+    <Property Name="WrkCntrStdSetupLaborRate" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="WrkCntrVarRunRate" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="WrkCntrVarSetupRate" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="WrkCntStdQueueHrs" Type="decimal" Precision="6" Scale="2" DefaultValue="0" />
+  </EntityType>
+  <EntityType Name="timWarehouse">
+    <Key>
+      <PropertyRef Name="WhseKey" />
+    </Key>
+    <Property Name="WhseKey" Type="int" Nullable="false" />
+    <Property Name="AllowImmedPickFromSO" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="AllowImmedShipFromPick" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="AllowTrnsfrBackOrd" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CompanyID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="CostOfCarry" Type="decimal" Nullable="false" Precision="5" Scale="4" DefaultValue="0" />
+    <Property Name="COSAcctKey" Type="int" />
+    <Property Name="CostTierAdjAcctKey" Type="int" />
+    <Property Name="CostToReplenish" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="CostWhseKey" Type="int" />
+    <Property Name="Description" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="DfltLotPickMethod" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="DfltPickMeth" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="DfltPickOfOutOfStockItems" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="ImmedInvcPrinterDest" Type="varchar" MaxLength="255" />
+    <Property Name="ImmedInvcRptSettingKey" Type="int" />
+    <Property Name="ImmedPickPrinterDest" Type="varchar" MaxLength="255" />
+    <Property Name="ImmedPickRptSettingKey" Type="int" />
+    <Property Name="InvtAcctKey" Type="int" />
+    <Property Name="IssueAcctKey" Type="int" />
+    <Property Name="LastRankDate" Type="datetime" />
+    <Property Name="LastRankInvtPerKey" Type="int" />
+    <Property Name="LastRplnsmntUpdate" Type="datetime" />
+    <Property Name="MailAddrKey" Type="int" />
+    <Property Name="MaxDemandMult" Type="decimal" Nullable="false" Precision="5" Scale="2" DefaultValue="12" />
+    <Property Name="MaxOrderCycle" Type="smallint" />
+    <Property Name="MaxQualLeadTime" Type="smallint" />
+    <Property Name="MaxQualLeadTimePct" Type="decimal" Precision="5" Scale="4" DefaultValue="0" />
+    <Property Name="MaxSeasDemandMult" Type="decimal" Nullable="false" Precision="5" Scale="2" DefaultValue="3" />
+    <Property Name="MinDemandMult" Type="decimal" Nullable="false" Precision="5" Scale="2" DefaultValue="0" />
+    <Property Name="MinOrderCycle" Type="smallint" DefaultValue="0" />
+    <Property Name="MinQualLeadTimePct" Type="decimal" Precision="5" Scale="4" DefaultValue="0" />
+    <Property Name="MiscAdjAcctKey" Type="int" />
+    <Property Name="PhysCountAcctKey" Type="int" />
+    <Property Name="PriceWhseKey" Type="int" />
+    <Property Name="PurchAcctKey" Type="int" />
+    <Property Name="ReordMeth" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="RestockMeth" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="RestockRate" Type="decimal" Nullable="false" Precision="12" Scale="6" DefaultValue="0" />
+    <Property Name="SalesAcctKey" Type="int" />
+    <Property Name="SalesOffsetAcctKey" Type="int" />
+    <Property Name="SalesReturnAcctKey" Type="int" />
+    <Property Name="ShipAddrKey" Type="int" Nullable="false" />
+    <Property Name="ShipComplete" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="SortPickTckt" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="STaxSchdKey" Type="int" />
+    <Property Name="TrackQtyAtBin" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="Transit" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="TrendPct" Type="decimal" Precision="5" Scale="2" DefaultValue="0" />
+    <Property Name="TrnsfrExpAcctKey" Type="int" />
+    <Property Name="TrnsfrFrtChrgOpt" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="TrnsfrMrkupAcctKey" Type="int" />
+    <Property Name="TrnsfrSrchrgOpt" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="UseBins" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="UseZones" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="WhseID" Type="varchar" Nullable="false" MaxLength="6" />
+    <Property Name="WhseMgrCntctKey" Type="int" />
+    <Property Name="WhseOvrdSegValue" Type="varchar" MaxLength="15" />
+    <Property Name="WillCallPickPrinterDest" Type="varchar" MaxLength="255" />
+    <Property Name="WillCallPickRptSettingKey" Type="int" />
+  </EntityType>
+  <EntityType Name="timWhseBin">
+    <Key>
+      <PropertyRef Name="WhseBinKey" />
+    </Key>
+    <Property Name="WhseBinKey" Type="int" Nullable="false" />
+    <Property Name="DfltBin" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="ExclFromAvail" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="ImportLogKey" Type="int" />
+    <Property Name="Location" Type="varchar" MaxLength="10" />
+    <Property Name="LockedForPick" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="LockedForPutaway" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="PhysCountCycleKey" Type="int" />
+    <Property Name="SortOrder" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="Status" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="TempBin" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="Type" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="VolCapacity" Type="decimal" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="VolCapUnitMeasKey" Type="int" />
+    <Property Name="WghtCapacity" Type="decimal" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="WghtCapUnitMeasKey" Type="int" />
+    <Property Name="WhseBinID" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="WhseKey" Type="int" Nullable="false" />
+    <Property Name="WhseZoneKey" Type="int" />
+  </EntityType>
+  <EntityType Name="timInventory">
+    <Key>
+      <PropertyRef Name="WhseKey" />
+      <PropertyRef Name="ItemKey" />
+    </Key>
+    <Property Name="WhseKey" Type="int" Nullable="false" />
+    <Property Name="ItemKey" Type="int" Nullable="false" />
+    <Property Name="AvgUnitCost" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="BuyerKey" Type="int" Nullable="false" />
+    <Property Name="CloseSOLineOnFirstShip" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="COSAcctKey" Type="int" Nullable="false" />
+    <Property Name="CostOfCarry" Type="decimal" Precision="5" Scale="4" />
+    <Property Name="CostTierAdjAcctKey" Type="int" Nullable="false" />
+    <Property Name="CostToReplenish" Type="decimal" Precision="15" Scale="3" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateType" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CreateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="DateEstab" Type="datetime" Nullable="false" />
+    <Property Name="Demand" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="DemandCalcKey" Type="int" />
+    <Property Name="ImportLogKey" Type="int" />
+    <Property Name="InvtAcctKey" Type="int" Nullable="false" />
+    <Property Name="IssueAcctKey" Type="int" Nullable="false" />
+    <Property Name="LandedUnitCost" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="LastDemandCalcInvtPerKey" Type="int" />
+    <Property Name="LastPhysCount" Type="datetime" />
+    <Property Name="LastPhysCountVar" Type="decimal" Nullable="false" Precision="5" Scale="2" DefaultValue="0" />
+    <Property Name="LastReplParamCalcInvtPerKey" Type="int" />
+    <Property Name="LastStockOut" Type="datetime" />
+    <Property Name="LastUnitCost" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="LeadTime" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="LeadTimeCalcKey" Type="int" />
+    <Property Name="LinePoint" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="MaxStockQty" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="MinStockQty" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="MiscAdjAcctKey" Type="int" Nullable="false" />
+    <Property Name="NonStock" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="OrderPoint" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="PhysCountAcctKey" Type="int" Nullable="false" />
+    <Property Name="PhysCountCycleKey" Type="int" />
+    <Property Name="PhysCountTolPct" Type="decimal" Nullable="false" Precision="5" Scale="4" DefaultValue="0" />
+    <Property Name="PickMethod" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="PickOneLotOnly" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="PickPrefBinsFirst" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="PrimaryVendKey" Type="int" />
+    <Property Name="PurchAcctKey" Type="int" Nullable="false" />
+    <Property Name="PurchProdLineKey" Type="int" />
+    <Property Name="QtyOnBO" Type="decimal" Nullable="false" Precision="25" Scale="13" DefaultValue="0" />
+    <Property Name="QtyOnPO" Type="decimal" Nullable="false" Precision="25" Scale="13" DefaultValue="0" />
+    <Property Name="QtyOnSO" Type="decimal" Nullable="false" Precision="25" Scale="13" DefaultValue="0" />
+    <Property Name="QtyOnTrnsfr" Type="decimal" Nullable="false" Precision="25" Scale="13" DefaultValue="0" />
+    <Property Name="QtyOnWO" Type="decimal" Nullable="false" Precision="25" Scale="13" DefaultValue="0" />
+    <Property Name="QtyReqForTrnsfr" Type="decimal" Precision="25" Scale="13" DefaultValue="0" />
+    <Property Name="QtyReqForWO" Type="decimal" Nullable="false" Precision="25" Scale="13" DefaultValue="0" />
+    <Property Name="RankByCOS" Type="varchar" Nullable="false" MaxLength="1" devart:DefaultValue="'X'" DefaultValue="X" />
+    <Property Name="RankByGrMargin" Type="varchar" Nullable="false" MaxLength="1" devart:DefaultValue="'X'" DefaultValue="X" />
+    <Property Name="RankByHits" Type="varchar" Nullable="false" MaxLength="1" devart:DefaultValue="'X'" DefaultValue="X" />
+    <Property Name="RankByQtySold" Type="varchar" Nullable="false" MaxLength="1" devart:DefaultValue="'X'" DefaultValue="X" />
+    <Property Name="ReordMeth" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="RplcmntUnitCost" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="RplnsmntLevel" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="RplnsmntParmFreeze" Type="datetime" />
+    <Property Name="RplnsmntWhseKey" Type="int" />
+    <Property Name="SafetyStockCalcKey" Type="int" />
+    <Property Name="SafetyStockQty" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="SalesAcctKey" Type="int" Nullable="false" />
+    <Property Name="SalesOffsetAcctKey" Type="int" Nullable="false" />
+    <Property Name="SalesReturnAcctKey" Type="int" Nullable="false" />
+    <Property Name="SerialNoLinesOnPickList" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="ShipComplete" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="ShowAvailLots" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="Status" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="StdOrdQty" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="StdUnitCost" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="UpdateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="UseDistPrefBinInMfg" Type="smallint" Nullable="false" DefaultValue="1" />
+  </EntityType>
+  <EntityType Name="timItem">
+    <Key>
+      <PropertyRef Name="ItemKey" />
+    </Key>
+    <Property Name="ItemKey" Type="int" Nullable="false" />
+    <Property Name="AdjQtyRoundMeth" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="AllowCostOvrd" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="AllowDecimalQty" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="AllowDropShip" Type="smallint" DefaultValue="0" />
+    <Property Name="AllowPriceOvrd" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="AllowRtrns" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="AvailForSale" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="CommClassKey" Type="int" />
+    <Property Name="CommodityCodeKey" Type="int" />
+    <Property Name="CompanyID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="COSAcctKey" Type="int" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateType" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CreateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="CRMItemID" Type="varchar" MaxLength="32" />
+    <Property Name="DateEstab" Type="datetime" />
+    <Property Name="DfltSaleQty" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="1" />
+    <Property Name="DfltWhseKey" Type="int" />
+    <Property Name="ExpAcctKey" Type="int" />
+    <Property Name="FASAssetTemplate" Type="varchar" MaxLength="25" />
+    <Property Name="FreightClassKey" Type="int" />
+    <Property Name="HazMat" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="ImportLogKey" Type="int" />
+    <Property Name="InclOnPackList" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="InternalLongDesc" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="IntrnlDeliveryReq" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="ItemClassKey" Type="int" Nullable="false" />
+    <Property Name="ItemID" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="ItemSubType" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="ItemType" Type="smallint" Nullable="false" />
+    <Property Name="MatchToleranceKey" Type="int" />
+    <Property Name="MatSafetySheetKey" Type="int" />
+    <Property Name="MinFactorUnitMeasKey" Type="int" />
+    <Property Name="MinGrossProfitPct" Type="decimal" Nullable="false" Precision="5" Scale="4" DefaultValue="0" />
+    <Property Name="MinSaleQty" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="PerUsageOrdLimit" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="PriceSeq" Type="int" />
+    <Property Name="PriceUnitMeasKey" Type="int" />
+    <Property Name="ProdDetlLink" Type="varchar" MaxLength="255" />
+    <Property Name="ProdPriceGroupKey" Type="int" />
+    <Property Name="PurchProdLineKey" Type="int" />
+    <Property Name="PurchUnitMeasKey" Type="int" />
+    <Property Name="RcptReq" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="RcvgCmnt" Type="varchar" MaxLength="255" />
+    <Property Name="RestockRate" Type="decimal" Nullable="false" Precision="12" Scale="6" DefaultValue="0" />
+    <Property Name="ReturnsAcctKey" Type="int" />
+    <Property Name="SaleMultiple" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="SalesAcctKey" Type="int" />
+    <Property Name="SalesProdLineKey" Type="int" />
+    <Property Name="SalesUnitMeasKey" Type="int" />
+    <Property Name="Seasonal" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="SerialIncrement" Type="varchar" MaxLength="20" />
+    <Property Name="SerialMask" Type="varchar" MaxLength="20" />
+    <Property Name="ShelfLife" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="Status" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="STaxClassKey" Type="int" />
+    <Property Name="StdPrice" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="StdUnitCost" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="StockUnitMeasKey" Type="int" />
+    <Property Name="SubjToTradeDisc" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="SuccessorDate" Type="datetime" />
+    <Property Name="SuccessorItemKey" Type="int" />
+    <Property Name="TargetMargin" Type="decimal" Nullable="false" Precision="5" Scale="4" DefaultValue="0" />
+    <Property Name="TrackMeth" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="UpdateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="UserFld1" Type="varchar" MaxLength="15" />
+    <Property Name="UserFld2" Type="varchar" MaxLength="15" />
+    <Property Name="UserFld3" Type="varchar" MaxLength="15" />
+    <Property Name="UserFld4" Type="varchar" MaxLength="15" />
+    <Property Name="UserFld5" Type="varchar" MaxLength="15" />
+    <Property Name="UserFld6" Type="varchar" MaxLength="15" />
+    <Property Name="ValuationMeth" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="VendFamilyKey" Type="int" />
+    <Property Name="WarrantyDays" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="WarrantyProvider" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="Trazability" Type="smallint" />
+    <Property Name="PurchCalendaryKey" Type="int" />
+  </EntityType>
+  <EntityType Name="timTranType">
+    <Key>
+      <PropertyRef Name="TranType" />
+    </Key>
+    <Property Name="TranType" Type="int" Nullable="false" />
+    <Property Name="InvtOffsetAcctKey" Type="int" />
+    <Property Name="InvtTranClass" Type="smallint" Nullable="false" />
+    <Property Name="QtyOnHandEffect" Type="smallint" Nullable="false" DefaultValue="0" />
+  </EntityType>
+  <EntityType Name="tciBatchLog">
+    <Key>
+      <PropertyRef Name="BatchKey" />
+    </Key>
+    <Property Name="BatchKey" Type="int" Nullable="false" />
+    <Property Name="BatchCmnt" Type="varchar" MaxLength="50" />
+    <Property Name="BatchID" Type="varchar" MaxLength="12" />
+    <Property Name="BatchNo" Type="int" Nullable="false" />
+    <Property Name="BatchOvrdSegKey" Type="int" />
+    <Property Name="BatchOvrdSegValue" Type="varchar" MaxLength="15" />
+    <Property Name="BatchTotal" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="BatchType" Type="int" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateType" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="ImportLogKey" Type="int" />
+    <Property Name="NextSeqNo" Type="int" Nullable="false" DefaultValue="1" />
+    <Property Name="OrigUserID" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="PostCompanyID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="PostDate" Type="datetime" />
+    <Property Name="PostError" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="PostStatus" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="PostUserID" Type="varchar" MaxLength="30" />
+    <Property Name="RevrsBatchKey" Type="int" />
+    <Property Name="RgstrPrinted" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="SourceCompanyID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="Status" Type="smallint" Nullable="false" DefaultValue="4" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+  </EntityType>
+  <EntityType Name="tglBatch">
+    <Key>
+      <PropertyRef Name="BatchKey" />
+    </Key>
+    <Property Name="BatchKey" Type="int" Nullable="false" />
+    <Property Name="BatchCmnt" Type="varchar" MaxLength="50" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateType" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="GeneralJrnlType" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="Hold" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="HoldReason" Type="varchar" MaxLength="20" />
+    <Property Name="InterCompany" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="InterCompBatchKey" Type="int" />
+    <Property Name="InterCompUsage" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="OrigUserID" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="PostDate" Type="datetime" Nullable="false" />
+    <Property Name="Private" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="ReversingDate" Type="datetime" />
+    <Property Name="TranCtrl" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+  </EntityType>
+  <EntityType Name="tglJournalDetl">
+    <Key>
+      <PropertyRef Name="JrnlHdrKey" />
+      <PropertyRef Name="EntryNo" />
+    </Key>
+    <Property Name="JrnlHdrKey" Type="int" Nullable="false" />
+    <Property Name="EntryNo" Type="int" Nullable="false" />
+    <Property Name="AcctRefKey" Type="int" />
+    <Property Name="GLAcctKey" Type="int" />
+    <Property Name="PostAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="PostAmtHC" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="PostCmnt" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="PostQty" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="RefNo" Type="varchar" MaxLength="10" />
+    <Property Name="SeqNo" Type="int" Nullable="false" />
+    <Property Name="TargetCompanyID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="TranDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tglJournalHdr">
+    <Key>
+      <PropertyRef Name="JrnlHdrKey" />
+    </Key>
+    <Property Name="JrnlHdrKey" Type="int" Nullable="false" />
+    <Property Name="AcctRefKey" Type="int" />
+    <Property Name="AllocateKey" Type="int" />
+    <Property Name="BatchKey" Type="int" Nullable="false" />
+    <Property Name="CheckNo" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CompanyID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateType" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CreateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="CurrExchRate" Type="float" Nullable="false" DefaultValue="1" />
+    <Property Name="CurrExchSchdKey" Type="int" />
+    <Property Name="CurrID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="DfltAcctRefKey" Type="int" />
+    <Property Name="Financial" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="GLAcctKey" Type="int" />
+    <Property Name="ImportLogKey" Type="int" />
+    <Property Name="JrnlKey" Type="int" Nullable="false" />
+    <Property Name="JrnlNo" Type="int" Nullable="false" />
+    <Property Name="JrnlTotalHC" Type="decimal" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="NextEntryNo" Type="int" />
+    <Property Name="OffsetAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="OffsetAmtHC" Type="decimal" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="OffsetPost" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="OutOfBalance" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="OutOfBalOverride" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="PostCmnt" Type="varchar" MaxLength="255" />
+    <Property Name="RecurJrnlKey" Type="int" />
+    <Property Name="ReqOffsetAmt" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="ReverseJrnl" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="SourceModule" Type="varchar" Nullable="false" MaxLength="2" />
+    <Property Name="Status" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="TranDate" Type="datetime" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="UpdateUserID" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="tglAccount">
+    <Key>
+      <PropertyRef Name="GLAcctKey" />
+    </Key>
+    <Property Name="GLAcctKey" Type="int" Nullable="false" />
+    <Property Name="CompanyID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateType" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CreateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="CurrRestriction" Type="smallint" Nullable="false" DefaultValue="2" />
+    <Property Name="Description" Type="varchar" MaxLength="40" />
+    <Property Name="EffEndDate" Type="datetime" />
+    <Property Name="EffStartDate" Type="datetime" />
+    <Property Name="ExtCmnt" Type="varchar" MaxLength="255" />
+    <Property Name="GLAcctNo" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="ImportLogKey" Type="int" />
+    <Property Name="NaturalAcctKey" Type="int" Nullable="false" />
+    <Property Name="PostingType" Type="smallint" Nullable="false" DefaultValue="3" />
+    <Property Name="RestrictedCurrID" Type="varchar" MaxLength="3" />
+    <Property Name="Revalue" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="StatUnit" Type="varchar" MaxLength="6" />
+    <Property Name="Status" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="UpdateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="UserFld1" Type="varchar" MaxLength="15" />
+    <Property Name="UserFld2" Type="varchar" MaxLength="15" />
+    <Property Name="UserFld3" Type="varchar" MaxLength="15" />
+    <Property Name="UserFld4" Type="varchar" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="timItemDescription">
+    <Key>
+      <PropertyRef Name="ItemKey" />
+      <PropertyRef Name="LanguageID" />
+    </Key>
+    <Property Name="ItemKey" Type="int" Nullable="false" />
+    <Property Name="LanguageID" Type="int" Nullable="false" />
+    <Property Name="LongDesc" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="ShortDesc" Type="varchar" Nullable="false" MaxLength="40" />
+  </EntityType>
+  <EntityType Name="tmcCurrency">
+    <Key>
+      <PropertyRef Name="CurrID" />
+    </Key>
+    <Property Name="CurrID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="CurrLocale" Type="int" Nullable="false" />
+    <Property Name="CurrSymbol" Type="varchar" MaxLength="4" />
+    <Property Name="CurrSymbolPosition" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="DecimalSymbol" Type="varchar" Nullable="false" MaxLength="1" devart:DefaultValue="'.'" DefaultValue="." />
+    <Property Name="Description" Type="varchar" MaxLength="30" />
+    <Property Name="DigitGroupSymbol" Type="varchar" Nullable="false" MaxLength="1" devart:DefaultValue="','" DefaultValue="," />
+    <Property Name="DigitsAfterDecimal" Type="smallint" Nullable="false" DefaultValue="2" />
+    <Property Name="DigitsInGroup" Type="smallint" Nullable="false" DefaultValue="3" />
+    <Property Name="IsUsed" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="RoundMeth" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="RoundPrecision" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+  </EntityType>
+  <EntityType Name="tglJournal">
+    <Key>
+      <PropertyRef Name="JrnlKey" />
+    </Key>
+    <Property Name="JrnlKey" Type="int" Nullable="false" />
+    <Property Name="BegBalance" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CheckNo" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CompanyID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="Description" Type="varchar" MaxLength="30" />
+    <Property Name="GLAcctKey" Type="int" />
+    <Property Name="JrnlID" Type="varchar" Nullable="false" MaxLength="2" />
+    <Property Name="NextJrnlNo" Type="int" />
+    <Property Name="OffsetPost" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="ReqOffsetAmt" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+  </EntityType>
+  <EntityType Name="tglJournalLog">
+    <Key>
+      <PropertyRef Name="JrnlKey" />
+      <PropertyRef Name="JrnlNo" />
+    </Key>
+    <Property Name="JrnlKey" Type="int" Nullable="false" />
+    <Property Name="JrnlNo" Type="int" Nullable="false" />
+    <Property Name="CompanyID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="PostDate" Type="datetime" Nullable="false" />
+    <Property Name="TranStatus" Type="smallint" Nullable="false" DefaultValue="1" />
+  </EntityType>
+  <EntityType Name="tsmCompany">
+    <Key>
+      <PropertyRef Name="CompanyID" />
+    </Key>
+    <Property Name="CompanyID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="AddrLine1" Type="varchar" Nullable="false" MaxLength="40" devart:DefaultValue="' '" DefaultValue=" " />
+    <Property Name="AddrLine2" Type="varchar" MaxLength="40" devart:DefaultValue="' '" DefaultValue=" " />
+    <Property Name="AddrLine3" Type="varchar" MaxLength="40" devart:DefaultValue="' '" DefaultValue=" " />
+    <Property Name="AddrLine4" Type="varchar" MaxLength="40" devart:DefaultValue="' '" DefaultValue=" " />
+    <Property Name="Backcolor" Type="int" />
+    <Property Name="City" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="CompanyName" Type="varchar" Nullable="false" MaxLength="40" devart:DefaultValue="' '" DefaultValue=" " />
+    <Property Name="Contact" Type="varchar" MaxLength="40" devart:DefaultValue="' '" DefaultValue=" " />
+    <Property Name="CountryCurrLocale" Type="int" Nullable="false" />
+    <Property Name="CountryID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="CurrID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="CurrLocale" Type="int" Nullable="false" />
+    <Property Name="DBServerName" Type="varchar" MaxLength="255" />
+    <Property Name="DemoData" Type="varchar" MaxLength="64" />
+    <Property Name="EMailAddr" Type="varchar" MaxLength="256" />
+    <Property Name="FAX" Type="varchar" MaxLength="17" devart:DefaultValue="' '" DefaultValue=" " />
+    <Property Name="FAXExt" Type="varchar" MaxLength="4" devart:DefaultValue="' '" DefaultValue=" " />
+    <Property Name="FedID" Type="varchar" MaxLength="20" />
+    <Property Name="FullGL" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="IncludeInOLAP" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="LastArchive" Type="datetime" />
+    <Property Name="LastRecover" Type="datetime" />
+    <Property Name="LogoBlobKey" Type="int" />
+    <Property Name="PathToArchive" Type="varchar" MaxLength="127" />
+    <Property Name="PathToDBase" Type="varchar" MaxLength="127" />
+    <Property Name="PathToLog" Type="varchar" MaxLength="127" />
+    <Property Name="Phone" Type="varchar" MaxLength="17" devart:DefaultValue="' '" DefaultValue=" " />
+    <Property Name="PhoneExt" Type="varchar" MaxLength="4" devart:DefaultValue="' '" DefaultValue=" " />
+    <Property Name="PostalCode" Type="varchar" MaxLength="9" devart:DefaultValue="' '" DefaultValue=" " />
+    <Property Name="StateID" Type="varchar" Nullable="false" MaxLength="3" devart:DefaultValue="' '" DefaultValue=" " />
+    <Property Name="StateTaxID" Type="varchar" MaxLength="30" />
+    <Property Name="UseMultLang" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="V1099CombStateFed" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="V1099PayerNameCtrl" Type="varchar" MaxLength="4" />
+    <Property Name="V1099XmitCtrlCode" Type="varchar" MaxLength="5" />
+  </EntityType>
+  <EntityType Name="tarCustClass">
+    <Key>
+      <PropertyRef Name="CustClassKey" />
+    </Key>
+    <Property Name="CustClassKey" Type="int" Nullable="false" />
+    <Property Name="AcctsRecAcctKey" Type="int" Nullable="false" />
+    <Property Name="AllowCustRefund" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="AllowInvtSubst" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="AllowWriteOff" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="BadDebtAcctKey" Type="int" Nullable="false" />
+    <Property Name="BillingType" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="ClassOvrdSegValue" Type="varchar" MaxLength="15" />
+    <Property Name="CommExpAcctKey" Type="int" />
+    <Property Name="CommPayableAcctKey" Type="int" />
+    <Property Name="CompanyID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateType" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CreateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="CreditLimit" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="CreditLimitAgeCat" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CurrID" Type="varchar" MaxLength="3" />
+    <Property Name="CustClassID" Type="varchar" Nullable="false" MaxLength="12" />
+    <Property Name="CustClassName" Type="varchar" MaxLength="40" />
+    <Property Name="DfltSalesAcctKey" Type="int" />
+    <Property Name="DiscTakenAcctKey" Type="int" Nullable="false" />
+    <Property Name="FinChgAcctKey" Type="int" />
+    <Property Name="FinChgFlatAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="FinChgPct" Type="decimal" Precision="5" Scale="4" DefaultValue="0" />
+    <Property Name="FOBKey" Type="int" />
+    <Property Name="InvcFormKey" Type="int" />
+    <Property Name="InvcMsg" Type="varchar" MaxLength="100" />
+    <Property Name="LanguageID" Type="int" Nullable="false" />
+    <Property Name="PmtTermsKey" Type="int" />
+    <Property Name="PrintDunnMsg" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="RefundAcctKey" Type="int" />
+    <Property Name="ReqPO" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="RequireSOAck" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="RetntPct" Type="decimal" Precision="5" Scale="4" DefaultValue="0" />
+    <Property Name="RetntRecAcctKey" Type="int" />
+    <Property Name="SalesReturnAcctKey" Type="int" />
+    <Property Name="ShipComplete" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="ShipLabelFormKey" Type="int" />
+    <Property Name="ShipMethKey" Type="int" />
+    <Property Name="SOAckFormKey" Type="int" />
+    <Property Name="SperKey" Type="int" />
+    <Property Name="STaxAcctKey" Type="int" />
+    <Property Name="STaxSchdKey" Type="int" />
+    <Property Name="StmtCycleKey" Type="int" />
+    <Property Name="StmtFormKey" Type="int" />
+    <Property Name="TradeDiscAcctKey" Type="int" />
+    <Property Name="TradeDiscPct" Type="decimal" Precision="5" Scale="4" DefaultValue="0" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="UpdateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="UserFld1" Type="varchar" MaxLength="15" />
+    <Property Name="UserFld2" Type="varchar" MaxLength="15" />
+    <Property Name="UserFld3" Type="varchar" MaxLength="15" />
+    <Property Name="UserFld4" Type="varchar" MaxLength="15" />
+    <Property Name="WriteOffAcctKey" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tarCustomer">
+    <Key>
+      <PropertyRef Name="CustKey" />
+    </Key>
+    <Property Name="CustKey" Type="int" Nullable="false" />
+    <Property Name="ABANo" Type="varchar" MaxLength="10" />
+    <Property Name="AllowCustRefund" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="AllowWriteOff" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="BillingType" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="BillToNationalAcctParent" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CompanyID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="ConsolidatedStatement" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateType" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CreateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="CreditLimit" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="CreditLimitAgeCat" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CreditLimitUsed" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CRMCustID" Type="varchar" MaxLength="32" />
+    <Property Name="CurrExchSchdKey" Type="int" />
+    <Property Name="CustClassKey" Type="int" Nullable="false" />
+    <Property Name="CustID" Type="varchar" Nullable="false" MaxLength="12" />
+    <Property Name="CustName" Type="varchar" Nullable="false" MaxLength="40" />
+    <Property Name="CustRefNo" Type="varchar" MaxLength="15" />
+    <Property Name="DateEstab" Type="datetime" />
+    <Property Name="DfltBillToAddrKey" Type="int" Nullable="false" />
+    <Property Name="DfltItemKey" Type="int" />
+    <Property Name="DfltMaxUpCharge" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="DfltMaxUpChargeType" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="DfltSalesAcctKey" Type="int" />
+    <Property Name="DfltSalesReturnAcctKey" Type="int" />
+    <Property Name="DfltShipToAddrKey" Type="int" Nullable="false" />
+    <Property Name="FinChgFlatAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="FinChgPct" Type="decimal" Precision="5" Scale="4" DefaultValue="0" />
+    <Property Name="Hold" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="ImportLogKey" Type="int" />
+    <Property Name="NationalAcctLevelKey" Type="int" />
+    <Property Name="PmtByNationalAcctParent" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="PrimaryAddrKey" Type="int" Nullable="false" />
+    <Property Name="PrimaryCntctKey" Type="int" />
+    <Property Name="PrintDunnMsg" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="ReqCreditLimit" Type="decimal" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="ReqPO" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="RetntPct" Type="decimal" Precision="5" Scale="4" DefaultValue="0" />
+    <Property Name="SalesSourceKey" Type="int" />
+    <Property Name="ShipPriority" Type="smallint" Nullable="false" DefaultValue="3" />
+    <Property Name="Status" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="StdIndusCodeID" Type="varchar" MaxLength="7" />
+    <Property Name="StmtCycleKey" Type="int" />
+    <Property Name="StmtFormKey" Type="int" />
+    <Property Name="TradeDiscPct" Type="decimal" Precision="5" Scale="4" DefaultValue="0" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="UpdateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="UserFld1" Type="varchar" MaxLength="15" />
+    <Property Name="UserFld2" Type="varchar" MaxLength="15" />
+    <Property Name="UserFld3" Type="varchar" MaxLength="15" />
+    <Property Name="UserFld4" Type="varchar" MaxLength="15" />
+    <Property Name="VendKey" Type="int" />
+  </EntityType>
+  <EntityType Name="tarNationalAcct">
+    <Key>
+      <PropertyRef Name="NationalAcctKey" />
+    </Key>
+    <Property Name="NationalAcctKey" Type="int" Nullable="false" />
+    <Property Name="CompanyID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="CreditLimit" Type="decimal" Nullable="false" Precision="12" Scale="0" DefaultValue="0" />
+    <Property Name="CreditLimitUsed" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="Description" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Hold" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="NationalAcctID" Type="varchar" Nullable="false" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="tarNationalAcctLevel">
+    <Key>
+      <PropertyRef Name="NationalAcctLevelKey" />
+    </Key>
+    <Property Name="NationalAcctLevelKey" Type="int" Nullable="false" />
+    <Property Name="Description" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="NationalAcctKey" Type="int" Nullable="false" />
+    <Property Name="NationalAcctLevel" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tarSalesTerritory">
+    <Key>
+      <PropertyRef Name="SalesTerritoryKey" />
+    </Key>
+    <Property Name="SalesTerritoryKey" Type="int" Nullable="false" />
+    <Property Name="CompanyID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="SalesTerritoryID" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+  </EntityType>
+  <EntityType Name="tarCustAddr">
+    <Key>
+      <PropertyRef Name="AddrKey" />
+    </Key>
+    <Property Name="AddrKey" Type="int" Nullable="false" />
+    <Property Name="AllowInvtSubst" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="BackOrdPrice" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="BOLReqd" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CarrierAcctNo" Type="varchar" MaxLength="20" />
+    <Property Name="CarrierBillMeth" Type="smallint" Nullable="false" DefaultValue="6" />
+    <Property Name="CloseSOLineOnFirstShip" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CloseSOOnFirstShip" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CommPlanKey" Type="int" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateType" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CreateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="CreditCardKey" Type="int" />
+    <Property Name="CurrExchSchdKey" Type="int" />
+    <Property Name="CurrID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="CustAddrID" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="CustKey" Type="int" Nullable="false" />
+    <Property Name="CustPriceGroupKey" Type="int" />
+    <Property Name="DfltCntctKey" Type="int" />
+    <Property Name="FOBKey" Type="int" />
+    <Property Name="FreightMethod" Type="smallint" Nullable="false" DefaultValue="2" />
+    <Property Name="ImportLogKey" Type="int" />
+    <Property Name="InvcFormKey" Type="int" />
+    <Property Name="InvcMsg" Type="varchar" MaxLength="100" />
+    <Property Name="InvoiceReqd" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="LanguageID" Type="int" Nullable="false" />
+    <Property Name="PackListContentsReqd" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="PackListFormKey" Type="int" />
+    <Property Name="PackListReqd" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="PmtTermsKey" Type="int" />
+    <Property Name="PriceAdj" Type="decimal" Nullable="false" Precision="5" Scale="4" DefaultValue="0" />
+    <Property Name="PriceBase" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="PrintOrderAck" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="RequireSOAck" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="SalesTerritoryKey" Type="int" />
+    <Property Name="ShipComplete" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="ShipDays" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="ShipLabelFormKey" Type="int" />
+    <Property Name="ShipLabelsReqd" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="ShipMethKey" Type="int" />
+    <Property Name="ShipZoneKey" Type="int" />
+    <Property Name="SOAckFormKey" Type="int" />
+    <Property Name="SOAckMeth" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="SperKey" Type="int" />
+    <Property Name="STaxSchdKey" Type="int" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="UpdateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="WhseKey" Type="int" />
+    <Property Name="UsePromoPrice" Type="smallint" Nullable="false" DefaultValue="0" />
+  </EntityType>
+  <EntityType Name="tciUnitMeasure">
+    <Key>
+      <PropertyRef Name="UnitMeasKey" />
+    </Key>
+    <Property Name="UnitMeasKey" Type="int" Nullable="false" />
+    <Property Name="Base" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CompanyID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="MeasType" Type="smallint" Nullable="false" DefaultValue="3" />
+    <Property Name="UnitMeasID" Type="varchar" Nullable="false" MaxLength="6" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+  </EntityType>
+  <EntityType Name="timItemUnitOfMeas">
+    <Key>
+      <PropertyRef Name="ItemKey" />
+      <PropertyRef Name="TargetUnitMeasKey" />
+    </Key>
+    <Property Name="ItemKey" Type="int" Nullable="false" />
+    <Property Name="TargetUnitMeasKey" Type="int" Nullable="false" />
+    <Property Name="ConversionFactor" Type="decimal" Nullable="false" Precision="25" Scale="13" DefaultValue="1" />
+    <Property Name="ConversionType" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="IsSmallestUOM" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="UnitVolume" Type="float" Nullable="false" DefaultValue="0" />
+    <Property Name="UnitWeight" Type="float" Nullable="false" DefaultValue="0" />
+    <Property Name="UPC" Type="varchar" MaxLength="15" />
+    <Property Name="UseForPurchases" Type="smallint" DefaultValue="1" />
+    <Property Name="UseForSales" Type="smallint" DefaultValue="1" />
+    <Property Name="UseStdConv" Type="smallint" Nullable="false" DefaultValue="0" />
+  </EntityType>
+  <EntityType Name="tciReasonCode">
+    <Key>
+      <PropertyRef Name="ReasonCodeKey" />
+    </Key>
+    <Property Name="ReasonCodeKey" Type="int" Nullable="false" />
+    <Property Name="CompanyID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="Description" Type="varchar" MaxLength="30" />
+    <Property Name="ReasonCodeID" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="ModuleNo" Type="int" />
+  </EntityType>
+  <EntityType Name="tglFiscalPeriod">
+    <Key>
+      <PropertyRef Name="CompanyID" />
+      <PropertyRef Name="FiscYear" />
+      <PropertyRef Name="FiscPer" />
+    </Key>
+    <Property Name="CompanyID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="FiscYear" Type="varchar" Nullable="false" MaxLength="5" />
+    <Property Name="FiscPer" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="EndDate" Type="datetime" />
+    <Property Name="FiscYearPer" Type="varchar" Nullable="false" MaxLength="9" />
+    <Property Name="LockAP" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="LockAR" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="LockCM" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="LockIM" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="LockMF" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="StartDate" Type="datetime" />
+    <Property Name="Status" Type="smallint" Nullable="false" DefaultValue="1" />
+  </EntityType>
+  <EntityType Name="tglFiscalYear">
+    <Key>
+      <PropertyRef Name="CompanyID" />
+      <PropertyRef Name="FiscYear" />
+    </Key>
+    <Property Name="CompanyID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="FiscYear" Type="varchar" Nullable="false" MaxLength="5" />
+    <Property Name="NoOfPeriods" Type="smallint" DefaultValue="0" />
+    <Property Name="Purged" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="Status" Type="smallint" Nullable="false" DefaultValue="1" />
+  </EntityType>
+  <EntityType Name="timSalesProdLine">
+    <Key>
+      <PropertyRef Name="SalesProdLineKey" />
+    </Key>
+    <Property Name="SalesProdLineKey" Type="int" Nullable="false" />
+    <Property Name="AllowPriceOvrd" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CommClassKey" Type="int" />
+    <Property Name="CompanyID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="Description" Type="varchar" MaxLength="30" />
+    <Property Name="MinGrossProfitPct" Type="decimal" Nullable="false" Precision="5" Scale="4" DefaultValue="0" />
+    <Property Name="SalesProdLineID" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="SPLineOvrdSegValue" Type="varchar" MaxLength="15" />
+    <Property Name="SubjToTradeDisc" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="TargetMargin" Type="decimal" Nullable="false" Precision="5" Scale="4" DefaultValue="0" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+  </EntityType>
+  <EntityType Name="timProdCategory">
+    <Key>
+      <PropertyRef Name="ProdCategoryKey" />
+    </Key>
+    <Property Name="ProdCategoryKey" Type="int" Nullable="false" />
+    <Property Name="CompanyID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="ParentProdCatKey" Type="int" />
+    <Property Name="ProdCategoryID" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="SeqNo" Type="int" Nullable="false" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+  </EntityType>
+  <EntityType Name="timProdCatItem">
+    <Key>
+      <PropertyRef Name="ProdCategoryKey" />
+      <PropertyRef Name="ItemKey" />
+    </Key>
+    <Property Name="ProdCategoryKey" Type="int" Nullable="false" />
+    <Property Name="ItemKey" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tarSalesperson">
+    <Key>
+      <PropertyRef Name="SperKey" />
+    </Key>
+    <Property Name="SperKey" Type="int" Nullable="false" />
+    <Property Name="AddrKey" Type="int" Nullable="false" />
+    <Property Name="CommPlanKey" Type="int" />
+    <Property Name="CommPmtMeth" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="CompanyID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="CRMUserID" Type="varchar" MaxLength="32" />
+    <Property Name="EMailAddr" Type="varchar" MaxLength="256" />
+    <Property Name="SalesMgrSperKey" Type="int" />
+    <Property Name="SperID" Type="varchar" Nullable="false" MaxLength="12" />
+    <Property Name="SperName" Type="varchar" Nullable="false" MaxLength="40" />
+    <Property Name="Status" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="UserFld1" Type="varchar" MaxLength="15" />
+    <Property Name="UserFld2" Type="varchar" MaxLength="15" />
+    <Property Name="UserID" Type="varchar" MaxLength="30" />
+    <Property Name="VendKey" Type="int" />
+  </EntityType>
+  <EntityType Name="tarSalesTeam">
+    <Key>
+      <PropertyRef Name="SalesTeamKey" />
+    </Key>
+    <Property Name="SalesTeamKey" Type="int" Nullable="false" />
+    <Property Name="CompanyID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="SalesTeamID" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="Description" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+  </EntityType>
+  <EntityType Name="tsoSalesOrder">
+    <Key>
+      <PropertyRef Name="SOKey" />
+    </Key>
+    <Property Name="SOKey" Type="int" Nullable="false" />
+    <Property Name="AckDate" Type="datetime" />
+    <Property Name="BillToAddrKey" Type="int" />
+    <Property Name="BillToCustAddrKey" Type="int" Nullable="false" />
+    <Property Name="BlnktRelNo" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="BlnktSOKey" Type="int" />
+    <Property Name="CCCustCode" Type="varchar" MaxLength="17" />
+    <Property Name="ChngOrdDate" Type="datetime" />
+    <Property Name="ChngOrdNo" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="ChngReason" Type="varchar" MaxLength="40" />
+    <Property Name="ChngUserID" Type="varchar" MaxLength="30" />
+    <Property Name="CloseDate" Type="datetime" />
+    <Property Name="CntctKey" Type="int" />
+    <Property Name="CompanyID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="ConfirmNo" Type="varchar" MaxLength="10" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateType" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CreateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="CreditApprovedAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="CreditAuthUserID" Type="varchar" MaxLength="30" />
+    <Property Name="CrHold" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CRMOpportunityID" Type="varchar" MaxLength="32" />
+    <Property Name="CurrExchRate" Type="float" Nullable="false" DefaultValue="1" />
+    <Property Name="CurrExchSchdKey" Type="int" />
+    <Property Name="CurrID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="CustClassKey" Type="int" Nullable="false" />
+    <Property Name="CustKey" Type="int" Nullable="false" />
+    <Property Name="CustPONo" Type="varchar" MaxLength="15" />
+    <Property Name="CustQuoteKey" Type="int" />
+    <Property Name="DfltAcctRefKey" Type="int" />
+    <Property Name="DfltCommPlanKey" Type="int" />
+    <Property Name="DfltCreatePO" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="DfltDeliveryMeth" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="DfltFOBKey" Type="int" />
+    <Property Name="DfltPromDate" Type="datetime" />
+    <Property Name="DfltPurchVAddrKey" Type="int" />
+    <Property Name="DfltRequestDate" Type="datetime" />
+    <Property Name="DfltShipDate" Type="datetime" />
+    <Property Name="DfltShipMethKey" Type="int" />
+    <Property Name="DfltShipPriority" Type="smallint" DefaultValue="3" />
+    <Property Name="DfltShipToAddrKey" Type="int" />
+    <Property Name="DfltShipToCAddrKey" Type="int" />
+    <Property Name="DfltShipZoneKey" Type="int" />
+    <Property Name="DfltVendKey" Type="int" />
+    <Property Name="DfltWhseKey" Type="int" />
+    <Property Name="DutyAmount" Type="decimal" Precision="15" Scale="3" />
+    <Property Name="Expiration" Type="datetime" />
+    <Property Name="FixedCurrExchRate" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="FreightAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="FreightMethod" Type="smallint" Nullable="false" DefaultValue="2" />
+    <Property Name="Hold" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="HoldReason" Type="varchar" MaxLength="20" />
+    <Property Name="ImportLogKey" Type="int" />
+    <Property Name="NationalTaxAmount" Type="decimal" Precision="15" Scale="3" />
+    <Property Name="NextLineNo" Type="int" Nullable="false" DefaultValue="1" />
+    <Property Name="OpenAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="OpenAmtHC" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="PmtTermsKey" Type="int" />
+    <Property Name="PrimarySperKey" Type="int" />
+    <Property Name="QuoteFormKey" Type="int" />
+    <Property Name="RecurSOKey" Type="int" />
+    <Property Name="RequireSOAck" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="SalesAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="SalesAmtHC" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="SalesSourceKey" Type="int" />
+    <Property Name="SOAckFormKey" Type="int" />
+    <Property Name="Status" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="STaxAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="STaxCalc" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="STaxTranKey" Type="int" />
+    <Property Name="TradeDiscAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="TranAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="TranAmtHC" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="TranCmnt" Type="varchar" MaxLength="50" />
+    <Property Name="TranDate" Type="datetime" Nullable="false" />
+    <Property Name="TranID" Type="varchar" Nullable="false" MaxLength="13" />
+    <Property Name="TranNo" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="TranNoChngOrd" Type="varchar" Nullable="false" MaxLength="14" />
+    <Property Name="TranNoRel" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="TranNoRelChngOrd" Type="varchar" Nullable="false" MaxLength="19" />
+    <Property Name="TranType" Type="int" Nullable="false" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="UpdateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="UserFld1" Type="varchar" MaxLength="15" />
+    <Property Name="UserFld2" Type="varchar" MaxLength="15" />
+    <Property Name="UserFld3" Type="varchar" MaxLength="15" />
+    <Property Name="UserFld4" Type="varchar" MaxLength="15" />
+    <Property Name="VATInvoiceNumber" Type="varchar" MaxLength="15" />
+    <Property Name="VATNumber" Type="varchar" MaxLength="13" />
+    <Property Name="VATTaxAmount" Type="decimal" Precision="15" Scale="3" />
+    <Property Name="VATTaxRate" Type="decimal" Precision="12" Scale="6" />
+  </EntityType>
+  <EntityType Name="tsoSOLine">
+    <Key>
+      <PropertyRef Name="SOLineKey" />
+    </Key>
+    <Property Name="SOLineKey" Type="int" Nullable="false" />
+    <Property Name="AlternateTaxID" Type="varchar" MaxLength="15" />
+    <Property Name="CloseDate" Type="datetime" />
+    <Property Name="CmntOnly" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CommClassKey" Type="int" />
+    <Property Name="CommPlanKey" Type="int" />
+    <Property Name="CustomBTOKit" Type="smallint" DefaultValue="0" />
+    <Property Name="CustQuoteLineKey" Type="int" />
+    <Property Name="Description" Type="varchar" MaxLength="40" />
+    <Property Name="EstimateKey" Type="int" />
+    <Property Name="ExtCmnt" Type="varchar" MaxLength="255" />
+    <Property Name="InclOnPackList" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="InclOnPickList" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="ItemAliasKey" Type="int" />
+    <Property Name="ItemKey" Type="int" />
+    <Property Name="OrigItemKey" Type="int" />
+    <Property Name="POLineKey" Type="int" />
+    <Property Name="ReqCert" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="SalesPromotionID" Type="varchar" MaxLength="15" />
+    <Property Name="SalesPromotionKey" Type="int" />
+    <Property Name="SOKey" Type="int" Nullable="false" />
+    <Property Name="SOLineNo" Type="int" Nullable="false" />
+    <Property Name="Status" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="STaxClassKey" Type="int" />
+    <Property Name="SystemPriceDetermination" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="TaxTypeApplied" Type="varchar" MaxLength="4" />
+    <Property Name="UnitMeasKey" Type="int" />
+    <Property Name="UnitPrice" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="UnitPriceFromSalesPromo" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="UnitPriceFromSchedule" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="UnitPriceOvrd" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="UserFld1" Type="varchar" MaxLength="15" />
+    <Property Name="UserFld2" Type="varchar" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="tsoSOLineDist">
+    <Key>
+      <PropertyRef Name="SOLineDistKey" />
+    </Key>
+    <Property Name="SOLineDistKey" Type="int" Nullable="false" />
+    <Property Name="AcctRefKey" Type="int" />
+    <Property Name="AmtInvcd" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="BlnktSOLineDistKey" Type="int" />
+    <Property Name="CreatePO" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="DeliveryMeth" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="ExtAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="FOBKey" Type="int" />
+    <Property Name="FreightAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="GLAcctKey" Type="int" Nullable="false" />
+    <Property Name="Hold" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="HoldReason" Type="varchar" MaxLength="20" />
+    <Property Name="OrigOrdered" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="OrigPromiseDate" Type="datetime" />
+    <Property Name="OrigWhseKey" Type="int" />
+    <Property Name="PromiseDate" Type="datetime" Nullable="false" />
+    <Property Name="PurchVendAddrKey" Type="int" />
+    <Property Name="QtyInvcd" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="QtyOnBO" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="QtyOpenToShip" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="QtyOrd" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="QtyRtrnCredit" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="QtyRtrnReplacement" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="QtyShip" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="RequestDate" Type="datetime" Nullable="false" />
+    <Property Name="ShipDate" Type="datetime" Nullable="false" />
+    <Property Name="ShipMethKey" Type="int" />
+    <Property Name="ShipPriority" Type="smallint" Nullable="false" DefaultValue="3" />
+    <Property Name="ShipToAddrKey" Type="int" />
+    <Property Name="ShipToCustAddrKey" Type="int" Nullable="false" />
+    <Property Name="ShipToCustAddrUpdateCntr" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="ShipZoneKey" Type="int" />
+    <Property Name="SOLineKey" Type="int" Nullable="false" />
+    <Property Name="Status" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="STaxTranKey" Type="int" />
+    <Property Name="TradeDiscAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="TradeDiscPct" Type="decimal" Precision="5" Scale="4" DefaultValue="0" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="VendKey" Type="int" />
+    <Property Name="WhseKey" Type="int" />
+  </EntityType>
+  <EntityType Name="tciAddress">
+    <Key>
+      <PropertyRef Name="AddrKey" />
+    </Key>
+    <Property Name="AddrKey" Type="int" Nullable="false" />
+    <Property Name="AddrLine1" Type="varchar" MaxLength="40" />
+    <Property Name="AddrLine2" Type="varchar" MaxLength="40" />
+    <Property Name="AddrLine3" Type="varchar" MaxLength="40" />
+    <Property Name="AddrLine4" Type="varchar" MaxLength="40" />
+    <Property Name="AddrLine5" Type="varchar" MaxLength="40" />
+    <Property Name="AddrName" Type="varchar" MaxLength="40" />
+    <Property Name="City" Type="varchar" MaxLength="20" />
+    <Property Name="CountryID" Type="varchar" MaxLength="3" />
+    <Property Name="CRMAddrID" Type="varchar" MaxLength="32" />
+    <Property Name="Fax" Type="varchar" MaxLength="17" />
+    <Property Name="FaxExt" Type="varchar" MaxLength="4" />
+    <Property Name="Latitude" Type="decimal" Precision="9" Scale="6" />
+    <Property Name="Longitude" Type="decimal" Precision="9" Scale="6" />
+    <Property Name="MobilePhone" Type="varchar" MaxLength="17" />
+    <Property Name="Phone" Type="varchar" MaxLength="17" />
+    <Property Name="PhoneExt" Type="varchar" MaxLength="4" />
+    <Property Name="PostalCode" Type="varchar" MaxLength="9" />
+    <Property Name="Residential" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="StateID" Type="varchar" MaxLength="3" />
+    <Property Name="TransactionOverride" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+  </EntityType>
+  <EntityType Name="tglAcctSegment">
+    <Key>
+      <PropertyRef Name="GLAcctKey" />
+      <PropertyRef Name="SegmentKey" />
+    </Key>
+    <Property Name="GLAcctKey" Type="int" Nullable="false" />
+    <Property Name="SegmentKey" Type="int" Nullable="false" />
+    <Property Name="AcctSegValue" Type="varchar" Nullable="false" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="tglSegment">
+    <Key>
+      <PropertyRef Name="SegmentKey" />
+    </Key>
+    <Property Name="SegmentKey" Type="int" Nullable="false" />
+    <Property Name="AcctSegID" Type="smallint" Nullable="false" />
+    <Property Name="CompanyID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="Description" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Mask" Type="varchar" MaxLength="15" />
+    <Property Name="Number" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="SegmentType" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="Size" Type="smallint" DefaultValue="0" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+  </EntityType>
+  <EntityType Name="tglSegmentCode">
+    <Key>
+      <PropertyRef Name="SegmentKey" />
+      <PropertyRef Name="AcctSegValue" />
+    </Key>
+    <Property Name="SegmentKey" Type="int" Nullable="false" />
+    <Property Name="AcctSegValue" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="ConsolAcctSegValue" Type="varchar" MaxLength="15" />
+    <Property Name="ConsolSegKey" Type="int" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateType" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CreateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="Description" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="EffEndDate" Type="datetime" />
+    <Property Name="EffStartDate" Type="datetime" />
+    <Property Name="ImportLogKey" Type="int" />
+    <Property Name="ShortDesc" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="SubsidCurrID" Type="varchar" MaxLength="3" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="UpdateUserID" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="tglAcctHist">
+    <Key>
+      <PropertyRef Name="FiscYear" />
+      <PropertyRef Name="FiscPer" />
+      <PropertyRef Name="GLAcctKey" />
+    </Key>
+    <Property Name="FiscYear" Type="varchar" Nullable="false" MaxLength="5" />
+    <Property Name="FiscPer" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="GLAcctKey" Type="int" Nullable="false" />
+    <Property Name="BegBal" Type="decimal" Nullable="false" Precision="18" Scale="3" DefaultValue="0" />
+    <Property Name="CreditAmt" Type="decimal" Nullable="false" Precision="18" Scale="3" DefaultValue="0" />
+    <Property Name="DebitAmt" Type="decimal" Nullable="false" Precision="18" Scale="3" DefaultValue="0" />
+    <Property Name="StatBegBal" Type="decimal" Nullable="false" Precision="16" Scale="4" DefaultValue="0" />
+    <Property Name="StatQty" Type="decimal" Nullable="false" Precision="16" Scale="4" DefaultValue="0" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+  </EntityType>
+  <EntityType Name="tglBudget">
+    <Key>
+      <PropertyRef Name="FiscYear" />
+      <PropertyRef Name="FiscPer" />
+      <PropertyRef Name="BudgetTypeKey" />
+      <PropertyRef Name="GLAcctKey" />
+    </Key>
+    <Property Name="FiscYear" Type="varchar" Nullable="false" MaxLength="5" />
+    <Property Name="FiscPer" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="BudgetTypeKey" Type="int" Nullable="false" />
+    <Property Name="GLAcctKey" Type="int" Nullable="false" />
+    <Property Name="BudgetAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+  </EntityType>
+  <EntityType Name="timCommodityCode">
+    <Key>
+      <PropertyRef Name="CommodityCodeKey" />
+    </Key>
+    <Property Name="CommodityCodeKey" Type="int" Nullable="false" />
+    <Property Name="CommodityCodeID" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="Description" Type="varchar" MaxLength="30" />
+    <Property Name="STaxClassKey" Type="int" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+  </EntityType>
+  <EntityType Name="tpoRcvrLine">
+    <Key>
+      <PropertyRef Name="RcvrLineKey" />
+    </Key>
+    <Property Name="RcvrLineKey" Type="int" Nullable="false" />
+    <Property Name="CloseSrcLine" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="DiscAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="InvtTranKey" Type="int" />
+    <Property Name="ItemRcvdKey" Type="int" />
+    <Property Name="ItemVol" Type="float" DefaultValue="0" />
+    <Property Name="ItemWght" Type="float" DefaultValue="0" />
+    <Property Name="MatchStatus" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="OtherAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="POLineKey" Type="int" />
+    <Property Name="RcvrKey" Type="int" Nullable="false" />
+    <Property Name="RtrnRcvrLineKey" Type="int" />
+    <Property Name="RtrnReasonCodeKey" Type="int" />
+    <Property Name="RtrnType" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="SeqNo" Type="int" Nullable="false" />
+    <Property Name="TaxAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="TranCmnt" Type="varchar" MaxLength="50" />
+    <Property Name="TransitInvtTranKey" Type="int" />
+    <Property Name="TrnsfrOrderLineKey" Type="int" />
+    <Property Name="UnitCost" Type="decimal" Nullable="false" Precision="15" Scale="5" DefaultValue="0" />
+    <Property Name="UnitCostExact" Type="decimal" Nullable="false" Precision="25" Scale="13" DefaultValue="0" />
+    <Property Name="UnitMeasKey" Type="int" Nullable="false" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="VendPerfCarrierDamage" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="VendPerfComment" Type="varchar" MaxLength="255" />
+    <Property Name="VendPerfDamagedGoods" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="VendPerfDefectiveGoods" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="VendPerfImproperLabeling" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="VendPerfImproperPackaging" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="VendPerfMissingDoc" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="VendPerfNotToSpec" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="VendPerfOtherProblem" Type="smallint" Nullable="false" DefaultValue="0" />
+  </EntityType>
+  <EntityType Name="tpoRcvrLineDist">
+    <Key>
+      <PropertyRef Name="RcvrLineDistKey" />
+    </Key>
+    <Property Name="RcvrLineDistKey" Type="int" Nullable="false" />
+    <Property Name="AcctRefKey" Type="int" />
+    <Property Name="FreightAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="GLAcctKey" Type="int" />
+    <Property Name="POLineDistKey" Type="int" />
+    <Property Name="QtyRcvd" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="QtyRcvdInSrcUOM" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="RcvrLineKey" Type="int" Nullable="false" />
+    <Property Name="RtrnRcvrLineDstKey" Type="int" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+  </EntityType>
+  <EntityType Name="tpoReceiver">
+    <Key>
+      <PropertyRef Name="RcvrKey" />
+    </Key>
+    <Property Name="RcvrKey" Type="int" Nullable="false" />
+    <Property Name="BatchKey" Type="int" Nullable="false" />
+    <Property Name="BillOfLadingNo" Type="varchar" MaxLength="15" />
+    <Property Name="CompanyID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateType" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CreateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="CurrExchRate" Type="float" Nullable="false" DefaultValue="1" />
+    <Property Name="CurrID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="LTExcptReasCodeKey" Type="int" />
+    <Property Name="POKey" Type="int" />
+    <Property Name="PostDate" Type="datetime" Nullable="false" />
+    <Property Name="PurchCompanyID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="RMA" Type="varchar" MaxLength="20" />
+    <Property Name="RtrnRcvrKey" Type="int" />
+    <Property Name="TranCmnt" Type="varchar" MaxLength="50" />
+    <Property Name="TranDate" Type="datetime" Nullable="false" />
+    <Property Name="TranID" Type="varchar" Nullable="false" MaxLength="13" />
+    <Property Name="TranNo" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="TranType" Type="int" Nullable="false" />
+    <Property Name="TrnsfrOrderKey" Type="int" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="UpdateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="VendKey" Type="int" />
+    <Property Name="VendPerfComment" Type="varchar" MaxLength="255" />
+    <Property Name="VendPerfDeliveryWrongDate" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="VendPerfDeliveryWrongDest" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="VendPerfDeliveryWrongTime" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="VendPerfExceptional" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="VendPerfOtherProblem" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="VendPerfPoorCustService" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="VendPerfUpgradeSubstItem" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="VendPerfUnauthSubstItem" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="WhseKey" Type="int" />
+  </EntityType>
+  <EntityType Name="tapVendPmt">
+    <Key>
+      <PropertyRef Name="VendPmtKey" />
+    </Key>
+    <Property Name="VendPmtKey" Type="int" Nullable="false" />
+    <Property Name="AddrKey" Type="int" />
+    <Property Name="BatchKey" Type="int" Nullable="false" />
+    <Property Name="CashAcctKey" Type="int" />
+    <Property Name="CashTranKey" Type="int" />
+    <Property Name="CompanyID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateType" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CreateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="CurrExchRate" Type="float" Nullable="false" DefaultValue="1" />
+    <Property Name="CurrExchSchdKey" Type="int" />
+    <Property Name="CurrID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="DiscTakenAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="GuarntdExchRate" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="ImportLogKey" Type="int" />
+    <Property Name="NextApplEntryNo" Type="int" DefaultValue="1" />
+    <Property Name="POKey" Type="int" />
+    <Property Name="PostDate" Type="datetime" Nullable="false" />
+    <Property Name="PrepaidVendInvcNo" Type="varchar" MaxLength="15" />
+    <Property Name="RevrsStatus" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="RevVendPmtKey" Type="int" />
+    <Property Name="TranAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="TranAmtHC" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="TranCmnt" Type="varchar" MaxLength="50" />
+    <Property Name="TranDate" Type="datetime" Nullable="false" />
+    <Property Name="TranID" Type="varchar" Nullable="false" MaxLength="13" />
+    <Property Name="TranNo" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="TranType" Type="int" Nullable="false" />
+    <Property Name="UnappliedAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="UnappliedAmtHC" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="UpdateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="VendClassKey" Type="int" Nullable="false" />
+    <Property Name="VendKey" Type="int" Nullable="false" />
+    <Property Name="VendPmtMethKey" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tapVendPmtAppl">
+    <Key>
+      <PropertyRef Name="ApplyFromPmtKey" />
+      <PropertyRef Name="EntryNo" />
+    </Key>
+    <Property Name="ApplyFromPmtKey" Type="int" Nullable="false" />
+    <Property Name="EntryNo" Type="int" Nullable="false" />
+    <Property Name="ApplyToTranDate" Type="datetime" Nullable="false" />
+    <Property Name="ApplyToTranID" Type="varchar" Nullable="false" MaxLength="18" />
+    <Property Name="ApplyToVouchKey" Type="int" Nullable="false" />
+    <Property Name="BatchKey" Type="int" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="CurrExchRate" Type="float" Nullable="false" DefaultValue="1" />
+    <Property Name="DiscTakenAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="DiscTakenAmtHC" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="PmtAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="PmtAmtHC" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="UpdateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="V1099Amt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="V1099Box" Type="varchar" MaxLength="3" />
+    <Property Name="V1099Form" Type="smallint" />
+    <Property Name="Vend1099SubmitKey" Type="int" />
+  </EntityType>
+  <EntityType Name="tapVoucher">
+    <Key>
+      <PropertyRef Name="VoucherKey" />
+    </Key>
+    <Property Name="VoucherKey" Type="int" Nullable="false" />
+    <Property Name="ApplySeqNo" Type="int" Nullable="false" />
+    <Property Name="Balance" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="BalanceHC" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="BatchKey" Type="int" Nullable="false" />
+    <Property Name="CashAcctKey" Type="int" />
+    <Property Name="CCGLAcctKey" Type="int" />
+    <Property Name="CCVendorKey" Type="int" />
+    <Property Name="CCVoucherKey" Type="int" />
+    <Property Name="ClosingPostDate" Type="datetime" />
+    <Property Name="ClosingTranDate" Type="datetime" />
+    <Property Name="CntctKey" Type="int" />
+    <Property Name="CompanyID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateType" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CreateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="CurrExchRate" Type="float" Nullable="false" DefaultValue="1" />
+    <Property Name="CurrExchSchdKey" Type="int" />
+    <Property Name="CurrID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="DiscAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="DiscTakenAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="DiscDate" Type="datetime" />
+    <Property Name="DueDate" Type="datetime" Nullable="false" />
+    <Property Name="FOBKey" Type="int" />
+    <Property Name="FreightAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="HoldPmt" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="ImportLogKey" Type="int" />
+    <Property Name="InvcRcptDate" Type="datetime" />
+    <Property Name="IsCCVoucher" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="NextApplEntryNo" Type="int" DefaultValue="1" />
+    <Property Name="PmtTermsKey" Type="int" />
+    <Property Name="PostDate" Type="datetime" Nullable="false" />
+    <Property Name="PurchAddrKey" Type="int" Nullable="false" />
+    <Property Name="PurchAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="PurchVendAddrKey" Type="int" Nullable="false" />
+    <Property Name="ReasonCodeKey" Type="int" />
+    <Property Name="RecurVouchKey" Type="int" />
+    <Property Name="RemitToAddrKey" Type="int" Nullable="false" />
+    <Property Name="RemitToVendAddrKey" Type="int" Nullable="false" />
+    <Property Name="RetntAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="SeparateChk" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="ShipMethKey" Type="int" />
+    <Property Name="ShipZoneKey" Type="int" />
+    <Property Name="Status" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="STaxAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="STaxTranKey" Type="int" />
+    <Property Name="TranAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="TranAmtHC" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="TranCmnt" Type="varchar" MaxLength="50" />
+    <Property Name="TranDate" Type="datetime" Nullable="false" />
+    <Property Name="TranID" Type="varchar" MaxLength="18" />
+    <Property Name="TranNo" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="TranType" Type="int" Nullable="false" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="UpdateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="V1099Box" Type="varchar" MaxLength="3" />
+    <Property Name="V1099BoxText" Type="varchar" MaxLength="15" />
+    <Property Name="V1099Form" Type="smallint" />
+    <Property Name="VendClassKey" Type="int" Nullable="false" />
+    <Property Name="VendKey" Type="int" Nullable="false" />
+    <Property Name="VouchNo" Type="varchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="tapVoucherAppl">
+    <Key>
+      <PropertyRef Name="ApplyToVoucherKey" />
+      <PropertyRef Name="EntryNo" />
+    </Key>
+    <Property Name="ApplyToVoucherKey" Type="int" Nullable="false" />
+    <Property Name="EntryNo" Type="int" Nullable="false" />
+    <Property Name="ApplyFromPmtKey" Type="int" />
+    <Property Name="ApplyFromTranDate" Type="datetime" Nullable="false" />
+    <Property Name="ApplyFromTranID" Type="varchar" Nullable="false" MaxLength="18" />
+    <Property Name="ApplyFromTranType" Type="int" />
+    <Property Name="ApplyFromVouchKey" Type="int" />
+    <Property Name="BatchKey" Type="int" Nullable="false" />
+    <Property Name="DiscTakenAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="DiscTakenAmtHC" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="PmtAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="PmtAmtHC" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="PostDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tapVendClass">
+    <Key>
+      <PropertyRef Name="VendClassKey" />
+    </Key>
+    <Property Name="VendClassKey" Type="int" Nullable="false" />
+    <Property Name="AcctsPaybleAcctKey" Type="int" Nullable="false" />
+    <Property Name="BuyerKey" Type="int" />
+    <Property Name="CashAcctKey" Type="int" />
+    <Property Name="ClassOvrdSegValue" Type="varchar" MaxLength="15" />
+    <Property Name="CompanyID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateType" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CreateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="CurrID" Type="varchar" MaxLength="3" />
+    <Property Name="DfltPurchAcctKey" Type="int" />
+    <Property Name="DiscEarnAcctKey" Type="int" />
+    <Property Name="DiscLostAcctKey" Type="int" />
+    <Property Name="LanguageID" Type="int" Nullable="false" />
+    <Property Name="MatchToleranceKey" Type="int" />
+    <Property Name="PmtTermsKey" Type="int" />
+    <Property Name="POFormKey" Type="int" />
+    <Property Name="RequirePOIssue" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="RetntPaybleAcctKey" Type="int" />
+    <Property Name="STaxAcctKey" Type="int" />
+    <Property Name="STaxSchdKey" Type="int" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="UpdateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="UserFld1" Type="varchar" MaxLength="15" />
+    <Property Name="UserFld2" Type="varchar" MaxLength="15" />
+    <Property Name="UserFld3" Type="varchar" MaxLength="15" />
+    <Property Name="UserFld4" Type="varchar" MaxLength="15" />
+    <Property Name="V1099FATCA" Type="smallint" DefaultValue="0" />
+    <Property Name="V1099Box" Type="varchar" MaxLength="3" />
+    <Property Name="V1099Form" Type="smallint" />
+    <Property Name="V1099Type" Type="smallint" Nullable="false" DefaultValue="3" />
+    <Property Name="VendClassID" Type="varchar" Nullable="false" MaxLength="12" />
+    <Property Name="VendClassName" Type="varchar" MaxLength="40" />
+    <Property Name="VendPmtMethKey" Type="int" />
+    <Property Name="WriteOffAcctKey" Type="int" />
+  </EntityType>
+  <EntityType Name="tapVendor">
+    <Key>
+      <PropertyRef Name="VendKey" />
+    </Key>
+    <Property Name="VendKey" Type="int" Nullable="false" />
+    <Property Name="ACHTranCode" Type="smallint" Nullable="false" DefaultValue="22" />
+    <Property Name="AllowPOBackOrder" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="BuyerKey" Type="int" />
+    <Property Name="CashAcctKey" Type="int" />
+    <Property Name="CompanyID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="CreditCardVendor" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateType" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CreateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="CreditLimit" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="CurrExchSchdKey" Type="int" />
+    <Property Name="DfltItemKey" Type="int" />
+    <Property Name="DfltPurchAcctKey" Type="int" />
+    <Property Name="DfltPurchAddrKey" Type="int" Nullable="false" />
+    <Property Name="DfltRemitToAddrKey" Type="int" Nullable="false" />
+    <Property Name="HoldPmt" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="ImportLogKey" Type="int" />
+    <Property Name="MatchToleranceKey" Type="int" />
+    <Property Name="PmtTermsKey" Type="int" />
+    <Property Name="POFormKey" Type="int" />
+    <Property Name="PrimaryAddrKey" Type="int" Nullable="false" />
+    <Property Name="PrimaryCntctKey" Type="int" />
+    <Property Name="RcvgCmnt" Type="varchar" MaxLength="255" />
+    <Property Name="RequirePOIssue" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="RequireRMA" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="RetntRate" Type="decimal" Precision="12" Scale="6" DefaultValue="0" />
+    <Property Name="SeparateChk" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="Status" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="TaxPayerID" Type="varchar" MaxLength="30" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="UpdateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="UserFld1" Type="varchar" MaxLength="15" />
+    <Property Name="UserFld2" Type="varchar" MaxLength="15" />
+    <Property Name="UserFld3" Type="varchar" MaxLength="15" />
+    <Property Name="UserFld4" Type="varchar" MaxLength="15" />
+    <Property Name="V1099Control" Type="varchar" MaxLength="4" />
+    <Property Name="V1099Box" Type="varchar" MaxLength="3" />
+    <Property Name="V1099FATCA" Type="smallint" DefaultValue="0" />
+    <Property Name="V1099Form" Type="smallint" />
+    <Property Name="V1099Type" Type="smallint" Nullable="false" DefaultValue="3" />
+    <Property Name="VendClassKey" Type="int" Nullable="false" />
+    <Property Name="VendDBA" Type="varchar" MaxLength="40" />
+    <Property Name="VendID" Type="varchar" Nullable="false" MaxLength="12" />
+    <Property Name="VendName" Type="varchar" Nullable="false" MaxLength="40" />
+    <Property Name="VendPmtMethKey" Type="int" />
+    <Property Name="VendRefNo" Type="varchar" MaxLength="15" />
+    <Property Name="VouchCmnt" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tarCustPmt">
+    <Key>
+      <PropertyRef Name="CustPmtKey" />
+    </Key>
+    <Property Name="CustPmtKey" Type="int" Nullable="false" />
+    <Property Name="BatchKey" Type="int" Nullable="false" />
+    <Property Name="CompanyID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateType" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CreateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="CurrExchRate" Type="float" Nullable="false" DefaultValue="1" />
+    <Property Name="CurrExchSchdKey" Type="int" />
+    <Property Name="CurrID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="CustClassKey" Type="int" Nullable="false" />
+    <Property Name="CustKey" Type="int" />
+    <Property Name="DiscTakenAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="GuarntdExchRate" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="ManualChk" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="NextApplEntryNo" Type="int" />
+    <Property Name="PmtRcptDate" Type="datetime" />
+    <Property Name="PostDate" Type="datetime" Nullable="false" />
+    <Property Name="PrepaidCustInvcNo" Type="varchar" MaxLength="10" />
+    <Property Name="RefundAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="RefundAmtHC" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="RefundCustPmtKey" Type="int" />
+    <Property Name="RevrsCustPmtKey" Type="int" />
+    <Property Name="TranAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="TranAmtHC" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="TranCmnt" Type="varchar" MaxLength="50" />
+    <Property Name="TranDate" Type="datetime" Nullable="false" />
+    <Property Name="TranID" Type="varchar" Nullable="false" MaxLength="13" />
+    <Property Name="TranNo" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="TranType" Type="int" Nullable="false" />
+    <Property Name="UnappliedAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="UnappliedAmtHC" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="UpdateUserID" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="tarInvoice">
+    <Key>
+      <PropertyRef Name="InvcKey" />
+    </Key>
+    <Property Name="InvcKey" Type="int" Nullable="false" />
+    <Property Name="AuthOvrdAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="Balance" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="BalanceHC" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="BatchKey" Type="int" Nullable="false" />
+    <Property Name="BillToAddrKey" Type="int" Nullable="false" />
+    <Property Name="BillToCustAddrKey" Type="int" />
+    <Property Name="ClosingPostDate" Type="datetime" />
+    <Property Name="ClosingTranDate" Type="datetime" />
+    <Property Name="CommPlanKey" Type="int" />
+    <Property Name="CompanyID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="ConfirmToCntctKey" Type="int" />
+    <Property Name="CostOfSales" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateType" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CreateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="CurrExchRate" Type="float" Nullable="false" DefaultValue="1" />
+    <Property Name="CurrExchSchdKey" Type="int" />
+    <Property Name="CurrID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="CustClassKey" Type="int" Nullable="false" />
+    <Property Name="CustKey" Type="int" Nullable="false" />
+    <Property Name="CustPONo" Type="varchar" MaxLength="15" />
+    <Property Name="DiscAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="DiscDate" Type="datetime" />
+    <Property Name="DiscTakenAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="DueDate" Type="datetime" />
+    <Property Name="FOBKey" Type="int" />
+    <Property Name="HandlAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="ImportLogKey" Type="int" />
+    <Property Name="InDispute" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="InvcFormKey" Type="int" />
+    <Property Name="NextApplEntryNo" Type="int" DefaultValue="1" />
+    <Property Name="PmtTermsKey" Type="int" />
+    <Property Name="PostDate" Type="datetime" Nullable="false" />
+    <Property Name="PrimarySperKey" Type="int" />
+    <Property Name="Printed" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="ReasonCodeKey" Type="int" />
+    <Property Name="RecurInvoiceKey" Type="int" />
+    <Property Name="RetntAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="RetntPct" Type="decimal" Precision="5" Scale="4" DefaultValue="0" />
+    <Property Name="SalesAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="ShipAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="ShipMethKey" Type="int" />
+    <Property Name="ShipToAddrKey" Type="int" Nullable="false" />
+    <Property Name="ShipToCustAddrKey" Type="int" />
+    <Property Name="ShipZoneKey" Type="int" />
+    <Property Name="SourceModule" Type="smallint" Nullable="false" DefaultValue="5" />
+    <Property Name="Status" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="STaxAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="STaxCalc" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="STaxTranKey" Type="int" />
+    <Property Name="TradeDiscAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="TranAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="TranAmtHC" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="TranCmnt" Type="varchar" MaxLength="50" />
+    <Property Name="TranDate" Type="datetime" Nullable="false" />
+    <Property Name="TranID" Type="varchar" Nullable="false" MaxLength="13" />
+    <Property Name="TranNo" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Transmitted" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="TranType" Type="int" Nullable="false" />
+    <Property Name="UpdateCounter" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="UpdateUserID" Type="varchar" MaxLength="30" />
+    <Property Name="VoucherKey" Type="int" />
+  </EntityType>
+  <EntityType Name="tarInvoiceAppl">
+    <Key>
+      <PropertyRef Name="ApplyToInvcKey" />
+      <PropertyRef Name="EntryNo" />
+    </Key>
+    <Property Name="ApplyToInvcKey" Type="int" Nullable="false" />
+    <Property Name="EntryNo" Type="int" Nullable="false" />
+    <Property Name="AppliedAtCreation" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="ApplyFromInvcKey" Type="int" />
+    <Property Name="ApplyFromPmtKey" Type="int" />
+    <Property Name="ApplyFromTranDate" Type="datetime" Nullable="false" />
+    <Property Name="ApplyFromTranID" Type="varchar" Nullable="false" MaxLength="13" />
+    <Property Name="ApplyFromTranType" Type="int" />
+    <Property Name="BatchKey" Type="int" Nullable="false" />
+    <Property Name="DiscTakenAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="DiscTakenAmtHC" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="PmtAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="PmtAmtHC" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="PostDate" Type="datetime" Nullable="false" />
+    <Property Name="RevrsApplBatchKey" Type="int" />
+    <Property Name="RevrsApplEntryNo" Type="int" />
+  </EntityType>
+  <EntityType Name="tglTransaction">
+    <Key>
+      <PropertyRef Name="glTranKey" />
+    </Key>
+    <Property Name="glTranKey" Type="int" Nullable="false" />
+    <Property Name="AcctRefKey" Type="int" />
+    <Property Name="BatchKey" Type="int" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateType" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CurrExchRate" Type="float" Nullable="false" DefaultValue="1" />
+    <Property Name="CurrID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="ExtCmnt" Type="varchar" MaxLength="255" />
+    <Property Name="FiscPer" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="FiscYear" Type="varchar" Nullable="false" MaxLength="5" />
+    <Property Name="GLAcctKey" Type="int" Nullable="false" />
+    <Property Name="JrnlKey" Type="int" />
+    <Property Name="JrnlNo" Type="int" />
+    <Property Name="PostAmt" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="PostAmtHC" Type="decimal" Nullable="false" Precision="15" Scale="3" DefaultValue="0" />
+    <Property Name="PostCmnt" Type="varchar" MaxLength="50" />
+    <Property Name="PostDate" Type="datetime" Nullable="false" />
+    <Property Name="PostQty" Type="decimal" Nullable="false" Precision="16" Scale="8" DefaultValue="0" />
+    <Property Name="SourceModuleNo" Type="smallint" Nullable="false" />
+    <Property Name="TranDate" Type="datetime" />
+    <Property Name="TranKey" Type="int" />
+    <Property Name="TranNo" Type="varchar" MaxLength="30" />
+    <Property Name="TranType" Type="int" />
+  </EntityType>
+  <EntityType Name="tsmCustomForm">
+    <Key>
+      <PropertyRef Name="CustomFormKey" />
+    </Key>
+    <Property Name="CustomFormKey" Type="int" Nullable="false" />
+    <Property Name="CompanyID" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="CustomFormEnabled" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="CustomVersionNo" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="Description" Type="varchar" MaxLength="30" />
+    <Property Name="FormName" Type="varchar" Nullable="false" MaxLength="32" devart:DefaultValue="' '" DefaultValue=" " />
+    <Property Name="LanguageID" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="Precedence" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="TaskID" Type="int" Nullable="false" />
+    <Property Name="UserGroupID" Type="varchar" Nullable="false" MaxLength="30" devart:DefaultValue="' '" DefaultValue=" " />
+    <Property Name="UserID" Type="varchar" Nullable="false" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="tsmCustomFormDetl">
+    <Key>
+      <PropertyRef Name="CustomFormKey" />
+      <PropertyRef Name="ControlName" />
+      <PropertyRef Name="CtrlSpecPropMask" />
+      <PropertyRef Name="PropertyMask" />
+      <PropertyRef Name="UserDefined" />
+    </Key>
+    <Property Name="CustomFormKey" Type="int" Nullable="false" />
+    <Property Name="ArrayIndex" Type="int" />
+    <Property Name="BackColor" Type="int" />
+    <Property Name="Caption" Type="varchar" MaxLength="255" />
+    <Property Name="ControlName" Type="varchar" Nullable="false" MaxLength="32" devart:DefaultValue="' '" DefaultValue=" " />
+    <Property Name="CtrlSpecProperty" Type="varchar" MaxLength="255" />
+    <Property Name="CtrlSpecPropMask" Type="int" Nullable="false" />
+    <Property Name="CustomBindingKey" Type="int" />
+    <Property Name="Enabled" Type="smallint" />
+    <Property Name="FontBold" Type="smallint" />
+    <Property Name="FontItalic" Type="smallint" />
+    <Property Name="FontName" Type="varchar" MaxLength="32" />
+    <Property Name="FontSize" Type="decimal" Precision="6" Scale="2" />
+    <Property Name="FontStrikethru" Type="smallint" />
+    <Property Name="FontUnderline" Type="smallint" />
+    <Property Name="ForeColor" Type="int" />
+    <Property Name="Height" Type="int" />
+    <Property Name="LeftPos" Type="int" />
+    <Property Name="ParentCtrlArrIndex" Type="int" />
+    <Property Name="ParentCtrlName" Type="varchar" MaxLength="32" />
+    <Property Name="PropertyMask" Type="int" Nullable="false" />
+    <Property Name="ScriptKey" Type="int" />
+    <Property Name="TabIndex" Type="int" />
+    <Property Name="TabStop" Type="smallint" />
+    <Property Name="TopPos" Type="int" />
+    <Property Name="TypeName" Type="varchar" MaxLength="32" />
+    <Property Name="UserDefined" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="Visible" Type="smallint" />
+    <Property Name="Width" Type="int" />
+  </EntityType>
+  <EntityType Name="tsmTask">
+    <Key>
+      <PropertyRef Name="TaskID" />
+    </Key>
+    <Property Name="TaskID" Type="int" Nullable="false" />
+    <Property Name="ClientEnabled" Type="smallint" Nullable="false" DefaultValue="1" />
+    <Property Name="ModuleNo" Type="smallint" Nullable="false" />
+    <Property Name="SystemTask" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="TaskConstName" Type="varchar" Nullable="false" MaxLength="40" devart:DefaultValue="' '" DefaultValue=" " />
+    <Property Name="TaskInterfaceType" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="TaskInvokeFlags" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="TaskInvokeMethod" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="TaskOleClsID" Type="varchar" Nullable="false" MaxLength="50" devart:DefaultValue="' '" DefaultValue=" " />
+    <Property Name="TaskOleProgID" Type="varchar" Nullable="false" MaxLength="255" devart:DefaultValue="' '" DefaultValue=" " />
+    <Property Name="TaskParamInt" Type="int" />
+    <Property Name="TaskParamStr" Type="varchar" MaxLength="255" />
+    <Property Name="TaskTypeID" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="WebEnabled" Type="smallint" Nullable="false" DefaultValue="0" />
+  </EntityType>
+  <Function Name="spGetNextSurrogateKey" IsComposable="false" BuiltIn="false" Aggregate="false" NiladicFunction="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" StoreFunctionName="spGetNextSurrogateKey">
+    <Parameter Name="iTableName" Type="varchar" Mode="In" MaxLength="30" />
+    <Parameter Name="oNewKey" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="spmfWOCreateSteps" IsComposable="false" BuiltIn="false" Aggregate="false" NiladicFunction="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" StoreFunctionName="spmfWOCreateSteps">
+    <Parameter Name="iCompanyId" Type="varchar" Mode="In" MaxLength="3" />
+    <Parameter Name="iWorkOrderKey" Type="int" Mode="In" />
+    <Parameter Name="iRoutingKey" Type="int" Mode="In" />
+    <Parameter Name="iLevel" Type="numeric" Mode="In" Precision="5" Scale="0" />
+    <Parameter Name="iPhantomAsSubAssm" Type="smallint" Mode="In" />
+    <Parameter Name="iBackFlush" Type="varchar" Mode="In" MaxLength="1" />
+    <Parameter Name="iPhantomMaterReqPer" Type="decimal" Mode="In" Precision="4" Scale="0" />
+    <Parameter Name="iPhantomItemKey" Type="int" Mode="In" />
+    <Parameter Name="oRowKey" Type="int" Mode="InOut" />
+    <Parameter Name="optInclCommentOnlyMatItem" Type="smallint" Mode="In" />
+  </Function>
+  <Function Name="spGetNextBatch" IsComposable="false" BuiltIn="false" Aggregate="false" NiladicFunction="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" StoreFunctionName="spGetNextBatch">
+    <Parameter Name="iCompanyID" Type="varchar" Mode="In" MaxLength="3" />
+    <Parameter Name="iModuleNo" Type="smallint" Mode="In" />
+    <Parameter Name="iBatchType" Type="int" Mode="In" />
+    <Parameter Name="iUserID" Type="varchar" Mode="In" MaxLength="30" />
+    <Parameter Name="iDefBatchCmnt" Type="varchar" Mode="In" MaxLength="80" />
+    <Parameter Name="iPostDate" Type="datetime" Mode="In" />
+    <Parameter Name="oBatchKey" Type="int" Mode="InOut" />
+    <Parameter Name="oNextBatchNo" Type="int" Mode="InOut" />
+    <Parameter Name="oRetVal" Type="smallint" Mode="InOut" />
+    <Parameter Name="optHiddenBatch" Type="smallint" Mode="In" />
+    <Parameter Name="optInvcDate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="spglGiveNextJrnlNo" IsComposable="false" BuiltIn="false" Aggregate="false" NiladicFunction="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" StoreFunctionName="spglGiveNextJrnlNo">
+    <Parameter Name="iCompanyID" Type="varchar" Mode="In" MaxLength="3" />
+    <Parameter Name="iJrnlKey" Type="int" Mode="In" />
+    <Parameter Name="iCommitFlag" Type="int" Mode="In" />
+    <Parameter Name="oJrnlNo" Type="int" Mode="InOut" />
+    <Parameter Name="oRetVal" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="spimSaveBinTransferTrnxs" IsComposable="false" BuiltIn="false" Aggregate="false" NiladicFunction="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" StoreFunctionName="spimSaveBinTransferTrnxs">
+    <Parameter Name="iCompanyID" Type="varchar" Mode="In" MaxLength="3" />
+    <Parameter Name="iBusinessDate" Type="datetime" Mode="In" />
+    <Parameter Name="oRetVal" Type="int" Mode="InOut" />
+  </Function>
+</Schema>
